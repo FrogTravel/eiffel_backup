@@ -1,0 +1,198 @@
+<html>
+<head>
+	<title>First Page</title>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/dropdown.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	
+</head>
+<body>
+	<div class="content">
+		<h4>Page 1</h4>
+		<p>Name of unit</p>
+		<input id="UNITNAME" type="text" name="UNITNAME">
+		<p>Name of Head Unit</p>
+		<input id="UNITHEADNAME" type="text" name="UNITHEADNAME">
+		<p>Start of reporting period</p>
+		<input  class="datepicker" id="REPORTSTARTDATE" type="text" name="REPORTSTARTDATE">
+		<p>End of reporting period</p>
+		<input  class="datepicker" id="REPORTENDDATE" type="text" name="REPORTENDDATE"><br>
+ 		
+
+ 		<h4>Page 2</h4>
+ 		<p class="inline">Courses taught</p>
+ 		<button id="addbtncourses">Add</button>
+ 		<button id="removebtncourses">Remove</button>
+ 		<div class="bigform courses">
+ 			<p class="inline number">1.</p>
+			<input id="COURSENAME" type="text" name="COURSENAME">
+
+			<!-- <div class="dropdown">
+				<button class="dropbtn">Level</button>
+				<div class="dropdown-content">
+					<a class="levelDropList buttonChoice" href="#">Bachelor</a>
+					<a class="levelDropList buttonChoice" href="#">Master</a>
+					<a class="levelDropList buttonChoice" href="#">PhD</a>
+				</div>
+			</div> -->
+
+			<select id="semesterSelectorCourses">
+				<option>Fall</option>
+				<option>Spring</option>
+			</select>
+
+			<select id="levelSelectorCourses">
+				<option>Bachelor</option>
+				<option>Master</option>
+				<option>PhD</option>
+			</select>
+
+			<input type="number" name="APPROXIMATESTUDENTNUMBER" id="APPROXIMATESTUDENTNUMBER">
+			<div id="newCoursesRow"></div>
+		</div>
+
+		<!-- Examinations -->
+		<p class="inline">Examinations</p>
+		<button id="addbtnexams">Add</button>
+		<button id="removebtnexams">Remove</button>
+		<div class="bigform exams">
+			<p class="inline number">1.</p>
+			<input id="courseName" type="text" name="COURSENAME">
+			<select id="examsSelector">
+				<option>Fall</option>
+				<option>Spring</option>
+			</select>
+			<select id="kindOfExams">
+				<option>Final</option>
+				<option>Repetition</option>
+			</select>
+			<input id="approxStudNumb" type="number" name="APPROXIMATESTUDENTNUMBER">
+			<div id="newExamsRow"></div>
+		</div>
+
+
+		<!-- Students supervised -->
+		<p class="inline">Students supervised</p>
+		<button id="addbtnstudsupervised">Add</button>
+		<button id="removebtnstudsupervised">Remove</button>
+		<div class="bigform studsupervised">
+			<input id="studentNameStudSupervised" type="text" name="name">
+			<select id="levelStudSupervised">
+				<option>Bachelor Thesis</option>
+				<option>Master Thesis</option>
+				<option>Summer Internship</option>
+			</select>
+			<div id="newStudentsSupervisedRow"></div>
+		</div>
+
+
+		<!-- Completed student reports -->
+		<p class="inline">Completed student reports</p>
+		<button id="addbtnstudreports">Add</button>
+		<button id="removebtnstudreports">Remove</button>
+		<div class="bigform reports">
+			<input id="studentNameReports" type="text" name="name">
+			<input id="titleOfReportStudent" type="text" name="titleofreport">
+			<input id="plansForPublication" class="notMandatory" type="text" name="plans">
+			<div id="newCompletedReportsRow"></div>
+		</div>
+
+
+		<!-- Completed PhD theses -->
+		<p class="inline">Completed PhD theses</p>
+		<button id="addbtncompphd">Add</button>
+		<button id="removebtncompphd">Remove</button>
+		<div class="bigform theses">
+			<input id="studentNameTheses" type="text" name="name">
+			<select id="degreeSelector">
+				<option>PhD</option>
+				<option>Dr. Sc.</option>
+			</select>
+			<input id="supervisorName" type="text" name="name">
+			<input id="otherMembersName" type="type" name="nameOfComitee">
+			<input id="nameOfDegreeGrantingInstitution" type="text" name="nameOfInstitution">
+			<input id="titleOfTheses" type="text" name="titleOfTheses">
+			<div id="newCompletedPhDTheses"></div>
+		</div>
+
+		<h4>Page 3</h4>
+		<!-- Grants -->
+		<p class="inline">Grants</p>
+		<button id="addbtnGrants">Add</button>
+		<button id="removebtnGrants">Remove</button>
+		<div class="bigform grants">
+			<p class="inline number">1.</p>
+			<input id="titleOfProject" type="text" name="name">
+			<input id="grantingAgency" type="text" name="agency">
+			<input id="durationGrants" type="number" name="date">
+			<input id="amountOfGrant" type="text" name="amountOfGrant">
+			<div id="newGrantRow"></div>
+		</div>
+
+		<!-- Research projects -->
+		<p class="inline">Research projects</p>
+		<button id="addbtnResearchProj">Add</button>
+		<button id="removebtnResearchProj">Remove</button>
+		<div class="bigform researchProj">
+			<p class="inline number">1.</p>
+			<input id="titleOfProjectResearch" type="text" name="name">
+			<input id="IUpersonnel" type="text" name="IUpersonnel">
+			<input id="externalPersonnel" type="text" name="externalPersonnel">
+			<input  class="datepicker" id="startDateOfProject" type="text" name="date">
+			<input  class="datepicker" id="endDateOfProject" type="text" name="date">
+			<input id="sourceOfFinance" type="text" name="sourceOfFinance">
+			<div id="newResearchProjectsRow"></div>
+		</div>	
+		
+		<!-- Research collaborations -->
+		<p class="inline">Research collaborations</p>
+		<button id="addbtnResearchColl">Add</button>
+		<button id="removebtnResearchColl">Remove</button>
+		<div class="bigform researchColl">
+			<p class="inline number">1.</p>
+			<input id="countryOfInst" type="text" name="country">
+			<input id="nameOfInstitution" type="text" name="nameOfInstitution">
+			<input id="departmentOfUnit" class="notMandatory" type="text" name="departmentOfUnit">
+			<input id="nameOfPrincipal" type="text" name="nameOfPrincipal">
+			<input id="otherImportantContacts" type="text" name="otherImportantContacts">
+			<input id="natureOfColl" type="text" name="natureOfColl">
+			<div id="newResearchCollaborationsRow"></div>
+		</div>	
+
+
+		<!-- Conference publications -->
+		<p class="inline">Conference publications</p>
+		<button id="addbtnconference">Add</button>
+		<button id="removebtnconference">Remove</button>
+		<div class="bigform conferencePubl">
+			<p class="inline number">1.</p>
+			<input id="publications" type="text" name="publications">
+			<div id="newConferencePublRow"></div>
+		</div>	
+
+
+		<!-- Journal publications -->
+		<p class="inline">Journal publications</p>
+		<button id="addbtnjournalpubl">Add</button>
+		<button id="removejournalpubl">Remove</button>
+		<div class="bigform journalPubl">
+			<p class="inline number">1.</p>
+			<input id="publications" type="text" name="publications">
+			<div id="newJournalPublRow"></div>
+		</div>	
+
+		<button id="submit">submit</button>
+	</div>
+
+		<script type="text/javascript" src="script/socket.js"></script>
+		<script type="text/javascript" src="script/dropdown.js"></script>
+		<script type="text/javascript" src="script/newRowsAdder.js"></script>
+		<script type="text/javascript" src="script/data-collector.js"></script>
+		<script type="text/javascript" src="script/main.js"></script>
+		<script type="text/javascript" src="script/initialization.js"></script>
+		
+</body>
+</html>
