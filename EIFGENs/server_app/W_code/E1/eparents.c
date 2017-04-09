@@ -3836,11 +3836,11 @@ static struct eif_par_types par956 = {956, ptf956, (uint16) 1, (uint16) 1, (char
 static EIF_TYPE_INDEX ptf957[] = {0,0xFFFF};
 static struct eif_par_types par957 = {957, ptf957, (uint16) 1, (uint16) 0, (char) 0};
 
-/* ERROR_VISITOR */
+/* WSF_VALUE_VISITOR */
 static EIF_TYPE_INDEX ptf958[] = {0,0xFFFF};
 static struct eif_par_types par958 = {958, ptf958, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WSF_VALUE_VISITOR */
+/* ERROR_VISITOR */
 static EIF_TYPE_INDEX ptf959[] = {0,0xFFFF};
 static struct eif_par_types par959 = {959, ptf959, (uint16) 1, (uint16) 0, (char) 0};
 
@@ -3852,23 +3852,23 @@ static struct eif_par_types par960 = {960, ptf960, (uint16) 1, (uint16) 0, (char
 static EIF_TYPE_INDEX ptf961[] = {0,0xFFFF};
 static struct eif_par_types par961 = {961, ptf961, (uint16) 1, (uint16) 0, (char) 1};
 
-/* WEB_SOCKET_ERROR_FRAME */
+/* WSF_ROUTER_SESSION */
 static EIF_TYPE_INDEX ptf962[] = {0,0xFFFF};
 static struct eif_par_types par962 = {962, ptf962, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WSF_REQUEST_PATH_PARAMETERS_SOURCE */
+/* C_DATE */
 static EIF_TYPE_INDEX ptf963[] = {0,0xFFFF};
 static struct eif_par_types par963 = {963, ptf963, (uint16) 1, (uint16) 0, (char) 0};
 
-/* HTTP_DATE_TIME_UTILITIES */
+/* WEB_SOCKET_ERROR_FRAME */
 static EIF_TYPE_INDEX ptf964[] = {0,0xFFFF};
 static struct eif_par_types par964 = {964, ptf964, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WSF_ROUTER_SESSION */
+/* WSF_REQUEST_PATH_PARAMETERS_SOURCE */
 static EIF_TYPE_INDEX ptf965[] = {0,0xFFFF};
 static struct eif_par_types par965 = {965, ptf965, (uint16) 1, (uint16) 0, (char) 0};
 
-/* C_DATE */
+/* HTTP_DATE_TIME_UTILITIES */
 static EIF_TYPE_INDEX ptf966[] = {0,0xFFFF};
 static struct eif_par_types par966 = {966, ptf966, (uint16) 1, (uint16) 0, (char) 0};
 
@@ -3880,67 +3880,67 @@ static struct eif_par_types par967 = {967, ptf967, (uint16) 1, (uint16) 0, (char
 static EIF_TYPE_INDEX ptf968[] = {0,0xFFFF};
 static struct eif_par_types par968 = {968, ptf968, (uint16) 1, (uint16) 0, (char) 0};
 
-/* SOCKET_ADDRESS */
+/* DATE_TIME_LANGUAGE_CONSTANTS */
 static EIF_TYPE_INDEX ptf969[] = {0,0xFFFF};
 static struct eif_par_types par969 = {969, ptf969, (uint16) 1, (uint16) 0, (char) 0};
 
-/* DATE_TIME_LANGUAGE_CONSTANTS */
-static EIF_TYPE_INDEX ptf970[] = {0,0xFFFF};
+/* DATE_TIME_TOOLS */
+static EIF_TYPE_INDEX ptf970[] = {969,0xFFFF};
 static struct eif_par_types par970 = {970, ptf970, (uint16) 1, (uint16) 0, (char) 0};
 
-/* DATE_TIME_TOOLS */
-static EIF_TYPE_INDEX ptf971[] = {970,0xFFFF};
+/* SOCKET_ADDRESS */
+static EIF_TYPE_INDEX ptf971[] = {0,0xFFFF};
 static struct eif_par_types par971 = {971, ptf971, (uint16) 1, (uint16) 0, (char) 0};
 
 /* HTTPD_SOCKET_FACTORY */
 static EIF_TYPE_INDEX ptf972[] = {0,0xFFFF};
 static struct eif_par_types par972 = {972, ptf972, (uint16) 1, (uint16) 0, (char) 0};
 
-/* CONCURRENT_POOL_ITEM */
+/* ADDRINFO */
 static EIF_TYPE_INDEX ptf973[] = {0,0xFFFF};
 static struct eif_par_types par973 = {973, ptf973, (uint16) 1, (uint16) 0, (char) 0};
 
-/* ADDRINFO */
+/* CONCURRENT_POOL_ITEM */
 static EIF_TYPE_INDEX ptf974[] = {0,0xFFFF};
 static struct eif_par_types par974 = {974, ptf974, (uint16) 1, (uint16) 0, (char) 0};
 
-/* HTTP_ACCEPT_VARIANTS */
+/* GROUP_ELEMENT */
 static EIF_TYPE_INDEX ptf975[] = {0,0xFFFF};
 static struct eif_par_types par975 = {975, ptf975, (uint16) 1, (uint16) 0, (char) 0};
 
-/* HTTP_ACCEPT_MEDIA_TYPE_VARIANTS */
-static EIF_TYPE_INDEX ptf976[] = {975,0xFFFF};
+/* HTTP_ACCEPT_VARIANTS */
+static EIF_TYPE_INDEX ptf976[] = {0,0xFFFF};
 static struct eif_par_types par976 = {976, ptf976, (uint16) 1, (uint16) 0, (char) 0};
 
-/* GROUP_ELEMENT */
-static EIF_TYPE_INDEX ptf977[] = {0,0xFFFF};
+/* HTTP_ACCEPT_MEDIA_TYPE_VARIANTS */
+static EIF_TYPE_INDEX ptf977[] = {976,0xFFFF};
 static struct eif_par_types par977 = {977, ptf977, (uint16) 1, (uint16) 0, (char) 0};
 
-/* HTTPD_REQUEST_HANDLER_FACTORY_I */
+/* HTTPD_LOGGER */
 static EIF_TYPE_INDEX ptf978[] = {0,0xFFFF};
 static struct eif_par_types par978 = {978, ptf978, (uint16) 1, (uint16) 0, (char) 0};
 
+/* HTTPD_REQUEST_HANDLER_FACTORY_I */
+static EIF_TYPE_INDEX ptf979[] = {0,0xFFFF};
+static struct eif_par_types par979 = {979, ptf979, (uint16) 1, (uint16) 0, (char) 0};
+
 /* HTTPD_REQUEST_HANDLER_FACTORY */
-static EIF_TYPE_INDEX ptf979[] = {978,0xFFF7,1152,0xFF01,1073,0xFFFF};
-static struct eif_par_types par979 = {979, ptf979, (uint16) 2, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf980[] = {979,0xFFF7,1155,0xFF01,1073,0xFFFF};
+static struct eif_par_types par980 = {980, ptf980, (uint16) 2, (uint16) 0, (char) 0};
 
 /* WGI_ERROR_STREAM */
-static EIF_TYPE_INDEX ptf980[] = {0,0xFFFF};
-static struct eif_par_types par980 = {980, ptf980, (uint16) 1, (uint16) 0, (char) 0};
-
-/* WGI_STANDALONE_ERROR_STREAM */
-static EIF_TYPE_INDEX ptf981[] = {980,0xFFFF};
+static EIF_TYPE_INDEX ptf981[] = {0,0xFFFF};
 static struct eif_par_types par981 = {981, ptf981, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WGI_OUTPUT_STREAM */
-static EIF_TYPE_INDEX ptf982[] = {0,0xFFFF};
+/* WGI_STANDALONE_ERROR_STREAM */
+static EIF_TYPE_INDEX ptf982[] = {981,0xFFFF};
 static struct eif_par_types par982 = {982, ptf982, (uint16) 1, (uint16) 0, (char) 0};
 
-/* HTTPD_LOGGER */
+/* WGI_OUTPUT_STREAM */
 static EIF_TYPE_INDEX ptf983[] = {0,0xFFFF};
 static struct eif_par_types par983 = {983, ptf983, (uint16) 1, (uint16) 0, (char) 0};
 
-/* HTTP_STREAM_SOCKET_EXT */
+/* WSF_REQUEST_EXPORTER */
 static EIF_TYPE_INDEX ptf984[] = {0,0xFFFF};
 static struct eif_par_types par984 = {984, ptf984, (uint16) 1, (uint16) 0, (char) 0};
 
@@ -3952,7 +3952,7 @@ static struct eif_par_types par985 = {985, ptf985, (uint16) 1, (uint16) 0, (char
 static EIF_TYPE_INDEX ptf986[] = {985,0xFFFF};
 static struct eif_par_types par986 = {986, ptf986, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WSF_REQUEST_EXPORTER */
+/* HTTP_STREAM_SOCKET_EXT */
 static EIF_TYPE_INDEX ptf987[] = {0,0xFFFF};
 static struct eif_par_types par987 = {987, ptf987, (uint16) 1, (uint16) 0, (char) 0};
 
@@ -3980,21 +3980,21 @@ static struct eif_par_types par992 = {992, ptf992, (uint16) 1, (uint16) 0, (char
 static EIF_TYPE_INDEX ptf993[] = {992,0xFFFF};
 static struct eif_par_types par993 = {993, ptf993, (uint16) 1, (uint16) 0, (char) 0};
 
-/* HELPER */
+/* WSF_ROUTER_MAPPING_FACTORY */
 static EIF_TYPE_INDEX ptf994[] = {0,0xFFFF};
 static struct eif_par_types par994 = {994, ptf994, (uint16) 1, (uint16) 0, (char) 0};
 
-/* MESSAGE_DIGEST */
+/* HELPER */
 static EIF_TYPE_INDEX ptf995[] = {0,0xFFFF};
 static struct eif_par_types par995 = {995, ptf995, (uint16) 1, (uint16) 0, (char) 0};
 
-/* SHA1 */
-static EIF_TYPE_INDEX ptf996[] = {995,0xFFF7,994,0xFFFF};
-static struct eif_par_types par996 = {996, ptf996, (uint16) 2, (uint16) 0, (char) 0};
+/* MESSAGE_DIGEST */
+static EIF_TYPE_INDEX ptf996[] = {0,0xFFFF};
+static struct eif_par_types par996 = {996, ptf996, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WSF_ROUTER_MAPPING_FACTORY */
-static EIF_TYPE_INDEX ptf997[] = {0,0xFFFF};
-static struct eif_par_types par997 = {997, ptf997, (uint16) 1, (uint16) 0, (char) 0};
+/* SHA1 */
+static EIF_TYPE_INDEX ptf997[] = {996,0xFFF7,995,0xFFFF};
+static struct eif_par_types par997 = {997, ptf997, (uint16) 2, (uint16) 0, (char) 0};
 
 /* HTTP_HEADER_NAMES */
 static EIF_TYPE_INDEX ptf998[] = {0,0xFFFF};
@@ -4012,23 +4012,23 @@ static struct eif_par_types par1000 = {1000, ptf1000, (uint16) 1, (uint16) 0, (c
 static EIF_TYPE_INDEX ptf1001[] = {1000,0xFFFF};
 static struct eif_par_types par1001 = {1001, ptf1001, (uint16) 1, (uint16) 0, (char) 0};
 
-/* COMMANDS */
+/* WSF_SELF_DOCUMENTED_HANDLER */
 static EIF_TYPE_INDEX ptf1002[] = {0,0xFFFF};
 static struct eif_par_types par1002 = {1002, ptf1002, (uint16) 1, (uint16) 0, (char) 0};
 
-/* COMMANDS_CLIENT */
-static EIF_TYPE_INDEX ptf1003[] = {1002,0xFFFF};
+/* COMMANDS */
+static EIF_TYPE_INDEX ptf1003[] = {0,0xFFFF};
 static struct eif_par_types par1003 = {1003, ptf1003, (uint16) 1, (uint16) 0, (char) 0};
 
-/* SHARED_BASE64 */
-static EIF_TYPE_INDEX ptf1004[] = {0,0xFFFF};
+/* COMMANDS_CLIENT */
+static EIF_TYPE_INDEX ptf1004[] = {1003,0xFFFF};
 static struct eif_par_types par1004 = {1004, ptf1004, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WGI_STANDALONE_CONNECTOR_EXPORTER */
+/* SHARED_BASE64 */
 static EIF_TYPE_INDEX ptf1005[] = {0,0xFFFF};
 static struct eif_par_types par1005 = {1005, ptf1005, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WSF_SELF_DOCUMENTED_HANDLER */
+/* WGI_STANDALONE_CONNECTOR_EXPORTER */
 static EIF_TYPE_INDEX ptf1006[] = {0,0xFFFF};
 static struct eif_par_types par1006 = {1006, ptf1006, (uint16) 1, (uint16) 0, (char) 0};
 
@@ -4088,29 +4088,29 @@ static struct eif_par_types par1019 = {1019, ptf1019, (uint16) 1, (uint16) 0, (c
 static EIF_TYPE_INDEX ptf1020[] = {1016,0xFFFF};
 static struct eif_par_types par1020 = {1020, ptf1020, (uint16) 1, (uint16) 0, (char) 0};
 
+/* DATE_MEASUREMENT */
+static EIF_TYPE_INDEX ptf1021[] = {1020,0xFFFF};
+static struct eif_par_types par1021 = {1021, ptf1021, (uint16) 1, (uint16) 0, (char) 0};
+
 /* DATE_TIME_MEASUREMENT */
-static EIF_TYPE_INDEX ptf1021[] = {1020,0xFFF7,1017,0xFFFF};
-static struct eif_par_types par1021 = {1021, ptf1021, (uint16) 2, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1022[] = {1020,0xFFF7,1017,0xFFFF};
+static struct eif_par_types par1022 = {1022, ptf1022, (uint16) 2, (uint16) 0, (char) 0};
 
 /* DATE_TIME_VALUE */
-static EIF_TYPE_INDEX ptf1022[] = {1021,0xFFFF};
-static struct eif_par_types par1022 = {1022, ptf1022, (uint16) 1, (uint16) 0, (char) 0};
-
-/* DATE_MEASUREMENT */
-static EIF_TYPE_INDEX ptf1023[] = {1020,0xFFFF};
+static EIF_TYPE_INDEX ptf1023[] = {1022,0xFFFF};
 static struct eif_par_types par1023 = {1023, ptf1023, (uint16) 1, (uint16) 0, (char) 0};
 
 /* INET_ADDRESS */
 static EIF_TYPE_INDEX ptf1024[] = {0,0xFFFF};
 static struct eif_par_types par1024 = {1024, ptf1024, (uint16) 1, (uint16) 0, (char) 0};
 
-/* INET6_ADDRESS */
-static EIF_TYPE_INDEX ptf1025[] = {1024,0xFFF7,1011,0xFFFF};
-static struct eif_par_types par1025 = {1025, ptf1025, (uint16) 2, (uint16) 0, (char) 0};
-
 /* INET4_ADDRESS */
-static EIF_TYPE_INDEX ptf1026[] = {1024,0xFFFF};
-static struct eif_par_types par1026 = {1026, ptf1026, (uint16) 1, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1025[] = {1024,0xFFFF};
+static struct eif_par_types par1025 = {1025, ptf1025, (uint16) 1, (uint16) 0, (char) 0};
+
+/* INET6_ADDRESS */
+static EIF_TYPE_INDEX ptf1026[] = {1024,0xFFF7,1011,0xFFFF};
+static struct eif_par_types par1026 = {1026, ptf1026, (uint16) 2, (uint16) 0, (char) 0};
 
 /* PERCENT_ENCODER */
 static EIF_TYPE_INDEX ptf1027[] = {0,0xFFFF};
@@ -4120,21 +4120,21 @@ static struct eif_par_types par1027 = {1027, ptf1027, (uint16) 1, (uint16) 0, (c
 static EIF_TYPE_INDEX ptf1028[] = {1027,0xFFFF};
 static struct eif_par_types par1028 = {1028, ptf1028, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WSF_MIME_HANDLER */
+/* WSF_HANDLER */
 static EIF_TYPE_INDEX ptf1029[] = {0,0xFFFF};
 static struct eif_par_types par1029 = {1029, ptf1029, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WSF_HANDLER */
-static EIF_TYPE_INDEX ptf1030[] = {0,0xFFFF};
+/* WSF_ROUTING_HANDLER */
+static EIF_TYPE_INDEX ptf1030[] = {1029,0xFFFF};
 static struct eif_par_types par1030 = {1030, ptf1030, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WSF_ROUTING_HANDLER */
-static EIF_TYPE_INDEX ptf1031[] = {1030,0xFFFF};
-static struct eif_par_types par1031 = {1031, ptf1031, (uint16) 1, (uint16) 0, (char) 0};
-
 /* WSF_STARTS_WITH_HANDLER */
-static EIF_TYPE_INDEX ptf1032[] = {1030,0xFFF7,997,0xFFFF};
-static struct eif_par_types par1032 = {1032, ptf1032, (uint16) 2, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1031[] = {1029,0xFFF7,994,0xFFFF};
+static struct eif_par_types par1031 = {1031, ptf1031, (uint16) 2, (uint16) 0, (char) 0};
+
+/* WSF_MIME_HANDLER */
+static EIF_TYPE_INDEX ptf1032[] = {0,0xFFFF};
+static struct eif_par_types par1032 = {1032, ptf1032, (uint16) 1, (uint16) 0, (char) 0};
 
 /* WGI_RESPONSE */
 static EIF_TYPE_INDEX ptf1033[] = {0,0xFFFF};
@@ -4152,7 +4152,7 @@ static struct eif_par_types par1035 = {1035, ptf1035, (uint16) 1, (uint16) 0, (c
 static EIF_TYPE_INDEX ptf1036[] = {1033,0xFFFF};
 static struct eif_par_types par1036 = {1036, ptf1036, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WGI_EXPORTER */
+/* HTTP_MIME_TYPES */
 static EIF_TYPE_INDEX ptf1037[] = {0,0xFFFF};
 static struct eif_par_types par1037 = {1037, ptf1037, (uint16) 1, (uint16) 0, (char) 0};
 
@@ -4164,21 +4164,21 @@ static struct eif_par_types par1038 = {1038, ptf1038, (uint16) 1, (uint16) 0, (c
 static EIF_TYPE_INDEX ptf1039[] = {0,0xFFFF};
 static struct eif_par_types par1039 = {1039, ptf1039, (uint16) 1, (uint16) 0, (char) 0};
 
+/* HTTP_CONSTANTS */
+static EIF_TYPE_INDEX ptf1040[] = {1037,0xFFF7,998,0xFFF7,1039,0xFFF7,1038,0xFFFF};
+static struct eif_par_types par1040 = {1040, ptf1040, (uint16) 4, (uint16) 0, (char) 0};
+
 /* HTTP_STATUS_CODE_MESSAGES */
-static EIF_TYPE_INDEX ptf1040[] = {1039,0xFFFF};
-static struct eif_par_types par1040 = {1040, ptf1040, (uint16) 1, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1041[] = {1039,0xFFFF};
+static struct eif_par_types par1041 = {1041, ptf1041, (uint16) 1, (uint16) 0, (char) 0};
 
 /* WGI_STANDALONE_OUTPUT_STREAM */
-static EIF_TYPE_INDEX ptf1041[] = {982,0xFFF7,1040,0xFFFF};
-static struct eif_par_types par1041 = {1041, ptf1041, (uint16) 2, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1042[] = {983,0xFFF7,1041,0xFFFF};
+static struct eif_par_types par1042 = {1042, ptf1042, (uint16) 2, (uint16) 0, (char) 0};
 
-/* HTTP_MIME_TYPES */
-static EIF_TYPE_INDEX ptf1042[] = {0,0xFFFF};
-static struct eif_par_types par1042 = {1042, ptf1042, (uint16) 1, (uint16) 0, (char) 0};
-
-/* HTTP_CONSTANTS */
-static EIF_TYPE_INDEX ptf1043[] = {1042,0xFFF7,998,0xFFF7,1039,0xFFF7,1038,0xFFFF};
-static struct eif_par_types par1043 = {1043, ptf1043, (uint16) 4, (uint16) 0, (char) 0};
+/* WGI_EXPORTER */
+static EIF_TYPE_INDEX ptf1043[] = {0,0xFFFF};
+static struct eif_par_types par1043 = {1043, ptf1043, (uint16) 1, (uint16) 0, (char) 0};
 
 /* SOCKET_RESOURCES */
 static EIF_TYPE_INDEX ptf1044[] = {0,0xFFFF};
@@ -4189,11 +4189,11 @@ static EIF_TYPE_INDEX ptf1045[] = {1011,0xFFF7,1044,0xFFFF};
 static struct eif_par_types par1045 = {1045, ptf1045, (uint16) 2, (uint16) 0, (char) 0};
 
 /* NETWORK_SOCKET_ADDRESS */
-static EIF_TYPE_INDEX ptf1046[] = {1045,0xFFF7,1044,0xFFF7,969,0xFFFF};
+static EIF_TYPE_INDEX ptf1046[] = {1045,0xFFF7,1044,0xFFF7,971,0xFFFF};
 static struct eif_par_types par1046 = {1046, ptf1046, (uint16) 3, (uint16) 0, (char) 0};
 
 /* BASE64 */
-static EIF_TYPE_INDEX ptf1047[] = {1156,0xFF01,227,0xFF01,227,0xFFFF};
+static EIF_TYPE_INDEX ptf1047[] = {1164,0xFF01,227,0xFF01,227,0xFFFF};
 static struct eif_par_types par1047 = {1047, ptf1047, (uint16) 1, (uint16) 0, (char) 0};
 
 /* SHARED_HTML_ENCODER */
@@ -4228,29 +4228,29 @@ static struct eif_par_types par1054 = {1054, ptf1054, (uint16) 1, (uint16) 0, (c
 static EIF_TYPE_INDEX ptf1055[] = {1054,0xFFFF};
 static struct eif_par_types par1055 = {1055, ptf1055, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WEB_SOCKET_CONSTANTS */
+/* SHARED_WSF_PERCENT_ENCODER */
 static EIF_TYPE_INDEX ptf1056[] = {0,0xFFFF};
 static struct eif_par_types par1056 = {1056, ptf1056, (uint16) 1, (uint16) 0, (char) 0};
 
+/* WSF_FILE_SYSTEM_HANDLER */
+static EIF_TYPE_INDEX ptf1057[] = {1031,0xFFF7,1002,0xFFF7,1048,0xFFF7,1056,0xFFF7,3,0xFFFF};
+static struct eif_par_types par1057 = {1057, ptf1057, (uint16) 5, (uint16) 0, (char) 0};
+
+/* WEB_SOCKET_CONSTANTS */
+static EIF_TYPE_INDEX ptf1058[] = {0,0xFFFF};
+static struct eif_par_types par1058 = {1058, ptf1058, (uint16) 1, (uint16) 0, (char) 0};
+
 /* WSF_RESPONSE_EXPORTER */
-static EIF_TYPE_INDEX ptf1057[] = {0,0xFFFF};
-static struct eif_par_types par1057 = {1057, ptf1057, (uint16) 1, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1059[] = {0,0xFFFF};
+static struct eif_par_types par1059 = {1059, ptf1059, (uint16) 1, (uint16) 0, (char) 0};
 
 /* WSF_HEAD_RESPONSE_WRAPPER */
-static EIF_TYPE_INDEX ptf1058[] = {1007,0xFFF7,1057,0xFFFF};
-static struct eif_par_types par1058 = {1058, ptf1058, (uint16) 2, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1060[] = {1007,0xFFF7,1059,0xFFFF};
+static struct eif_par_types par1060 = {1060, ptf1060, (uint16) 2, (uint16) 0, (char) 0};
 
 /* WSF_WGI_DELAYED_HEADER_RESPONSE */
-static EIF_TYPE_INDEX ptf1059[] = {1036,0xFFF7,1057,0xFFFF};
-static struct eif_par_types par1059 = {1059, ptf1059, (uint16) 2, (uint16) 0, (char) 0};
-
-/* SHARED_WSF_PERCENT_ENCODER */
-static EIF_TYPE_INDEX ptf1060[] = {0,0xFFFF};
-static struct eif_par_types par1060 = {1060, ptf1060, (uint16) 1, (uint16) 0, (char) 0};
-
-/* WSF_FILE_SYSTEM_HANDLER */
-static EIF_TYPE_INDEX ptf1061[] = {1032,0xFFF7,1006,0xFFF7,1048,0xFFF7,1060,0xFFF7,3,0xFFFF};
-static struct eif_par_types par1061 = {1061, ptf1061, (uint16) 5, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1061[] = {1036,0xFFF7,1059,0xFFFF};
+static struct eif_par_types par1061 = {1061, ptf1061, (uint16) 2, (uint16) 0, (char) 0};
 
 /* WGI_INPUT_STREAM */
 static EIF_TYPE_INDEX ptf1062[] = {126,0xFFFF};
@@ -4265,20 +4265,20 @@ static EIF_TYPE_INDEX ptf1064[] = {1062,0xFFFF};
 static struct eif_par_types par1064 = {1064, ptf1064, (uint16) 1, (uint16) 0, (char) 0};
 
 /* DURATION */
-static EIF_TYPE_INDEX ptf1065[] = {106,0xFFF7,977,0xFFFF};
+static EIF_TYPE_INDEX ptf1065[] = {106,0xFFF7,975,0xFFFF};
 static struct eif_par_types par1065 = {1065, ptf1065, (uint16) 2, (uint16) 0, (char) 0};
 
-/* TIME_DURATION */
-static EIF_TYPE_INDEX ptf1066[] = {1065,0xFFF7,1018,0xFFF7,118,0xFFFF};
+/* DATE_DURATION */
+static EIF_TYPE_INDEX ptf1066[] = {1065,0xFFF7,1020,0xFFF7,1021,0xFFFF};
 static struct eif_par_types par1066 = {1066, ptf1066, (uint16) 3, (uint16) 0, (char) 0};
 
-/* DATE_TIME_DURATION */
-static EIF_TYPE_INDEX ptf1067[] = {1065,0xFFF7,1021,0xFFFF};
-static struct eif_par_types par1067 = {1067, ptf1067, (uint16) 2, (uint16) 0, (char) 0};
+/* TIME_DURATION */
+static EIF_TYPE_INDEX ptf1067[] = {1065,0xFFF7,1018,0xFFF7,118,0xFFFF};
+static struct eif_par_types par1067 = {1067, ptf1067, (uint16) 3, (uint16) 0, (char) 0};
 
-/* DATE_DURATION */
-static EIF_TYPE_INDEX ptf1068[] = {1065,0xFFF7,1020,0xFFF7,1023,0xFFFF};
-static struct eif_par_types par1068 = {1068, ptf1068, (uint16) 3, (uint16) 0, (char) 0};
+/* DATE_TIME_DURATION */
+static EIF_TYPE_INDEX ptf1068[] = {1065,0xFFF7,1022,0xFFFF};
+static struct eif_par_types par1068 = {1068, ptf1068, (uint16) 2, (uint16) 0, (char) 0};
 
 /* ABSOLUTE */
 static EIF_TYPE_INDEX ptf1069[] = {107,0xFFFF};
@@ -4289,7 +4289,7 @@ static EIF_TYPE_INDEX ptf1070[] = {0,0xFFFF};
 static struct eif_par_types par1070 = {1070, ptf1070, (uint16) 1, (uint16) 0, (char) 0};
 
 /* WEB_SOCKET */
-static EIF_TYPE_INDEX ptf1071[] = {1005,0xFFF7,1057,0xFFF7,1037,0xFFF7,1070,0xFFF7,1056,0xFFF7,1004,0xFFFF};
+static EIF_TYPE_INDEX ptf1071[] = {1006,0xFFF7,1059,0xFFF7,1043,0xFFF7,1070,0xFFF7,1058,0xFFF7,1005,0xFFFF};
 static struct eif_par_types par1071 = {1071, ptf1071, (uint16) 6, (uint16) 0, (char) 0};
 
 /* HTTPD_REQUEST_HANDLER_I */
@@ -4297,11 +4297,11 @@ static EIF_TYPE_INDEX ptf1072[] = {1053,0xFFF7,1070,0xFFF7,972,0xFFFF};
 static struct eif_par_types par1072 = {1072, ptf1072, (uint16) 3, (uint16) 0, (char) 0};
 
 /* HTTPD_REQUEST_HANDLER */
-static EIF_TYPE_INDEX ptf1073[] = {1072,0xFFF7,973,0xFFFF};
+static EIF_TYPE_INDEX ptf1073[] = {1072,0xFFF7,974,0xFFFF};
 static struct eif_par_types par1073 = {1073, ptf1073, (uint16) 2, (uint16) 0, (char) 0};
 
 /* HTTPD_SERVER_I */
-static EIF_TYPE_INDEX ptf1074[] = {1053,0xFFF7,983,0xFFF7,1070,0xFFFF};
+static EIF_TYPE_INDEX ptf1074[] = {1053,0xFFF7,978,0xFFF7,1070,0xFFFF};
 static struct eif_par_types par1074 = {1074, ptf1074, (uint16) 3, (uint16) 0, (char) 0};
 
 /* HTTPD_SERVER */
@@ -4313,11 +4313,11 @@ static EIF_TYPE_INDEX ptf1076[] = {1070,0xFFFF};
 static struct eif_par_types par1076 = {1076, ptf1076, (uint16) 1, (uint16) 0, (char) 0};
 
 /* URL_ENCODER */
-static EIF_TYPE_INDEX ptf1077[] = {1156,0xFF01,232,0xFF01,225,0xFFF7,123,0xFFF7,1027,0xFFFF};
+static EIF_TYPE_INDEX ptf1077[] = {1164,0xFF01,232,0xFF01,225,0xFFF7,123,0xFFF7,1027,0xFFFF};
 static struct eif_par_types par1077 = {1077, ptf1077, (uint16) 3, (uint16) 0, (char) 0};
 
 /* HTML_ENCODER */
-static EIF_TYPE_INDEX ptf1078[] = {1156,0xFF01,232,0xFF01,225,0xFFF7,123,0xFFFF};
+static EIF_TYPE_INDEX ptf1078[] = {1164,0xFF01,232,0xFF01,225,0xFFF7,123,0xFFFF};
 static struct eif_par_types par1078 = {1078, ptf1078, (uint16) 2, (uint16) 0, (char) 0};
 
 /* SERVER_MEDIA_TYPE_NEGOTIATION */
@@ -4325,7 +4325,7 @@ static EIF_TYPE_INDEX ptf1079[] = {41,0xFFFF};
 static struct eif_par_types par1079 = {1079, ptf1079, (uint16) 1, (uint16) 0, (char) 0};
 
 /* WEB_SOCKET_HANDLER */
-static EIF_TYPE_INDEX ptf1080[] = {1056,0xFFF7,41,0xFFF7,1070,0xFFFF};
+static EIF_TYPE_INDEX ptf1080[] = {1058,0xFFF7,41,0xFFF7,1070,0xFFFF};
 static struct eif_par_types par1080 = {1080, ptf1080, (uint16) 3, (uint16) 0, (char) 0};
 
 /* HTTP_HEADER_UTILITIES */
@@ -4337,7 +4337,7 @@ static EIF_TYPE_INDEX ptf1082[] = {1081,0xFFFF};
 static struct eif_par_types par1082 = {1082, ptf1082, (uint16) 1, (uint16) 0, (char) 0};
 
 /* WEB_SOCKET_EVENT_I */
-static EIF_TYPE_INDEX ptf1083[] = {1056,0xFFF7,41,0xFFFF};
+static EIF_TYPE_INDEX ptf1083[] = {1058,0xFFF7,41,0xFFFF};
 static struct eif_par_types par1083 = {1083, ptf1083, (uint16) 2, (uint16) 0, (char) 0};
 
 /* APPLICATION_EXECUTION */
@@ -4349,318 +4349,478 @@ static EIF_TYPE_INDEX ptf1085[] = {1084,0xFFFF};
 static struct eif_par_types par1085 = {1085, ptf1085, (uint16) 1, (uint16) 0, (char) 0};
 
 /* DATE_VALUE */
-static EIF_TYPE_INDEX ptf1086[] = {1023,0xFFF7,159,0xFFFF};
+static EIF_TYPE_INDEX ptf1086[] = {1021,0xFFF7,159,0xFFFF};
 static struct eif_par_types par1086 = {1086, ptf1086, (uint16) 2, (uint16) 0, (char) 0};
 
 /* WSF_ROUTER */
-static EIF_TYPE_INDEX ptf1087[] = {269,0xFF01,1111,0xFFF7,987,0xFFFF};
+static EIF_TYPE_INDEX ptf1087[] = {269,0xFF01,1112,0xFFF7,984,0xFFFF};
 static struct eif_par_types par1087 = {1087, ptf1087, (uint16) 2, (uint16) 0, (char) 0};
 
 /* WSF_REQUEST_METHODS */
 static EIF_TYPE_INDEX ptf1088[] = {269,0xFF01,225,0xFFF7,1038,0xFFFF};
 static struct eif_par_types par1088 = {1088, ptf1088, (uint16) 2, (uint16) 0, (char) 0};
 
-/* APPLICATION */
-static EIF_TYPE_INDEX ptf1089[] = {146,0xFFFF};
+/* HTTP_HEADER_MODIFIER */
+static EIF_TYPE_INDEX ptf1089[] = {269,0xFF01,225,0xFFFF};
 static struct eif_par_types par1089 = {1089, ptf1089, (uint16) 1, (uint16) 0, (char) 0};
 
-/* HTTP_HEADER_MODIFIER */
-static EIF_TYPE_INDEX ptf1090[] = {269,0xFF01,225,0xFFFF};
-static struct eif_par_types par1090 = {1090, ptf1090, (uint16) 1, (uint16) 0, (char) 0};
-
 /* WSF_RESPONSE_HEADER */
-static EIF_TYPE_INDEX ptf1091[] = {1090,0xFFF7,1057,0xFFFF};
-static struct eif_par_types par1091 = {1091, ptf1091, (uint16) 2, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1090[] = {1089,0xFFF7,1059,0xFFFF};
+static struct eif_par_types par1090 = {1090, ptf1090, (uint16) 2, (uint16) 0, (char) 0};
 
-/* WSF_SERVICE_LAUNCHER_OPTIONS */
-static EIF_TYPE_INDEX ptf1092[] = {375,0,0xFF01,224,0xFFFF};
+/* DATA_CLIENT_PARSER */
+static EIF_TYPE_INDEX ptf1091[] = {146,0xFFFF};
+static struct eif_par_types par1091 = {1091, ptf1091, (uint16) 1, (uint16) 0, (char) 0};
+
+/* APPLICATION */
+static EIF_TYPE_INDEX ptf1092[] = {146,0xFFFF};
 static struct eif_par_types par1092 = {1092, ptf1092, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WSF_SERVICE_LAUNCHER_OPTIONS_FROM_INI */
-static EIF_TYPE_INDEX ptf1093[] = {1092,0xFFFF};
+/* WSF_SERVICE_LAUNCHER_OPTIONS */
+static EIF_TYPE_INDEX ptf1093[] = {375,0,0xFF01,224,0xFFFF};
 static struct eif_par_types par1093 = {1093, ptf1093, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WSF_STANDALONE_SERVICE_OPTIONS */
-static EIF_TYPE_INDEX ptf1094[] = {1092,0xFFFF};
+/* WSF_SERVICE_LAUNCHER_OPTIONS_FROM_INI */
+static EIF_TYPE_INDEX ptf1094[] = {1093,0xFFFF};
 static struct eif_par_types par1094 = {1094, ptf1094, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WSF_STANDALONE_WEBSOCKET_SERVICE_OPTIONS */
-static EIF_TYPE_INDEX ptf1095[] = {1094,0xFFFF};
+/* WSF_STANDALONE_SERVICE_OPTIONS */
+static EIF_TYPE_INDEX ptf1095[] = {1093,0xFFFF};
 static struct eif_par_types par1095 = {1095, ptf1095, (uint16) 1, (uint16) 0, (char) 0};
 
-/* HTTP_PARAMETER_TABLE */
-static EIF_TYPE_INDEX ptf1096[] = {371,0xFF01,225,0xFF01,227,0xFFFF};
+/* WSF_STANDALONE_WEBSOCKET_SERVICE_OPTIONS */
+static EIF_TYPE_INDEX ptf1096[] = {1095,0xFFFF};
 static struct eif_par_types par1096 = {1096, ptf1096, (uint16) 1, (uint16) 0, (char) 0};
 
+/* HTTP_PARAMETER_TABLE */
+static EIF_TYPE_INDEX ptf1097[] = {371,0xFF01,225,0xFF01,227,0xFFFF};
+static struct eif_par_types par1097 = {1097, ptf1097, (uint16) 1, (uint16) 0, (char) 0};
+
 /* HTTP_HEADER */
-static EIF_TYPE_INDEX ptf1097[] = {269,0xFF01,225,0xFFF7,1090,0xFFFF};
-static struct eif_par_types par1097 = {1097, ptf1097, (uint16) 2, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1098[] = {269,0xFF01,225,0xFFF7,1089,0xFFFF};
+static struct eif_par_types par1098 = {1098, ptf1098, (uint16) 2, (uint16) 0, (char) 0};
 
 /* WSF_HEADER */
-static EIF_TYPE_INDEX ptf1098[] = {1097,0xFFFF};
-static struct eif_par_types par1098 = {1098, ptf1098, (uint16) 1, (uint16) 0, (char) 0};
-
-/* EXTERNAL_OBJECT */
-static EIF_TYPE_INDEX ptf1099[] = {164,0xFFFF};
+static EIF_TYPE_INDEX ptf1099[] = {1098,0xFFFF};
 static struct eif_par_types par1099 = {1099, ptf1099, (uint16) 1, (uint16) 0, (char) 0};
 
+/* EXTERNAL_OBJECT */
+static EIF_TYPE_INDEX ptf1100[] = {164,0xFFFF};
+static struct eif_par_types par1100 = {1100, ptf1100, (uint16) 1, (uint16) 0, (char) 0};
+
 /* ADDRINFO_1 */
-static EIF_TYPE_INDEX ptf1100[] = {974,0xFFF7,1099,0xFFFF};
-static struct eif_par_types par1100 = {1100, ptf1100, (uint16) 2, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1101[] = {973,0xFFF7,1100,0xFFFF};
+static struct eif_par_types par1101 = {1101, ptf1101, (uint16) 2, (uint16) 0, (char) 0};
 
 /* ADDRINFO_2 */
-static EIF_TYPE_INDEX ptf1101[] = {1100,0xFFFF};
-static struct eif_par_types par1101 = {1101, ptf1101, (uint16) 1, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1102[] = {1101,0xFFFF};
+static struct eif_par_types par1102 = {1102, ptf1102, (uint16) 1, (uint16) 0, (char) 0};
 
 /* SOCKET */
-static EIF_TYPE_INDEX ptf1102[] = {1044,0xFFF7,174,0xFFF7,62,0xFFF7,123,0xFFFF};
-static struct eif_par_types par1102 = {1102, ptf1102, (uint16) 4, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1103[] = {1044,0xFFF7,174,0xFFF7,62,0xFFF7,123,0xFFFF};
+static struct eif_par_types par1103 = {1103, ptf1103, (uint16) 4, (uint16) 0, (char) 0};
 
 /* STREAM_SOCKET */
-static EIF_TYPE_INDEX ptf1103[] = {1102,0xFFFF};
-static struct eif_par_types par1103 = {1103, ptf1103, (uint16) 1, (uint16) 0, (char) 0};
-
-/* NETWORK_SOCKET */
-static EIF_TYPE_INDEX ptf1104[] = {1102,0xFFFF};
+static EIF_TYPE_INDEX ptf1104[] = {1103,0xFFFF};
 static struct eif_par_types par1104 = {1104, ptf1104, (uint16) 1, (uint16) 0, (char) 0};
 
+/* NETWORK_SOCKET */
+static EIF_TYPE_INDEX ptf1105[] = {1103,0xFFFF};
+static struct eif_par_types par1105 = {1105, ptf1105, (uint16) 1, (uint16) 0, (char) 0};
+
 /* NETWORK_STREAM_SOCKET */
-static EIF_TYPE_INDEX ptf1105[] = {1045,0xFFF7,1104,0xFFF7,1103,0xFFFF};
-static struct eif_par_types par1105 = {1105, ptf1105, (uint16) 3, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1106[] = {1045,0xFFF7,1105,0xFFF7,1104,0xFFFF};
+static struct eif_par_types par1106 = {1106, ptf1106, (uint16) 3, (uint16) 0, (char) 0};
 
 /* HTTP_STREAM_SOCKET */
-static EIF_TYPE_INDEX ptf1106[] = {1105,0xFFF7,984,0xFFFF};
-static struct eif_par_types par1106 = {1106, ptf1106, (uint16) 2, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1107[] = {1106,0xFFF7,987,0xFFFF};
+static struct eif_par_types par1107 = {1107, ptf1107, (uint16) 2, (uint16) 0, (char) 0};
 
 /* HTTP_STREAM_SECURE_SOCKET */
-static EIF_TYPE_INDEX ptf1107[] = {1106,0xFFFF};
-static struct eif_par_types par1107 = {1107, ptf1107, (uint16) 1, (uint16) 0, (char) 0};
-
-/* HTTPD_STREAM_SOCKET */
-static EIF_TYPE_INDEX ptf1108[] = {1106,0xFFFF};
+static EIF_TYPE_INDEX ptf1108[] = {1107,0xFFFF};
 static struct eif_par_types par1108 = {1108, ptf1108, (uint16) 1, (uint16) 0, (char) 0};
 
-/* HTTPD_STREAM_SECURE_SOCKET */
-static EIF_TYPE_INDEX ptf1109[] = {1107,0xFFF7,1108,0xFFFF};
-static struct eif_par_types par1109 = {1109, ptf1109, (uint16) 2, (uint16) 0, (char) 0};
+/* HTTPD_STREAM_SOCKET */
+static EIF_TYPE_INDEX ptf1109[] = {1107,0xFFFF};
+static struct eif_par_types par1109 = {1109, ptf1109, (uint16) 1, (uint16) 0, (char) 0};
 
-/* FITNESS_AND_QUALITY */
-static EIF_TYPE_INDEX ptf1110[] = {107,0xFFF7,139,0xFFFF};
+/* HTTPD_STREAM_SECURE_SOCKET */
+static EIF_TYPE_INDEX ptf1110[] = {1108,0xFFF7,1109,0xFFFF};
 static struct eif_par_types par1110 = {1110, ptf1110, (uint16) 2, (uint16) 0, (char) 0};
 
+/* FITNESS_AND_QUALITY */
+static EIF_TYPE_INDEX ptf1111[] = {107,0xFFF7,139,0xFFFF};
+static struct eif_par_types par1111 = {1111, ptf1111, (uint16) 2, (uint16) 0, (char) 0};
+
 /* WSF_ROUTER_ITEM */
-static EIF_TYPE_INDEX ptf1111[] = {139,0xFFFF};
-static struct eif_par_types par1111 = {1111, ptf1111, (uint16) 1, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1112[] = {139,0xFFFF};
+static struct eif_par_types par1112 = {1112, ptf1112, (uint16) 1, (uint16) 0, (char) 0};
 
 /* DATE_TIME_CODE */
-static EIF_TYPE_INDEX ptf1112[] = {1015,0xFFF7,139,0xFFFF};
-static struct eif_par_types par1112 = {1112, ptf1112, (uint16) 2, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1113[] = {1015,0xFFF7,139,0xFFFF};
+static struct eif_par_types par1113 = {1113, ptf1113, (uint16) 2, (uint16) 0, (char) 0};
 
 /* WGI_REQUEST_CGI_VARIABLES */
-static EIF_TYPE_INDEX ptf1113[] = {139,0xFFFF};
-static struct eif_par_types par1113 = {1113, ptf1113, (uint16) 1, (uint16) 0, (char) 0};
-
-/* HTTP_DATE */
 static EIF_TYPE_INDEX ptf1114[] = {139,0xFFFF};
 static struct eif_par_types par1114 = {1114, ptf1114, (uint16) 1, (uint16) 0, (char) 0};
 
-/* HTTP_MEDIA_TYPE */
+/* HTTP_DATE */
 static EIF_TYPE_INDEX ptf1115[] = {139,0xFFFF};
 static struct eif_par_types par1115 = {1115, ptf1115, (uint16) 1, (uint16) 0, (char) 0};
 
-/* HTTP_CONTENT_TYPE */
-static EIF_TYPE_INDEX ptf1116[] = {1115,0xFFFF};
+/* HTTP_MEDIA_TYPE */
+static EIF_TYPE_INDEX ptf1116[] = {139,0xFFFF};
 static struct eif_par_types par1116 = {1116, ptf1116, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WSF_ROUTER_MAPPING */
-static EIF_TYPE_INDEX ptf1117[] = {139,0xFFFF};
+/* HTTP_CONTENT_TYPE */
+static EIF_TYPE_INDEX ptf1117[] = {1116,0xFFFF};
 static struct eif_par_types par1117 = {1117, ptf1117, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WSF_SELF_DOCUMENTED_ROUTER_MAPPING */
-static EIF_TYPE_INDEX ptf1118[] = {1117,0xFFFF};
+/* WSF_ROUTER_MAPPING */
+static EIF_TYPE_INDEX ptf1118[] = {139,0xFFFF};
 static struct eif_par_types par1118 = {1118, ptf1118, (uint16) 1, (uint16) 0, (char) 0};
 
+/* WSF_SELF_DOCUMENTED_ROUTER_MAPPING */
+static EIF_TYPE_INDEX ptf1119[] = {1118,0xFFFF};
+static struct eif_par_types par1119 = {1119, ptf1119, (uint16) 1, (uint16) 0, (char) 0};
+
 /* WSF_STARTS_WITH_MAPPING_I */
-static EIF_TYPE_INDEX ptf1119[] = {1117,0xFFF7,1118,0xFFFF};
-static struct eif_par_types par1119 = {1119, ptf1119, (uint16) 2, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1120[] = {1118,0xFFF7,1119,0xFFFF};
+static struct eif_par_types par1120 = {1120, ptf1120, (uint16) 2, (uint16) 0, (char) 0};
 
 /* WSF_STARTS_WITH_MAPPING */
-static EIF_TYPE_INDEX ptf1120[] = {1119,0xFFFF};
-static struct eif_par_types par1120 = {1120, ptf1120, (uint16) 1, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1121[] = {1120,0xFFFF};
+static struct eif_par_types par1121 = {1121, ptf1121, (uint16) 1, (uint16) 0, (char) 0};
 
 /* WSF_VALUE */
-static EIF_TYPE_INDEX ptf1121[] = {139,0xFFF7,1060,0xFFFF};
-static struct eif_par_types par1121 = {1121, ptf1121, (uint16) 2, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1122[] = {139,0xFFF7,1056,0xFFFF};
+static struct eif_par_types par1122 = {1122, ptf1122, (uint16) 2, (uint16) 0, (char) 0};
 
 /* WSF_ANY */
-static EIF_TYPE_INDEX ptf1122[] = {1121,0xFFFF};
-static struct eif_par_types par1122 = {1122, ptf1122, (uint16) 1, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1123[] = {1122,0xFFFF};
+static struct eif_par_types par1123 = {1123, ptf1123, (uint16) 1, (uint16) 0, (char) 0};
 
 /* WSF_MULTIPLE_STRING */
-static EIF_TYPE_INDEX ptf1123[] = {1121,0xFFF7,269,0xFF01,1125,0xFFFF};
-static struct eif_par_types par1123 = {1123, ptf1123, (uint16) 2, (uint16) 0, (char) 0};
-
-/* WSF_TABLE */
-static EIF_TYPE_INDEX ptf1124[] = {1121,0xFFF7,375,0xFF01,1121,0xFF01,232,0xFFFF};
+static EIF_TYPE_INDEX ptf1124[] = {1122,0xFFF7,269,0xFF01,1126,0xFFFF};
 static struct eif_par_types par1124 = {1124, ptf1124, (uint16) 2, (uint16) 0, (char) 0};
 
-/* WSF_STRING */
-static EIF_TYPE_INDEX ptf1125[] = {1121,0xFFFF};
-static struct eif_par_types par1125 = {1125, ptf1125, (uint16) 1, (uint16) 0, (char) 0};
+/* WSF_TABLE */
+static EIF_TYPE_INDEX ptf1125[] = {1122,0xFFF7,375,0xFF01,1122,0xFF01,232,0xFFFF};
+static struct eif_par_types par1125 = {1125, ptf1125, (uint16) 2, (uint16) 0, (char) 0};
 
-/* WSF_UPLOADED_FILE */
-static EIF_TYPE_INDEX ptf1126[] = {1121,0xFFFF};
+/* WSF_STRING */
+static EIF_TYPE_INDEX ptf1126[] = {1122,0xFFFF};
 static struct eif_par_types par1126 = {1126, ptf1126, (uint16) 1, (uint16) 0, (char) 0};
 
-/* ERROR_HANDLER */
-static EIF_TYPE_INDEX ptf1127[] = {0,0xFFF7,139,0xFFFF};
-static struct eif_par_types par1127 = {1127, ptf1127, (uint16) 2, (uint16) 0, (char) 0};
+/* WSF_UPLOADED_FILE */
+static EIF_TYPE_INDEX ptf1127[] = {1122,0xFFFF};
+static struct eif_par_types par1127 = {1127, ptf1127, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WEB_SOCKET_FRAME */
-static EIF_TYPE_INDEX ptf1128[] = {0,0xFFF7,1056,0xFFFF};
+/* ERROR_HANDLER */
+static EIF_TYPE_INDEX ptf1128[] = {0,0xFFF7,139,0xFFFF};
 static struct eif_par_types par1128 = {1128, ptf1128, (uint16) 2, (uint16) 0, (char) 0};
 
 /* HTTP_FILE_EXTENSION_MIME_MAPPING */
-static EIF_TYPE_INDEX ptf1129[] = {0,0xFFF7,1042,0xFFFF};
+static EIF_TYPE_INDEX ptf1129[] = {0,0xFFF7,1037,0xFFFF};
 static struct eif_par_types par1129 = {1129, ptf1129, (uint16) 2, (uint16) 0, (char) 0};
 
-/* WGI_STANDALONE_CONSTANTS */
-static EIF_TYPE_INDEX ptf1130[] = {0,0xFFF7,993,0xFFFF};
+/* WEB_SOCKET_FRAME */
+static EIF_TYPE_INDEX ptf1130[] = {0,0xFFF7,1058,0xFFFF};
 static struct eif_par_types par1130 = {1130, ptf1130, (uint16) 2, (uint16) 0, (char) 0};
 
-/* HTTPD_CONFIGURATION_I */
+/* WGI_STANDALONE_CONSTANTS */
 static EIF_TYPE_INDEX ptf1131[] = {0,0xFFF7,993,0xFFFF};
 static struct eif_par_types par1131 = {1131, ptf1131, (uint16) 2, (uint16) 0, (char) 0};
 
+/* HTTPD_CONFIGURATION_I */
+static EIF_TYPE_INDEX ptf1132[] = {0,0xFFF7,993,0xFFFF};
+static struct eif_par_types par1132 = {1132, ptf1132, (uint16) 2, (uint16) 0, (char) 0};
+
 /* HTTPD_CONFIGURATION */
-static EIF_TYPE_INDEX ptf1132[] = {1131,0xFFFF};
-static struct eif_par_types par1132 = {1132, ptf1132, (uint16) 1, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1133[] = {1132,0xFFFF};
+static struct eif_par_types par1133 = {1133, ptf1133, (uint16) 1, (uint16) 0, (char) 0};
 
 /* ERROR */
-static EIF_TYPE_INDEX ptf1133[] = {0,0xFFF7,139,0xFFFF};
-static struct eif_par_types par1133 = {1133, ptf1133, (uint16) 2, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1134[] = {0,0xFFF7,139,0xFFFF};
+static struct eif_par_types par1134 = {1134, ptf1134, (uint16) 2, (uint16) 0, (char) 0};
 
 /* ERROR_GROUP */
-static EIF_TYPE_INDEX ptf1134[] = {1133,0xFFFF};
-static struct eif_par_types par1134 = {1134, ptf1134, (uint16) 1, (uint16) 0, (char) 0};
-
-/* ERROR_CUSTOM */
-static EIF_TYPE_INDEX ptf1135[] = {1133,0xFFFF};
+static EIF_TYPE_INDEX ptf1135[] = {1134,0xFFFF};
 static struct eif_par_types par1135 = {1135, ptf1135, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WSF_ERROR */
-static EIF_TYPE_INDEX ptf1136[] = {1133,0xFFF7,1040,0xFFFF};
-static struct eif_par_types par1136 = {1136, ptf1136, (uint16) 2, (uint16) 0, (char) 0};
+/* ERROR_CUSTOM */
+static EIF_TYPE_INDEX ptf1136[] = {1134,0xFFFF};
+static struct eif_par_types par1136 = {1136, ptf1136, (uint16) 1, (uint16) 0, (char) 0};
 
-/* WSF_VALUE_UTILITIES */
-static EIF_TYPE_INDEX ptf1137[] = {0,0xFFF7,1060,0xFFFF};
+/* WSF_ERROR */
+static EIF_TYPE_INDEX ptf1137[] = {1134,0xFFF7,1041,0xFFFF};
 static struct eif_par_types par1137 = {1137, ptf1137, (uint16) 2, (uint16) 0, (char) 0};
 
+/* WSF_VALUE_UTILITIES */
+static EIF_TYPE_INDEX ptf1138[] = {0,0xFFF7,1056,0xFFFF};
+static struct eif_par_types par1138 = {1138, ptf1138, (uint16) 2, (uint16) 0, (char) 0};
+
 /* WSF_REQUEST */
-static EIF_TYPE_INDEX ptf1138[] = {139,0xFFF7,3,0xFFF7,1060,0xFFF7,1137,0xFFFF};
-static struct eif_par_types par1138 = {1138, ptf1138, (uint16) 4, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1139[] = {139,0xFFF7,3,0xFFF7,1056,0xFFF7,1138,0xFFFF};
+static struct eif_par_types par1139 = {1139, ptf1139, (uint16) 4, (uint16) 0, (char) 0};
 
 /* WSF_MIME_HANDLER_HELPER */
-static EIF_TYPE_INDEX ptf1139[] = {0,0xFFF7,1137,0xFFFF};
-static struct eif_par_types par1139 = {1139, ptf1139, (uint16) 2, (uint16) 0, (char) 0};
-
-/* WSF_MULTIPART_FORM_DATA_HANDLER */
-static EIF_TYPE_INDEX ptf1140[] = {1029,0xFFF7,1139,0xFFFF};
+static EIF_TYPE_INDEX ptf1140[] = {0,0xFFF7,1138,0xFFFF};
 static struct eif_par_types par1140 = {1140, ptf1140, (uint16) 2, (uint16) 0, (char) 0};
 
-/* WSF_APPLICATION_X_WWW_FORM_URLENCODED_HANDLER */
-static EIF_TYPE_INDEX ptf1141[] = {1029,0xFFF7,1139,0xFFF7,1137,0xFFFF};
-static struct eif_par_types par1141 = {1141, ptf1141, (uint16) 3, (uint16) 0, (char) 0};
+/* WSF_MULTIPART_FORM_DATA_HANDLER */
+static EIF_TYPE_INDEX ptf1141[] = {1032,0xFFF7,1140,0xFFFF};
+static struct eif_par_types par1141 = {1141, ptf1141, (uint16) 2, (uint16) 0, (char) 0};
 
-/* FIND_SEPARATOR_FACILITY */
-static EIF_TYPE_INDEX ptf1142[] = {28,0xFFF7,1015,0xFFF7,0,0xFFFF};
+/* WSF_APPLICATION_X_WWW_FORM_URLENCODED_HANDLER */
+static EIF_TYPE_INDEX ptf1142[] = {1032,0xFFF7,1140,0xFFF7,1138,0xFFFF};
 static struct eif_par_types par1142 = {1142, ptf1142, (uint16) 3, (uint16) 0, (char) 0};
 
-/* DATE_TIME_CODE_STRING */
-static EIF_TYPE_INDEX ptf1143[] = {1142,0xFFFF};
-static struct eif_par_types par1143 = {1143, ptf1143, (uint16) 1, (uint16) 0, (char) 0};
-
-/* TIME_VALIDITY_CHECKER */
-static EIF_TYPE_INDEX ptf1144[] = {1017,0xFFF7,1019,0xFFF7,0,0xFFFF};
-static struct eif_par_types par1144 = {1144, ptf1144, (uint16) 3, (uint16) 0, (char) 0};
-
-/* TIME */
-static EIF_TYPE_INDEX ptf1145[] = {1069,0xFFF7,1019,0xFFF7,1144,0xFFF7,139,0xFFFF};
-static struct eif_par_types par1145 = {1145, ptf1145, (uint16) 4, (uint16) 0, (char) 0};
-
 /* DATE_VALIDITY_CHECKER */
-static EIF_TYPE_INDEX ptf1146[] = {1020,0xFFF7,1086,0xFFF7,0,0xFFFF};
-static struct eif_par_types par1146 = {1146, ptf1146, (uint16) 3, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1143[] = {1020,0xFFF7,1086,0xFFF7,0,0xFFFF};
+static struct eif_par_types par1143 = {1143, ptf1143, (uint16) 3, (uint16) 0, (char) 0};
 
 /* DATE */
-static EIF_TYPE_INDEX ptf1147[] = {1069,0xFFF7,1086,0xFFF7,1146,0xFFF7,139,0xFFFF};
-static struct eif_par_types par1147 = {1147, ptf1147, (uint16) 4, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1144[] = {1069,0xFFF7,1086,0xFFF7,1143,0xFFF7,139,0xFFFF};
+static struct eif_par_types par1144 = {1144, ptf1144, (uint16) 4, (uint16) 0, (char) 0};
+
+/* FIND_SEPARATOR_FACILITY */
+static EIF_TYPE_INDEX ptf1145[] = {28,0xFFF7,1015,0xFFF7,0,0xFFFF};
+static struct eif_par_types par1145 = {1145, ptf1145, (uint16) 3, (uint16) 0, (char) 0};
+
+/* DATE_TIME_CODE_STRING */
+static EIF_TYPE_INDEX ptf1146[] = {1145,0xFFFF};
+static struct eif_par_types par1146 = {1146, ptf1146, (uint16) 1, (uint16) 0, (char) 0};
+
+/* TIME_VALIDITY_CHECKER */
+static EIF_TYPE_INDEX ptf1147[] = {1017,0xFFF7,1019,0xFFF7,0,0xFFFF};
+static struct eif_par_types par1147 = {1147, ptf1147, (uint16) 3, (uint16) 0, (char) 0};
+
+/* TIME */
+static EIF_TYPE_INDEX ptf1148[] = {1069,0xFFF7,1019,0xFFF7,1147,0xFFF7,139,0xFFFF};
+static struct eif_par_types par1148 = {1148, ptf1148, (uint16) 4, (uint16) 0, (char) 0};
 
 /* DATE_TIME_VALIDITY_CHECKER */
-static EIF_TYPE_INDEX ptf1148[] = {1146,0xFFF7,1144,0xFFF7,0,0xFFFF};
-static struct eif_par_types par1148 = {1148, ptf1148, (uint16) 3, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1149[] = {1143,0xFFF7,1147,0xFFF7,0,0xFFFF};
+static struct eif_par_types par1149 = {1149, ptf1149, (uint16) 3, (uint16) 0, (char) 0};
 
 /* DATE_TIME_PARSER */
-static EIF_TYPE_INDEX ptf1149[] = {1148,0xFFF7,1142,0xFFFF};
-static struct eif_par_types par1149 = {1149, ptf1149, (uint16) 2, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf1150[] = {1149,0xFFF7,1145,0xFFFF};
+static struct eif_par_types par1150 = {1150, ptf1150, (uint16) 2, (uint16) 0, (char) 0};
 
 /* DATE_TIME */
-static EIF_TYPE_INDEX ptf1150[] = {1069,0xFFF7,1022,0xFFF7,1148,0xFFF7,139,0xFFFF};
-static struct eif_par_types par1150 = {1150, ptf1150, (uint16) 4, (uint16) 0, (char) 0};
-
-/* WSF_FILE_UTILITIES [G#1] */
-static EIF_TYPE_INDEX ptf1151[] = {0,0xFFFF};
-static struct eif_par_types par1151 = {1151, ptf1151, (uint16) 1, (uint16) 1, (char) 0};
-
-/* CONCURRENT_POOL_FACTORY [G#1] */
-static EIF_TYPE_INDEX ptf1152[] = {0,0xFFFF};
-static struct eif_par_types par1152 = {1152, ptf1152, (uint16) 1, (uint16) 1, (char) 0};
+static EIF_TYPE_INDEX ptf1151[] = {1069,0xFFF7,1023,0xFFF7,1149,0xFFF7,139,0xFFFF};
+static struct eif_par_types par1151 = {1151, ptf1151, (uint16) 4, (uint16) 0, (char) 0};
 
 /* INTERVAL [G#1] */
-static EIF_TYPE_INDEX ptf1153[] = {106,0xFFFF};
+static EIF_TYPE_INDEX ptf1152[] = {106,0xFFFF};
+static struct eif_par_types par1152 = {1152, ptf1152, (uint16) 1, (uint16) 1, (char) 0};
+
+/* WSF_FILE_UTILITIES [G#1] */
+static EIF_TYPE_INDEX ptf1153[] = {0,0xFFFF};
 static struct eif_par_types par1153 = {1153, ptf1153, (uint16) 1, (uint16) 1, (char) 0};
 
-/* TYPE [HTTPD_REQUEST_SETTINGS] */
-static EIF_TYPE_INDEX ptf1154[] = {179,0xFFF7,106,0xFFF7,139,0xFFFF};
-static struct eif_par_types par1154 = {1154, ptf1154, (uint16) 3, (uint16) 1, (char) 0};
-
 /* CONCURRENT_POOL [G#1] */
-static EIF_TYPE_INDEX ptf1155[] = {1053,0xFFFF};
+static EIF_TYPE_INDEX ptf1154[] = {1053,0xFFFF};
+static struct eif_par_types par1154 = {1154, ptf1154, (uint16) 1, (uint16) 1, (char) 0};
+
+/* CONCURRENT_POOL_FACTORY [G#1] */
+static EIF_TYPE_INDEX ptf1155[] = {0,0xFFFF};
 static struct eif_par_types par1155 = {1155, ptf1155, (uint16) 1, (uint16) 1, (char) 0};
 
-/* ENCODER [G#1, G#2] */
-static EIF_TYPE_INDEX ptf1156[] = {0,0xFFFF};
-static struct eif_par_types par1156 = {1156, ptf1156, (uint16) 1, (uint16) 2, (char) 0};
-
-/* WGI_STANDALONE_CONNECTOR [G#1] */
-static EIF_TYPE_INDEX ptf1157[] = {999,0xFFFF};
-static struct eif_par_types par1157 = {1157, ptf1157, (uint16) 1, (uint16) 1, (char) 0};
-
-/* WGI_HTTPD_REQUEST_HANDLER_FACTORY [G#1] */
-static EIF_TYPE_INDEX ptf1158[] = {979,0xFFFF};
-static struct eif_par_types par1158 = {1158, ptf1158, (uint16) 1, (uint16) 1, (char) 0};
-
-/* WGI_HTTPD_REQUEST_HANDLER [G#1] */
-static EIF_TYPE_INDEX ptf1159[] = {1073,0xFFF7,1037,0xFFF7,41,0xFFF7,1048,0xFFFF};
-static struct eif_par_types par1159 = {1159, ptf1159, (uint16) 4, (uint16) 1, (char) 0};
+/* TYPE [HTTPD_REQUEST_SETTINGS] */
+static EIF_TYPE_INDEX ptf1156[] = {179,0xFFF7,106,0xFFF7,139,0xFFFF};
+static struct eif_par_types par1156 = {1156, ptf1156, (uint16) 3, (uint16) 1, (char) 0};
 
 /* WSF_STANDALONE_WEBSOCKET_SERVICE_LAUNCHER [G#1] */
-static EIF_TYPE_INDEX ptf1160[] = {1161,0xFFF8,1,0xFFFF};
-static struct eif_par_types par1160 = {1160, ptf1160, (uint16) 1, (uint16) 1, (char) 0};
+static EIF_TYPE_INDEX ptf1157[] = {1158,0xFFF8,1,0xFFFF};
+static struct eif_par_types par1157 = {1157, ptf1157, (uint16) 1, (uint16) 1, (char) 0};
 
 /* WSF_STANDALONE_SERVICE_LAUNCHER [G#1] */
-static EIF_TYPE_INDEX ptf1161[] = {1162,0xFFF8,1,0xFFF7,1076,0xFFFF};
-static struct eif_par_types par1161 = {1161, ptf1161, (uint16) 2, (uint16) 1, (char) 0};
+static EIF_TYPE_INDEX ptf1158[] = {1159,0xFFF8,1,0xFFF7,1076,0xFFFF};
+static struct eif_par_types par1158 = {1158, ptf1158, (uint16) 2, (uint16) 1, (char) 0};
 
 /* WSF_SERVICE_LAUNCHER [G#1] */
-static EIF_TYPE_INDEX ptf1162[] = {0,0xFFFF};
-static struct eif_par_types par1162 = {1162, ptf1162, (uint16) 1, (uint16) 1, (char) 0};
+static EIF_TYPE_INDEX ptf1159[] = {0,0xFFFF};
+static struct eif_par_types par1159 = {1159, ptf1159, (uint16) 1, (uint16) 1, (char) 0};
+
+/* WGI_STANDALONE_CONNECTOR [G#1] */
+static EIF_TYPE_INDEX ptf1160[] = {999,0xFFFF};
+static struct eif_par_types par1160 = {1160, ptf1160, (uint16) 1, (uint16) 1, (char) 0};
+
+/* WGI_HTTPD_REQUEST_HANDLER_FACTORY [G#1] */
+static EIF_TYPE_INDEX ptf1161[] = {980,0xFFFF};
+static struct eif_par_types par1161 = {1161, ptf1161, (uint16) 1, (uint16) 1, (char) 0};
+
+/* WGI_HTTPD_REQUEST_HANDLER [G#1] */
+static EIF_TYPE_INDEX ptf1162[] = {1073,0xFFF7,1043,0xFFF7,41,0xFFF7,1048,0xFFFF};
+static struct eif_par_types par1162 = {1162, ptf1162, (uint16) 4, (uint16) 1, (char) 0};
 
 /* WGI_STANDALONE_WEBSOCKET_CONNECTOR [G#1] */
-static EIF_TYPE_INDEX ptf1163[] = {1157,0xFFF8,1,0xFFFF};
+static EIF_TYPE_INDEX ptf1163[] = {1160,0xFFF8,1,0xFFFF};
 static struct eif_par_types par1163 = {1163, ptf1163, (uint16) 1, (uint16) 1, (char) 0};
 
-int egc_partab_size_init = 1163;
+/* ENCODER [G#1, G#2] */
+static EIF_TYPE_INDEX ptf1164[] = {0,0xFFFF};
+static struct eif_par_types par1164 = {1164, ptf1164, (uint16) 1, (uint16) 2, (char) 0};
+
+/* SQLITE_THREADING_MODE */
+static EIF_TYPE_INDEX ptf1165[] = {0,0xFFFF};
+static struct eif_par_types par1165 = {1165, ptf1165, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_EXPERIMENTAL_EXTERNALS */
+static EIF_TYPE_INDEX ptf1166[] = {0,0xFFFF};
+static struct eif_par_types par1166 = {1166, ptf1166, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_TYPE */
+static EIF_TYPE_INDEX ptf1167[] = {0,0xFFFF};
+static struct eif_par_types par1167 = {1167, ptf1167, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_UPDATE_ACTION */
+static EIF_TYPE_INDEX ptf1168[] = {0,0xFFFF};
+static struct eif_par_types par1168 = {1168, ptf1168, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_OPEN_MODE */
+static EIF_TYPE_INDEX ptf1169[] = {0,0xFFFF};
+static struct eif_par_types par1169 = {1169, ptf1169, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_EXTERNALS */
+static EIF_TYPE_INDEX ptf1170[] = {0,0xFFFF};
+static struct eif_par_types par1170 = {1170, ptf1170, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_RESULT_CODE */
+static EIF_TYPE_INDEX ptf1171[] = {0,0xFFFF};
+static struct eif_par_types par1171 = {1171, ptf1171, (uint16) 1, (uint16) 0, (char) 0};
+
+/* DB_HELPER */
+static EIF_TYPE_INDEX ptf1172[] = {0,0xFFFF};
+static struct eif_par_types par1172 = {1172, ptf1172, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_RESULT_EXTERNALS */
+static EIF_TYPE_INDEX ptf1173[] = {0,0xFFFF};
+static struct eif_par_types par1173 = {1173, ptf1173, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_SOURCE */
+static EIF_TYPE_INDEX ptf1174[] = {0,0xFFFF};
+static struct eif_par_types par1174 = {1174, ptf1174, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_FILE_SOURCE */
+static EIF_TYPE_INDEX ptf1175[] = {1174,0xFFFF};
+static struct eif_par_types par1175 = {1175, ptf1175, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_API_EXTERNALS */
+static EIF_TYPE_INDEX ptf1176[] = {0,0xFFFF};
+static struct eif_par_types par1176 = {1176, ptf1176, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_EXCEPTION */
+static EIF_TYPE_INDEX ptf1177[] = {65,0xFFFF};
+static struct eif_par_types par1177 = {1177, ptf1177, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_IO_EXCEPTION */
+static EIF_TYPE_INDEX ptf1178[] = {1177,0xFFFF};
+static struct eif_par_types par1178 = {1178, ptf1178, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_HELPERS */
+static EIF_TYPE_INDEX ptf1179[] = {0,0xFFFF};
+static struct eif_par_types par1179 = {1179, ptf1179, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_DATABASE_EXTERNALS */
+static EIF_TYPE_INDEX ptf1180[] = {0,0xFFFF};
+static struct eif_par_types par1180 = {1180, ptf1180, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_STATEMENT_EXTERNALS */
+static EIF_TYPE_INDEX ptf1181[] = {0,0xFFFF};
+static struct eif_par_types par1181 = {1181, ptf1181, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_INTERNALS */
+static EIF_TYPE_INDEX ptf1182[] = {0,0xFFFF};
+static struct eif_par_types par1182 = {1182, ptf1182, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_SHARED_API */
+static EIF_TYPE_INDEX ptf1183[] = {0,0xFFF7,1179,0xFFFF};
+static struct eif_par_types par1183 = {1183, ptf1183, (uint16) 2, (uint16) 0, (char) 0};
+
+/* SQLITE_RESULT_ROW */
+static EIF_TYPE_INDEX ptf1184[] = {1183,0xFFF7,1182,0xFFF7,1173,0xFFF7,1181,0xFFFF};
+static struct eif_par_types par1184 = {1184, ptf1184, (uint16) 4, (uint16) 0, (char) 0};
+
+/* SQLITE_DATABASE */
+static EIF_TYPE_INDEX ptf1185[] = {164,0xFFF7,1183,0xFFF7,1182,0xFFF7,1176,0xFFF7,1180,0xFFF7,1181,0xFFFF};
+static struct eif_par_types par1185 = {1185, ptf1185, (uint16) 6, (uint16) 0, (char) 0};
+
+/* SQLITE_BINDING_HELPERS */
+static EIF_TYPE_INDEX ptf1186[] = {1183,0xFFFF};
+static struct eif_par_types par1186 = {1186, ptf1186, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_BIND_ARG_MARSHALLER */
+static EIF_TYPE_INDEX ptf1187[] = {1186,0xFFFF};
+static struct eif_par_types par1187 = {1187, ptf1187, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_STATEMENT_ITERATION_CURSOR */
+static EIF_TYPE_INDEX ptf1188[] = {270,0xFF01,1184,0xFFF7,269,0xFF01,1184,0xFFF7,1183,0xFFF7,1182,0xFFF7,1180,0xFFF7,1181,0xFFF7,1187,0xFFFF};
+static struct eif_par_types par1188 = {1188, ptf1188, (uint16) 7, (uint16) 0, (char) 0};
+
+/* SQLITE_STATEMENT */
+static EIF_TYPE_INDEX ptf1189[] = {164,0xFFF7,1186,0xFFF7,1183,0xFFF7,1182,0xFFF7,1180,0xFFF7,1181,0xFFF7,1187,0xFFFF};
+static struct eif_par_types par1189 = {1189, ptf1189, (uint16) 7, (uint16) 0, (char) 0};
+
+/* SQLITE_QUERY_STATEMENT */
+static EIF_TYPE_INDEX ptf1190[] = {1189,0xFFFF};
+static struct eif_par_types par1190 = {1190, ptf1190, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_MODIFY_STATEMENT */
+static EIF_TYPE_INDEX ptf1191[] = {1189,0xFFFF};
+static struct eif_par_types par1191 = {1191, ptf1191, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_INSERT_STATEMENT */
+static EIF_TYPE_INDEX ptf1192[] = {1191,0xFFFF};
+static struct eif_par_types par1192 = {1192, ptf1192, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_API */
+static EIF_TYPE_INDEX ptf1193[] = {0,0xFFF7,1182,0xFFF7,1176,0xFFF7,1179,0xFFFF};
+static struct eif_par_types par1193 = {1193, ptf1193, (uint16) 4, (uint16) 0, (char) 0};
+
+/* SQLITE_BOOLEAN_ARG */
+static EIF_TYPE_INDEX ptf1194[] = {1201,198,0xFFFF};
+static struct eif_par_types par1194 = {1194, ptf1194, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_DOUBLE_ARG */
+static EIF_TYPE_INDEX ptf1195[] = {1203,201,0xFFFF};
+static struct eif_par_types par1195 = {1195, ptf1195, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_INTEGER_ARG */
+static EIF_TYPE_INDEX ptf1196[] = {1202,195,0xFFFF};
+static struct eif_par_types par1196 = {1196, ptf1196, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_STRING_ARG */
+static EIF_TYPE_INDEX ptf1197[] = {1200,0xFF01,225,0xFFFF};
+static struct eif_par_types par1197 = {1197, ptf1197, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_NULL_ARG */
+static EIF_TYPE_INDEX ptf1198[] = {1200,0xFF01,0,0xFFFF};
+static struct eif_par_types par1198 = {1198, ptf1198, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_BLOB_ARG */
+static EIF_TYPE_INDEX ptf1199[] = {1200,0xFF01,166,0xFFFF};
+static struct eif_par_types par1199 = {1199, ptf1199, (uint16) 1, (uint16) 0, (char) 0};
+
+/* SQLITE_BIND_ARG [G#1] */
+static EIF_TYPE_INDEX ptf1200[] = {1179,0xFFF7,1186,0xFFF7,1182,0xFFF7,1183,0xFFF7,0,0xFFFF};
+static struct eif_par_types par1200 = {1200, ptf1200, (uint16) 5, (uint16) 1, (char) 0};
+
+/* SQLITE_BIND_ARG [BOOLEAN] */
+static EIF_TYPE_INDEX ptf1201[] = {1179,0xFFF7,1186,0xFFF7,1182,0xFFF7,1183,0xFFF7,0,0xFFFF};
+static struct eif_par_types par1201 = {1201, ptf1201, (uint16) 5, (uint16) 1, (char) 0};
+
+/* SQLITE_BIND_ARG [INTEGER_64] */
+static EIF_TYPE_INDEX ptf1202[] = {1179,0xFFF7,1186,0xFFF7,1182,0xFFF7,1183,0xFFF7,0,0xFFFF};
+static struct eif_par_types par1202 = {1202, ptf1202, (uint16) 5, (uint16) 1, (char) 0};
+
+/* SQLITE_BIND_ARG [REAL_64] */
+static EIF_TYPE_INDEX ptf1203[] = {1179,0xFFF7,1186,0xFFF7,1182,0xFFF7,1183,0xFFF7,0,0xFFFF};
+static struct eif_par_types par1203 = {1203, ptf1203, (uint16) 5, (uint16) 1, (char) 0};
+
+int egc_partab_size_init = 1203;
 struct eif_par_types *egc_partab_init[] = {
 &par0,
 &par1,
@@ -5826,6 +5986,46 @@ struct eif_par_types *egc_partab_init[] = {
 &par1161,
 &par1162,
 &par1163,
+&par1164,
+&par1165,
+&par1166,
+&par1167,
+&par1168,
+&par1169,
+&par1170,
+&par1171,
+&par1172,
+&par1173,
+&par1174,
+&par1175,
+&par1176,
+&par1177,
+&par1178,
+&par1179,
+&par1180,
+&par1181,
+&par1182,
+&par1183,
+&par1184,
+&par1185,
+&par1186,
+&par1187,
+&par1188,
+&par1189,
+&par1190,
+&par1191,
+&par1192,
+&par1193,
+&par1194,
+&par1195,
+&par1196,
+&par1197,
+&par1198,
+&par1199,
+&par1200,
+&par1201,
+&par1202,
+&par1203,
 NULL};
 
 #ifdef __cplusplus

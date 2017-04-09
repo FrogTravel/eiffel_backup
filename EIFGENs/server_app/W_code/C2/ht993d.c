@@ -63,7 +63,7 @@ void Init993(void)
 {
 	IDSC(desc_993, 0, 992);
 	IDSC(desc_993 + 1, 1, 992);
-	IDSC(desc_993 + 32, 466, 992);
+	IDSC(desc_993 + 32, 467, 992);
 }
 
 

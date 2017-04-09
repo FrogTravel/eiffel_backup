@@ -1,5 +1,5 @@
 /*
- * Class WSF_SELF_DOCUMENTED_ROUTER_MAPPING
+ * Class WSF_ROUTER_MAPPING
  */
 
 #include "eif_macros.h"
@@ -22,11 +22,10 @@ static const EIF_TYPE_INDEX egt_9_1119 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1119 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1119 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1119 [] = {0xFF01,1118,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1119 [] = {0xFF01,224,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_1119 [] = {0xFF01,968,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_1119 [] = {0xFF01,225,0xFFFF};
-static const EIF_TYPE_INDEX egt_16_1119 [] = {0xFF01,1030,0xFFFF};
-static const EIF_TYPE_INDEX egt_17_1119 [] = {0xFF01,232,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1119 [] = {0xFF01,225,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_1119 [] = {0xFF01,1029,0xFFFF};
+static const EIF_TYPE_INDEX egt_15_1119 [] = {0xFF01,232,0xFFFF};
+static const EIF_TYPE_INDEX egt_16_1119 [] = {0xFF01,224,0xFFFF};
 
 
 static const struct desc_info desc_1119[] = {
@@ -62,22 +61,20 @@ static const struct desc_info desc_1119[] = {
 	{EIF_NON_GENERIC(0x08BD /*1118*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01BD /*222*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1119), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1119), 15581, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_14_1119), 15582, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 0x00, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_1119), 0x00, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_14_1119), 0x00, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_15_1119), 0x00, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_16_1119), 0x00, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_17_1119), 0x00, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x018D /*198*/), 0x00, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 0x00, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_16_1119), 15585, 0xFFFFFFFF},
 };
 void Init1119(void)
 {
 	IDSC(desc_1119, 0, 1118);
 	IDSC(desc_1119 + 1, 1, 1118);
-	IDSC(desc_1119 + 32, 349, 1118);
-	IDSC(desc_1119 + 33, 531, 1118);
-	IDSC(desc_1119 + 34, 381, 1118);
+	IDSC(desc_1119 + 32, 399, 1118);
+	IDSC(desc_1119 + 38, 349, 1118);
 }
 
 

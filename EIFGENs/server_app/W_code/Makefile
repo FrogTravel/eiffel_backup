@@ -1,4 +1,4 @@
-INCLUDE_PATH =  -I"C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL\library\time\spec\include" -I"c:\program files\eiffel software\eiffelstudio 17.01 gpl\contrib\library\network\http_network/spec/include"
+INCLUDE_PATH =  -I"C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL\library\time\spec\include" -I"C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL/unstable/library/persistency/database/sqlite3/spec/include" -I"-DSQLITE_THREADSAFE=1" -I"c:\program files\eiffel software\eiffelstudio 17.01 gpl\contrib\library\network\http_network/spec/include"
 SHELL = /bin/sh
 CC = "C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL/gcc/win64/mingw/bin/gcc"
 CPP = "C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL/gcc/win64/mingw/bin/gcc"
@@ -28,7 +28,7 @@ COMMAND_MAKEFILE =
 START_TEST = if [ ! -f finished ] ; then 
 END_TEST = ; fi 
 CREATE_TEST = "C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL/gcc/win64/msys/1.0/bin/touch" finished
-PATH := C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL/gcc/win64/mingw/libexec/gcc/mingw32/3.4.2;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Users\Ekaterina\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\MobileRobots\Aria\bin64;C:\sqlite 
+PATH := C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL/gcc/win64/mingw/libexec/gcc/mingw32/3.4.2;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Users\Ekaterina\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\MobileRobots\Aria\bin64;C:\sqlite 
 SYSTEM_IN_DYNAMIC_LIB = server_app.dll 
 
 .SUFFIXES:.cpp .o 
@@ -39,10 +39,11 @@ SYSTEM_IN_DYNAMIC_LIB = server_app.dll
 .cpp.o:
 	$(CPP) $(CPPFLAGS) -c $<
 
-SUBDIRS = C1 C2 C3 C4 C5 C6 C7 E1
+SUBDIRS = C1 C2 C3 C4 C5 C6 C7 C8 E1
 
 EXTERNALS =  \
 	"C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL\library\net\spec\mingw\win64\lib\mtnet.lib" \
+	"C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL\unstable\library\persistency\database\sqlite3\spec\mingw\win64\lib\mtesqlite.lib" \
 	-lmswsock
 
 all:: server_app.exe
@@ -68,6 +69,9 @@ C6/Cobj6.o: Makefile E1/estructure.h
 
 C7/Cobj7.o: Makefile E1/estructure.h
 	cd C7 && $(START_TEST) $(MAKE) Cobj7.o $(END_TEST) && cd ..
+
+C8/Cobj8.o: Makefile E1/estructure.h
+	cd C8 && $(START_TEST) $(MAKE) Cobj8.o $(END_TEST) && cd ..
 
 E1/emain.o:  Makefile E1/Makefile
 	$(CP) "$(EIFTEMPLATES)/emain.template" "E1/emain.c"
@@ -106,9 +110,9 @@ E1/einit.o : Makefile E1/Makefile E1/estructure.h
 E1/eparents.o : Makefile E1/Makefile E1/estructure.h
 	cd E1 && $(START_TEST) $(MAKE) eparents.o  $(END_TEST) && cd ..
 
-OBJECTS = E1/eparents.o  E1/einit.o  E1/ececil.o  E1/evisib.o  E1/enames.o  E1/eskelet.o  E1/eplug.o  E1/ecall.o  E1/efrozen.o  E1/epattern.o  E1/eoption.o  C7/Cobj7.o C6/Cobj6.o C5/Cobj5.o C4/Cobj4.o C3/Cobj3.o C2/Cobj2.o C1/Cobj1.o 
+OBJECTS = E1/eparents.o  E1/einit.o  E1/ececil.o  E1/evisib.o  E1/enames.o  E1/eskelet.o  E1/eplug.o  E1/ecall.o  E1/efrozen.o  E1/epattern.o  E1/eoption.o  C8/Cobj8.o C7/Cobj7.o C6/Cobj6.o C5/Cobj5.o C4/Cobj4.o C3/Cobj3.o C2/Cobj2.o C1/Cobj1.o 
 
-C_OBJECTS = C7/Cobj7.o C6/Cobj6.o C5/Cobj5.o C4/Cobj4.o C3/Cobj3.o C2/Cobj2.o C1/Cobj1.o 
+C_OBJECTS = C8/Cobj8.o C7/Cobj7.o C6/Cobj6.o C5/Cobj5.o C4/Cobj4.o C3/Cobj3.o C2/Cobj2.o C1/Cobj1.o 
 
 EOBJECTS = E1/eparents.o  E1/einit.o  E1/ececil.o  E1/evisib.o  E1/enames.o  E1/eskelet.o  E1/eplug.o  E1/ecall.o  E1/efrozen.o  E1/epattern.o  E1/eoption.o  
 

@@ -1,5 +1,5 @@
 /*
- * Class WSF_HANDLER
+ * Class WSF_ROUTING_HANDLER
  */
 
 #include "eif_macros.h"
@@ -22,6 +22,7 @@ static const EIF_TYPE_INDEX egt_9_1031 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1031 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1031 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1031 [] = {0xFF01,1030,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1031 [] = {0xFF01,1087,0xFFFF};
 
 
 static const struct desc_info desc_1031[] = {
@@ -59,12 +60,19 @@ static const struct desc_info desc_1031[] = {
 	{EIF_GENERIC(egt_12_1031), 30, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x018D /*198*/), 13964, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 13965, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 13966, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_1031), 13967, 0},
+	{EIF_NON_GENERIC(0x01AB /*213*/), 13968, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x01C3 /*225*/), 13969, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 13970, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 13971, 0xFFFFFFFF},
 };
 void Init1031(void)
 {
 	IDSC(desc_1031, 0, 1030);
 	IDSC(desc_1031 + 1, 1, 1030);
-	IDSC(desc_1031 + 32, 429, 1030);
+	IDSC(desc_1031 + 32, 460, 1030);
+	IDSC(desc_1031 + 34, 503, 1030);
 }
 
 

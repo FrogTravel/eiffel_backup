@@ -63,7 +63,7 @@ void Init1050(void)
 {
 	IDSC(desc_1050, 0, 1049);
 	IDSC(desc_1050 + 1, 1, 1049);
-	IDSC(desc_1050 + 32, 369, 1049);
+	IDSC(desc_1050 + 32, 368, 1049);
 }
 
 

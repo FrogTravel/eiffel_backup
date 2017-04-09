@@ -85,7 +85,7 @@ void F1074_8718 (EIF_REFERENCE Current)
 		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6334, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 		loc2 = RTCCL(tr1);
 		if (EIF_TEST(loc2)) {
-			tb2 = *(EIF_BOOLEAN *)(loc2 + RTVA(6831, "descriptor_available", loc2));
+			tb2 = *(EIF_BOOLEAN *)(loc2 + RTVA(6835, "descriptor_available", loc2));
 			tb1 = tb2;
 		}
 		if (tb1) {
@@ -116,7 +116,7 @@ void F1074_8718 (EIF_REFERENCE Current)
 	RTHOOK(5);
 	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6362, 1072))(Current);
 	RTHOOK(6);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(5036, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(5046, dtype))(Current);
 	if (
 		WDBG(1073,"dbglog")
 	) {

@@ -23,7 +23,7 @@ extern void F1056_8362(EIF_REFERENCE);
 extern void F1056_8363(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern EIF_TYPED_VALUE F1056_8364(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern EIF_TYPED_VALUE F1056_8365(EIF_REFERENCE);
-extern void F1056_10157(EIF_REFERENCE, int);
+extern void F1056_10161(EIF_REFERENCE, int);
 extern void EIF_Minit1056(void);
 
 #ifdef __cplusplus
@@ -98,7 +98,7 @@ void F1056_8353 (EIF_REFERENCE Current)
 	ti4_2 = eif_max_int32 (ti4_1,ui4_1);
 	loc1 = (EIF_INTEGER_32) ti4_2;
 	RTHOOK(2);
-	RTDBGAL(Current, 2, 0xF8000483, 0, 0); /* loc2 */
+	RTDBGAL(Current, 2, 0xF8000482, 0, 0); /* loc2 */
 	tr1 = RTLNSMART(RTWCT(6090, dtype, Dftype(Current)).id);
 	RTS_PA (tr1);
 	ui4_1 = loc1;
@@ -112,7 +112,7 @@ void F1056_8353 (EIF_REFERENCE Current)
 	ui4_1 = loc1;
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6083, dtype))(Current, ur1x, ui4_1x);
 	RTHOOK(4);
-	RTDBGAA(Current, dtype, 6090, 0xF8000483, 0); /* pool */
+	RTDBGAA(Current, dtype, 6090, 0xF8000482, 0); /* pool */
 	RTAR(Current, loc2);
 	*(EIF_REFERENCE *)(Current + RTWA(6090, dtype)) = (EIF_REFERENCE) RTCCL(loc2);
 	RTVI(Current, RTAL);
@@ -270,11 +270,11 @@ EIF_TYPED_VALUE F1056_8356 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTNHOOK(1,1);
 	if (RTS_CI (EIF_TRUE, tr1)) {
 		RTS_BI (tr1);
-		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7214, "max_concurrent_connections", tr1))(tr1)).it_i4);
+		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7218, "max_concurrent_connections", tr1))(tr1)).it_i4);
 		RTS_EI;
 	} else {
 		RTS_AC (0, tr1);
-		RTS_CALL (7214, SK_INT32);
+		RTS_CALL (7218, SK_INT32);
 		ti4_1 = l_scoop_result.it_i4;
 	}
 	Result = (EIF_INTEGER_32) ti4_1;
@@ -448,7 +448,7 @@ void F1056_8359 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTME(dtype, 0);
 	RTGC;
 	RTDBGEAA(1055, Current, 14407);
-	RTCC(arg1, 1055, l_feature_name, 1, eif_new_type(1108, 0x01), 0x01);
+	RTCC(arg1, 1055, l_feature_name, 1, eif_new_type(1109, 0x01), 0x01);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6090, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
@@ -524,7 +524,7 @@ void F1056_8360 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE a
 	RTGC;
 	RTDBGEAA(1055, Current, 14408);
 	RTCC(arg1, 1055, l_feature_name, 1, RTWCT(6090, dtype, Dftype(Current)), 0x00);
-	RTCC(arg2, 1055, l_feature_name, 2, eif_new_type(1108, 0x01), 0x01);
+	RTCC(arg2, 1055, l_feature_name, 2, eif_new_type(1109, 0x01), 0x01);
 	uarg1 = (EIF_BOOLEAN) RTS_OU (arg1);
 	uarg = uarg1;
 	if (uarg) {
@@ -608,12 +608,12 @@ body:;
 		loc2 = RTCCL(tr1);
 		if (EIF_TEST(loc2)) {
 			RTHOOK(5);
-			RTDBGAL(Current, 1, 0xF8000454, 0, 0); /* loc1 */
+			RTDBGAL(Current, 1, 0xF8000455, 0, 0); /* loc1 */
 			ur1 = RTCCL(loc2);
 			loc1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(6089, dtype))(Current, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 			RTHOOK(6);
 			ur1 = RTCCL(loc1);
-			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(6882, "accept_to", arg2))(arg2, ur1x);
+			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(6886, "accept_to", arg2))(arg2, ur1x);
 			RTHOOK(7);
 			ur1 = RTCCL(loc2);
 			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(6087, dtype))(Current, ur1x);
@@ -924,7 +924,7 @@ EIF_TYPED_VALUE F1056_8364 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	}
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAL(Current, 0, 0xF8000454, 0,0); /* Result */
+	RTDBGAL(Current, 0, 0xF8000455, 0,0); /* Result */
 	if (RTS_CI (EIF_TRUE, arg1)) {
 		RTS_BI (arg1);
 		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6335, "client_socket", arg1))(arg1)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
@@ -963,7 +963,7 @@ EIF_TYPED_VALUE F1056_8365 (EIF_REFERENCE Current)
 
 
 /* {HTTPD_CONNECTION_HANDLER}._invariant */
-void F1056_10157 (EIF_REFERENCE Current, int where)
+void F1056_10161 (EIF_REFERENCE Current, int where)
 {
 	GTCX
 	char *l_feature_name = "_invariant";
@@ -981,7 +981,7 @@ void F1056_10157 (EIF_REFERENCE Current, int where)
 	RTLIU(2);
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
-	RTEAINV(l_feature_name, 1055, Current, 0, 10156);
+	RTEAINV(l_feature_name, 1055, Current, 0, 10160);
 	RTSA(dtype);
 	RTME(dtype, 0);
 	RTIT("pool_attached", Current);

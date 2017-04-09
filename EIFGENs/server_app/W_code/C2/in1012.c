@@ -16,7 +16,7 @@ extern EIF_TYPED_VALUE F1012_7685(EIF_REFERENCE);extern EIF_BOOLEAN en_get_prefe
 
 extern void F1012_7686(EIF_REFERENCE, EIF_TYPED_VALUE);extern void en_set_prefer_ipv4(EIF_BOOLEAN);
 
-extern void F1012_10155(EIF_REFERENCE, int);
+extern void F1012_10159(EIF_REFERENCE, int);
 extern void EIF_Minit1012(void);
 
 #ifdef __cplusplus
@@ -149,7 +149,7 @@ void F1012_7686 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 }
 
 /* {INET_PROPERTIES}._invariant */
-void F1012_10155 (EIF_REFERENCE Current, int where)
+void F1012_10159 (EIF_REFERENCE Current, int where)
 {
 	GTCX
 	char *l_feature_name = "_invariant";
@@ -165,7 +165,7 @@ void F1012_10155 (EIF_REFERENCE Current, int where)
 	RTLIU(1);
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
-	RTEAINV(l_feature_name, 1011, Current, 0, 10154);
+	RTEAINV(l_feature_name, 1011, Current, 0, 10158);
 	RTSA(dtype);
 	RTME(dtype, 0);
 	RTIT("exclusive", Current);

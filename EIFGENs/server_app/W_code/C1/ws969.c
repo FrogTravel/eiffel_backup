@@ -73,7 +73,7 @@ void F969_7137 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTCC(arg1, 968, l_feature_name, 1, RTWCT(5009, dtype, Dftype(Current)), 0x00);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAA(Current, dtype, 5009, 0xF800045D, 0); /* mapping */
+	RTDBGAA(Current, dtype, 5009, 0xF800045E, 0); /* mapping */
 	RTAR(Current, arg1);
 	*(EIF_REFERENCE *)(Current + RTWA(5009, dtype)) = (EIF_REFERENCE) RTCCL(arg1);
 	RTHOOK(2);

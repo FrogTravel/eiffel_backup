@@ -20,7 +20,7 @@ extern void F958_7061(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
 extern EIF_TYPED_VALUE F958_7062(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern void F958_7063(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern EIF_TYPED_VALUE F958_7064(EIF_REFERENCE);
-extern void F958_10148(EIF_REFERENCE, int);
+extern void F958_10152(EIF_REFERENCE, int);
 extern void EIF_Minit958(void);
 
 #ifdef __cplusplus
@@ -721,7 +721,7 @@ EIF_TYPED_VALUE F958_7064 (EIF_REFERENCE Current)
 
 
 /* {PACKET}._invariant */
-void F958_10148 (EIF_REFERENCE Current, int where)
+void F958_10152 (EIF_REFERENCE Current, int where)
 {
 	GTCX
 	char *l_feature_name = "_invariant";
@@ -739,7 +739,7 @@ void F958_10148 (EIF_REFERENCE Current, int where)
 	RTLIU(2);
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
-	RTEAINV(l_feature_name, 957, Current, 0, 10147);
+	RTEAINV(l_feature_name, 957, Current, 0, 10151);
 	RTSA(dtype);
 	RTME(dtype, 0);
 	RTIT("data_not_equal_void", Current);

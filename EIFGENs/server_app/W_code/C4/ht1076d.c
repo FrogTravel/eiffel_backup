@@ -23,10 +23,10 @@ static const EIF_TYPE_INDEX egt_10_1076 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1076 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1076 [] = {0xFF01,1075,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_1076 [] = {0xFF01,227,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_1076 [] = {0xFF01,1132,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_1076 [] = {0xFF01,1133,0xFFFF};
 static const EIF_TYPE_INDEX egt_15_1076 [] = {0xFF05,967,0xFFFF};
-static const EIF_TYPE_INDEX egt_16_1076 [] = {0xFF05,979,0xFFFF};
-static const EIF_TYPE_INDEX egt_17_1076 [] = {0xFF01,1108,0xFFFF};
+static const EIF_TYPE_INDEX egt_16_1076 [] = {0xFF05,980,0xFFFF};
+static const EIF_TYPE_INDEX egt_17_1076 [] = {0xFF01,1109,0xFFFF};
 
 
 static const struct desc_info desc_1076[] = {
@@ -112,10 +112,10 @@ void Init1076(void)
 {
 	IDSC(desc_1076, 0, 1075);
 	IDSC(desc_1076 + 1, 1, 1075);
-	IDSC(desc_1076 + 32, 510, 1075);
-	IDSC(desc_1076 + 34, 402, 1075);
-	IDSC(desc_1076 + 42, 469, 1075);
-	IDSC(desc_1076 + 76, 511, 1075);
+	IDSC(desc_1076 + 32, 521, 1075);
+	IDSC(desc_1076 + 34, 389, 1075);
+	IDSC(desc_1076 + 42, 473, 1075);
+	IDSC(desc_1076 + 76, 522, 1075);
 }
 
 

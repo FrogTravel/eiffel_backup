@@ -251,14 +251,14 @@ EIF_TYPED_VALUE F1080_8808 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TY
 	}
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAL(Current, 0, 0xF80003D0, 0,0); /* Result */
-	tr1 = RTLN(eif_new_type(976, 0x01).id);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(5048, Dtype(tr1)))(tr1);
+	RTDBGAL(Current, 0, 0xF80003D1, 0,0); /* Result */
+	tr1 = RTLN(eif_new_type(977, 0x01).id);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(5053, Dtype(tr1)))(tr1);
 	RTNHOOK(1,1);
 	Result = (EIF_REFERENCE) RTCCL(tr1);
 	RTHOOK(2);
 	ur1 = RTCCL(arg1);
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(5057, "set_supported_variants", Result))(Result, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(5062, "set_supported_variants", Result))(Result, ur1x);
 	RTHOOK(3);
 	tb1 = '\01';
 	if (!(EIF_BOOLEAN)(arg2 == NULL)) {
@@ -268,14 +268,14 @@ EIF_TYPED_VALUE F1080_8808 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TY
 	if (tb1) {
 		RTHOOK(4);
 		ub1 = (EIF_BOOLEAN) 1;
-		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(5056, "set_acceptable", Result))(Result, ub1x);
+		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(5061, "set_acceptable", Result))(Result, ub1x);
 		RTHOOK(5);
 		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6451, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 		ur1 = RTCCL(tr1);
-		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(5055, "set_variant_value", Result))(Result, ur1x);
+		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(5060, "set_variant_value", Result))(Result, ur1x);
 	} else {
 		RTHOOK(6);
-		(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(5049, "set_vary_header_value", Result))(Result);
+		(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(5054, "set_vary_header_value", Result))(Result);
 		RTHOOK(7);
 		RTDBGAL(Current, 1, 0xF80000E1, 0, 0); /* loc1 */
 		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6450, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
@@ -289,14 +289,14 @@ EIF_TYPED_VALUE F1080_8808 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TY
 		if (tb1) {
 			RTHOOK(9);
 			ub1 = (EIF_BOOLEAN) 0;
-			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(5056, "set_acceptable", Result))(Result, ub1x);
+			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(5061, "set_acceptable", Result))(Result, ub1x);
 		} else {
 			RTHOOK(10);
 			ur1 = RTCCL(loc1);
-			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(5055, "set_variant_value", Result))(Result, ur1x);
+			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(5060, "set_variant_value", Result))(Result, ur1x);
 			RTHOOK(11);
 			ub1 = (EIF_BOOLEAN) 1;
-			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(5056, "set_acceptable", Result))(Result, ub1x);
+			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(5061, "set_acceptable", Result))(Result, ub1x);
 		}
 	}
 	RTVI(Current, RTAL);

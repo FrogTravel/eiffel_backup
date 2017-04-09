@@ -88,7 +88,7 @@ void F1055_8342 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTAR(Current, arg1);
 	*(EIF_REFERENCE *)(Current + RTWA(6075, dtype)) = (EIF_REFERENCE) RTCCL(arg1);
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 6074, 0xF80003D3, 0); /* factory */
+	RTDBGAA(Current, dtype, 6074, 0xF80003D4, 0); /* factory */
 	ur1 = RTCCL(arg1);
 	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(6081, dtype))(Current, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTAR(Current, tr1);
@@ -249,7 +249,7 @@ EIF_TYPED_VALUE F1055_8351 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	}
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAL(Current, 0, 0xF80003D3, 0,0); /* Result */
+	RTDBGAL(Current, 0, 0xF80003D4, 0,0); /* Result */
 	if (RTS_CI (EIF_TRUE, arg1)) {
 		RTS_BI (arg1);
 		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6383, "factory", arg1))(arg1)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
@@ -330,12 +330,12 @@ void F1055_8352 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE a
 	ur1 = RTCCL(arg2);
 	if (RTS_CI (EIF_FALSE, arg1)) {
 		RTS_BI (arg1);
-		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(5090, "log", arg1))(arg1, ur1x);
+		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(5063, "log", arg1))(arg1, ur1x);
 		RTS_EI;
 	} else {
 		RTS_AC (1, arg1);
 		RTS_AA (ur1x, it_r, SK_REF, 1);
-		RTS_CALL (5090, SK_VOID);
+		RTS_CALL (5063, SK_VOID);
 	}
 	RTVI(Current, RTAL);
 	RTRS;

@@ -71,7 +71,7 @@ void Init1077(void)
 {
 	IDSC(desc_1077, 0, 1076);
 	IDSC(desc_1077 + 1, 1, 1076);
-	IDSC(desc_1077 + 32, 402, 1076);
+	IDSC(desc_1077 + 32, 389, 1076);
 }
 
 

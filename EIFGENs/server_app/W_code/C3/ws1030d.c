@@ -1,5 +1,5 @@
 /*
- * Class WSF_MIME_HANDLER
+ * Class WSF_HANDLER
  */
 
 #include "eif_macros.h"
@@ -57,14 +57,14 @@ static const struct desc_info desc_1030[] = {
 	{EIF_NON_GENERIC(0x080B /*1029*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01BD /*222*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1030), 30, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x018D /*198*/), 0x00, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 0x00, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x018D /*198*/), 13964, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 13965, 0xFFFFFFFF},
 };
 void Init1030(void)
 {
 	IDSC(desc_1030, 0, 1029);
 	IDSC(desc_1030 + 1, 1, 1029);
-	IDSC(desc_1030 + 32, 444, 1029);
+	IDSC(desc_1030 + 32, 460, 1029);
 }
 
 

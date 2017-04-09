@@ -66,7 +66,7 @@ void Init1000(void)
 {
 	IDSC(desc_1000, 0, 999);
 	IDSC(desc_1000 + 1, 1, 999);
-	IDSC(desc_1000 + 32, 417, 999);
+	IDSC(desc_1000 + 32, 418, 999);
 }
 
 

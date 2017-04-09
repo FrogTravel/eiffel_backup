@@ -23,9 +23,9 @@ static const EIF_TYPE_INDEX egt_10_1083 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1083 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1083 [] = {0xFF01,1082,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_1083 [] = {0xFF01,227,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_1083 [] = {0xFF01,1115,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_1083 [] = {0xFF01,1116,0xFFFF};
 static const EIF_TYPE_INDEX egt_15_1083 [] = {0xFF01,225,0xFFFF};
-static const EIF_TYPE_INDEX egt_16_1083 [] = {0xFF01,1110,0xFFFF};
+static const EIF_TYPE_INDEX egt_16_1083 [] = {0xFF01,1111,0xFFFF};
 
 
 static const struct desc_info desc_1083[] = {
@@ -76,8 +76,8 @@ void Init1083(void)
 	IDSC(desc_1083, 0, 1082);
 	IDSC(desc_1083 + 1, 1, 1082);
 	IDSC(desc_1083 + 32, 40, 1082);
-	IDSC(desc_1083 + 35, 528, 1082);
-	IDSC(desc_1083 + 36, 492, 1082);
+	IDSC(desc_1083 + 35, 527, 1082);
+	IDSC(desc_1083 + 36, 483, 1082);
 }
 
 

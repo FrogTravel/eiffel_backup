@@ -21,7 +21,7 @@ extern void F1010_7677(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern void F1010_7678(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern void F1010_7679(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern void F1010_7680(EIF_REFERENCE);
-extern void F1010_10154(EIF_REFERENCE, int);
+extern void F1010_10158(EIF_REFERENCE, int);
 extern void EIF_Minit1010(void);
 
 #ifdef __cplusplus
@@ -79,12 +79,12 @@ void F1010_7669 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE a
 	RTLU(SK_REF,&arg2);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1009, Current, 0, 2, 13778);
+	RTEAA(l_feature_name, 1009, Current, 0, 2, 13779);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(1009, Current, 13778);
+	RTDBGEAA(1009, Current, 13779);
 	RTCC(arg1, 1009, l_feature_name, 1, eif_new_type(1000, 0x01), 0x01);
 	RTCC(arg2, 1009, l_feature_name, 2, eif_new_type(1033, 0x01), 0x01);
 	RTIV(Current, RTAL);
@@ -93,11 +93,11 @@ void F1010_7669 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE a
 	ur2 = RTCCL(arg2);
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5478, 1008))(Current, ur1x, ur2x);
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 5487, 0xF8000472, 0); /* request */
+	RTDBGAA(Current, dtype, 5487, 0xF8000473, 0); /* request */
 	tr1 = RTLNSMART(RTWCT(5487, dtype, Dftype(Current)).id);
 	tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5480, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	ur1 = RTCCL(tr2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(7274, Dtype(tr1)))(tr1, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(7278, Dtype(tr1)))(tr1, ur1x);
 	RTNHOOK(2,1);
 	RTAR(Current, tr1);
 	*(EIF_REFERENCE *)(Current + RTWA(5487, dtype)) = (EIF_REFERENCE) RTCCL(tr1);
@@ -155,19 +155,19 @@ void F1010_7670 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_REF,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1009, Current, 0, 1, 13779);
+	RTEAA(l_feature_name, 1009, Current, 0, 1, 13780);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(1009, Current, 13779);
+	RTDBGEAA(1009, Current, 13780);
 	RTCC(arg1, 1009, l_feature_name, 1, eif_new_type(1009, 0x01), 0x01);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	ur1 = RTCCL(arg1);
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5479, dtype))(Current, ur1x);
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 5487, 0xF8000472, 0); /* request */
+	RTDBGAA(Current, dtype, 5487, 0xF8000473, 0); /* request */
 	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5487, "request", arg1))(arg1)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTAR(Current, tr1);
 	*(EIF_REFERENCE *)(Current + RTWA(5487, dtype)) = (EIF_REFERENCE) RTCCL(tr1);
@@ -207,12 +207,12 @@ void F1010_7671 (EIF_REFERENCE Current)
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 1009, Current, 0, 0, 13780);
+	RTEAA(l_feature_name, 1009, Current, 0, 0, 13781);
 	RTSA(Dtype(Current));
 	RTSC;
 	RTME(Dtype(Current), 0);
 	RTGC;
-	RTDBGEAA(1009, Current, 13780);
+	RTDBGEAA(1009, Current, 13781);
 	RTIV(Current, RTAL);
 	RTVI(Current, RTAL);
 	RTRS;
@@ -576,7 +576,7 @@ void F1010_7680 (EIF_REFERENCE Current)
 	RTHOOK(2);
 	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5487, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(2,1);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(7278, "destroy", tr1))(tr1);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(7282, "destroy", tr1))(tr1);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(3);
@@ -589,7 +589,7 @@ void F1010_7680 (EIF_REFERENCE Current)
 }
 
 /* {WSF_EXECUTION}._invariant */
-void F1010_10154 (EIF_REFERENCE Current, int where)
+void F1010_10158 (EIF_REFERENCE Current, int where)
 {
 	GTCX
 	char *l_feature_name = "_invariant";
@@ -607,7 +607,7 @@ void F1010_10154 (EIF_REFERENCE Current, int where)
 	RTLIU(2);
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
-	RTEAINV(l_feature_name, 1009, Current, 0, 10153);
+	RTEAINV(l_feature_name, 1009, Current, 0, 10157);
 	RTSA(dtype);
 	RTME(dtype, 0);
 	RTIT("wsf_request_set", Current);

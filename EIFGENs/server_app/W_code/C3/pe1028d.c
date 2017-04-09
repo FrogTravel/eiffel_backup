@@ -93,7 +93,7 @@ void Init1028(void)
 {
 	IDSC(desc_1028, 0, 1027);
 	IDSC(desc_1028 + 1, 1, 1027);
-	IDSC(desc_1028 + 32, 504, 1027);
+	IDSC(desc_1028 + 32, 507, 1027);
 }
 
 

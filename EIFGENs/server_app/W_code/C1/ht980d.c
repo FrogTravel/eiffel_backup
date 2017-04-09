@@ -1,5 +1,5 @@
 /*
- * Class HTTPD_REQUEST_HANDLER_FACTORY
+ * Class HTTPD_REQUEST_HANDLER_FACTORY_I
  */
 
 #include "eif_macros.h"
@@ -23,8 +23,6 @@ static const EIF_TYPE_INDEX egt_10_980 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_980 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_980 [] = {0xFF01,979,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_980 [] = {0xFF05,1073,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_980 [] = {0xFF01,1073,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_980 [] = {0xFF05,1073,0xFFFF};
 
 
 static const struct desc_info desc_980[] = {
@@ -60,17 +58,13 @@ static const struct desc_info desc_980[] = {
 	{EIF_NON_GENERIC(0x07A7 /*979*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01BD /*222*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_980), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 13385, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_13_980), 0x00, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_14_980), 0x00, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_15_980), 0x00, 0xFFFFFFFF},
 };
 void Init980(void)
 {
 	IDSC(desc_980, 0, 979);
 	IDSC(desc_980 + 1, 1, 979);
-	IDSC(desc_980 + 32, 521, 979);
-	IDSC(desc_980 + 35, 520, 979);
+	IDSC(desc_980 + 32, 516, 979);
 }
 
 

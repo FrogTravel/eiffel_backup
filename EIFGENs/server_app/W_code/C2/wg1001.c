@@ -12,7 +12,7 @@ extern "C" {
 
 extern EIF_TYPED_VALUE F1001_7495(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F1001_7497(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern void F1001_10150(EIF_REFERENCE, int);
+extern void F1001_10154(EIF_REFERENCE, int);
 extern void EIF_Minit1001(void);
 
 #ifdef __cplusplus
@@ -66,10 +66,10 @@ EIF_TYPED_VALUE F1001_7495 (EIF_REFERENCE Current)
 	RTDBGEAA(1000, Current, 13652);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAL(Current, 0, 0xF8000459, 0,0); /* Result */
-	tr1 = RTLN(eif_new_type(1113, 0x01).id);
+	RTDBGAL(Current, 0, 0xF800045A, 0,0); /* Result */
+	tr1 = RTLN(eif_new_type(1114, 0x01).id);
 	ur1 = RTCCL(Current);
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(6975, Dtype(tr1)))(tr1, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(6979, Dtype(tr1)))(tr1, ur1x);
 	RTNHOOK(1,1);
 	Result = (EIF_REFERENCE) RTCCL(tr1);
 	RTVI(Current, RTAL);
@@ -168,7 +168,7 @@ body:;
 }
 
 /* {WGI_REQUEST}._invariant */
-void F1001_10150 (EIF_REFERENCE Current, int where)
+void F1001_10154 (EIF_REFERENCE Current, int where)
 {
 	GTCX
 	char *l_feature_name = "_invariant";
@@ -195,7 +195,7 @@ void F1001_10150 (EIF_REFERENCE Current, int where)
 	RTLIU(4);
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
-	RTEAINV(l_feature_name, 1000, Current, 0, 10149);
+	RTEAINV(l_feature_name, 1000, Current, 0, 10153);
 	RTSA(dtype);
 	RTME(dtype, 0);
 	RTIT("server_name_not_empty", Current);

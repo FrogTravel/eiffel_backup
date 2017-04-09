@@ -16,7 +16,7 @@ extern EIF_TYPED_VALUE F1009_7664(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F1009_7665(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F1009_7667(EIF_REFERENCE);
 extern void F1009_7668(EIF_REFERENCE);
-extern void F1009_10153(EIF_REFERENCE, int);
+extern void F1009_10157(EIF_REFERENCE, int);
 extern void EIF_Minit1009(void);
 
 #ifdef __cplusplus
@@ -239,7 +239,7 @@ void F1009_7668 (EIF_REFERENCE Current)
 }
 
 /* {WGI_EXECUTION}._invariant */
-void F1009_10153 (EIF_REFERENCE Current, int where)
+void F1009_10157 (EIF_REFERENCE Current, int where)
 {
 	GTCX
 	char *l_feature_name = "_invariant";
@@ -257,7 +257,7 @@ void F1009_10153 (EIF_REFERENCE Current, int where)
 	RTLIU(2);
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
-	RTEAINV(l_feature_name, 1008, Current, 0, 10152);
+	RTEAINV(l_feature_name, 1008, Current, 0, 10156);
 	RTSA(dtype);
 	RTME(dtype, 0);
 	RTIT("wgi_request_set", Current);

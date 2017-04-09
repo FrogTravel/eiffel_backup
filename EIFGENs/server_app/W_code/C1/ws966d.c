@@ -1,5 +1,5 @@
 /*
- * Class WSF_ROUTER_SESSION
+ * Class WSF_REQUEST_PATH_PARAMETERS_SOURCE
  */
 
 #include "eif_macros.h"
@@ -22,6 +22,8 @@ static const EIF_TYPE_INDEX egt_9_966 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_966 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_966 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_966 [] = {0xFF01,965,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_966 [] = {0xFF01,375,0xFF01,225,0xFF01,225,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_966 [] = {269,0xFF01,1122,0xFFFF};
 
 
 static const struct desc_info desc_966[] = {
@@ -57,9 +59,10 @@ static const struct desc_info desc_966[] = {
 	{EIF_NON_GENERIC(0x078B /*965*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01BD /*222*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_966), 30, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x018D /*198*/), 13306, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x080D /*1030*/), 13307, 0},
-	{EIF_GENERIC(NULL), 13308, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x01AB /*213*/), 0x00, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_966), 0x00, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_14_966), 13329, 0},
+	{EIF_GENERIC(NULL), 13330, 0xFFFFFFFF},
 };
 void Init966(void)
 {

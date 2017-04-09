@@ -1,5 +1,5 @@
 /*
- * Class WSF_STARTS_WITH_HANDLER
+ * Class WSF_MIME_HANDLER
  */
 
 #include "eif_macros.h"
@@ -22,7 +22,6 @@ static const EIF_TYPE_INDEX egt_9_1033 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1033 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1033 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1033 [] = {0xFF01,1032,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1033 [] = {0xFF01,1117,0xFFFF};
 
 
 static const struct desc_info desc_1033[] = {
@@ -58,18 +57,14 @@ static const struct desc_info desc_1033[] = {
 	{EIF_NON_GENERIC(0x0811 /*1032*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01BD /*222*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1033), 30, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x018D /*198*/), 13964, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 13965, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x018D /*198*/), 0x00, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 0x00, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1033), 13972, 0xFFFFFFFF},
 };
 void Init1033(void)
 {
 	IDSC(desc_1033, 0, 1032);
 	IDSC(desc_1033 + 1, 1, 1032);
-	IDSC(desc_1033 + 32, 429, 1032);
-	IDSC(desc_1033 + 34, 391, 1032);
-	IDSC(desc_1033 + 35, 458, 1032);
+	IDSC(desc_1033 + 32, 427, 1032);
 }
 
 

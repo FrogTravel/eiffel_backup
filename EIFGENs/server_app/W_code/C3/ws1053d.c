@@ -22,7 +22,7 @@ static const EIF_TYPE_INDEX egt_9_1053 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1053 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1053 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1053 [] = {0xFF01,1052,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1053 [] = {0xFF01,1097,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1053 [] = {0xFF01,1098,0xFFFF};
 static const EIF_TYPE_INDEX egt_14_1053 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_15_1053 [] = {0xFF01,274,0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_16_1053 [] = {0xFF01,225,0xFFFF};
@@ -90,7 +90,7 @@ void Init1053(void)
 	IDSC(desc_1053, 0, 1052);
 	IDSC(desc_1053 + 1, 1, 1052);
 	IDSC(desc_1053 + 32, 366, 1052);
-	IDSC(desc_1053 + 53, 369, 1052);
+	IDSC(desc_1053 + 53, 368, 1052);
 }
 
 

@@ -1,5 +1,5 @@
 /*
- * Code for class HTTPD_REQUEST_HANDLER_FACTORY_I
+ * Code for class HTTPD_LOGGER
  */
 
 #include "eif_eiffel.h"

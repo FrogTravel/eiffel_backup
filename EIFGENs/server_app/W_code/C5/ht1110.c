@@ -1,5 +1,5 @@
 /*
- * Code for class HTTPD_STREAM_SECURE_SOCKET
+ * Code for class HTTPD_STREAM_SOCKET
  */
 
 #include "eif_eiffel.h"

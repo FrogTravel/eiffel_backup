@@ -182,7 +182,7 @@ void Init999(void)
 {
 	IDSC(desc_999, 0, 998);
 	IDSC(desc_999 + 1, 1, 998);
-	IDSC(desc_999 + 32, 456, 998);
+	IDSC(desc_999 + 32, 420, 998);
 }
 
 

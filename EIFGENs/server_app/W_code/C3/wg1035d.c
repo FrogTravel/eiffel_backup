@@ -23,7 +23,7 @@ static const EIF_TYPE_INDEX egt_10_1035 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1035 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1035 [] = {0xFF01,1034,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_1035 [] = {258,0xFF01,0xFFF9,0,181,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_1035 [] = {0xFF01,982,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_1035 [] = {0xFF01,983,0xFFFF};
 
 
 static const struct desc_info desc_1035[] = {
@@ -80,7 +80,7 @@ static const struct desc_info desc_1035[] = {
 	{EIF_GENERIC(NULL), 13994, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 13978, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_14_1035), 13976, 8},
-	{EIF_NON_GENERIC(0x07A9 /*980*/), 13977, 16},
+	{EIF_NON_GENERIC(0x07AB /*981*/), 13977, 16},
 	{EIF_NON_GENERIC(0x01C3 /*225*/), 13987, 24},
 	{EIF_NON_GENERIC(0x01AB /*213*/), 13986, 36},
 	{EIF_NON_GENERIC(0x018D /*198*/), 13982, 32},
@@ -92,7 +92,7 @@ void Init1035(void)
 	IDSC(desc_1035, 0, 1034);
 	IDSC(desc_1035 + 1, 1, 1034);
 	IDSC(desc_1035 + 32, 411, 1034);
-	IDSC(desc_1035 + 51, 546, 1034);
+	IDSC(desc_1035 + 51, 535, 1034);
 }
 
 

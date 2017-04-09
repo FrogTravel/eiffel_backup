@@ -69,7 +69,7 @@ extern void F1002_7597(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F1002_7598(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern EIF_TYPED_VALUE F1002_7599(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern EIF_TYPED_VALUE F1002_7600(EIF_REFERENCE);
-extern void F1002_10151(EIF_REFERENCE, int);
+extern void F1002_10155(EIF_REFERENCE, int);
 extern void EIF_Minit1002(void);
 
 #ifdef __cplusplus
@@ -3106,7 +3106,7 @@ EIF_TYPED_VALUE F1002_7600 (EIF_REFERENCE Current)
 
 
 /* {WGI_REQUEST_FROM_TABLE}._invariant */
-void F1002_10151 (EIF_REFERENCE Current, int where)
+void F1002_10155 (EIF_REFERENCE Current, int where)
 {
 	GTCX
 	char *l_feature_name = "_invariant";
@@ -3125,7 +3125,7 @@ void F1002_10151 (EIF_REFERENCE Current, int where)
 	RTLIU(2);
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
-	RTEAINV(l_feature_name, 1001, Current, 0, 10150);
+	RTEAINV(l_feature_name, 1001, Current, 0, 10154);
 	RTSA(dtype);
 	RTME(dtype, 0);
 	RTIT("empty_string_unchanged", Current);

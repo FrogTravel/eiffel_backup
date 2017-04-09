@@ -1,5 +1,5 @@
 /*
- * Class COMMANDS_CLIENT
+ * Class COMMANDS
  */
 
 #include "eif_macros.h"
@@ -63,16 +63,14 @@ static const struct desc_info desc_1004[] = {
 	{EIF_GENERIC(egt_13_1004), 13715, 0},
 	{EIF_GENERIC(egt_14_1004), 13716, 8},
 	{EIF_NON_GENERIC(0x01AB /*213*/), 13717, 16},
-	{EIF_GENERIC(NULL), 13719, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 0x00, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 13718, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 13720, 0xFFFFFFFF},
 };
 void Init1004(void)
 {
 	IDSC(desc_1004, 0, 1003);
 	IDSC(desc_1004 + 1, 1, 1003);
-	IDSC(desc_1004 + 32, 406, 1003);
-	IDSC(desc_1004 + 38, 368, 1003);
+	IDSC(desc_1004 + 32, 392, 1003);
 }
 
 

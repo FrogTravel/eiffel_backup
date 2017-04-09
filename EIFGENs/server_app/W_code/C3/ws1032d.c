@@ -1,5 +1,5 @@
 /*
- * Class WSF_ROUTING_HANDLER
+ * Class WSF_STARTS_WITH_HANDLER
  */
 
 #include "eif_macros.h"
@@ -22,7 +22,7 @@ static const EIF_TYPE_INDEX egt_9_1032 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1032 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1032 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1032 [] = {0xFF01,1031,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1032 [] = {0xFF01,1087,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1032 [] = {0xFF01,1118,0xFFFF};
 
 
 static const struct desc_info desc_1032[] = {
@@ -60,19 +60,16 @@ static const struct desc_info desc_1032[] = {
 	{EIF_GENERIC(egt_12_1032), 30, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x018D /*198*/), 13964, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 13965, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 13966, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_1032), 13967, 0},
-	{EIF_NON_GENERIC(0x01AB /*213*/), 13968, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x01C3 /*225*/), 13969, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 13970, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 13971, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 0x00, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_1032), 13972, 0xFFFFFFFF},
 };
 void Init1032(void)
 {
 	IDSC(desc_1032, 0, 1031);
 	IDSC(desc_1032 + 1, 1, 1031);
-	IDSC(desc_1032 + 32, 429, 1031);
-	IDSC(desc_1032 + 34, 487, 1031);
+	IDSC(desc_1032 + 32, 460, 1031);
+	IDSC(desc_1032 + 34, 403, 1031);
+	IDSC(desc_1032 + 35, 464, 1031);
 }
 
 

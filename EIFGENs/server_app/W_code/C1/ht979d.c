@@ -1,5 +1,5 @@
 /*
- * Class HTTPD_REQUEST_HANDLER_FACTORY_I
+ * Class HTTPD_LOGGER
  */
 
 #include "eif_macros.h"
@@ -22,7 +22,6 @@ static const EIF_TYPE_INDEX egt_9_979 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_979 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_979 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_979 [] = {0xFF01,978,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_979 [] = {0xFF05,1073,0xFFFF};
 
 
 static const struct desc_info desc_979[] = {
@@ -58,13 +57,13 @@ static const struct desc_info desc_979[] = {
 	{EIF_NON_GENERIC(0x07A5 /*978*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01BD /*222*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_979), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_979), 0x00, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 0x00, 0xFFFFFFFF},
 };
 void Init979(void)
 {
 	IDSC(desc_979, 0, 978);
 	IDSC(desc_979 + 1, 1, 978);
-	IDSC(desc_979 + 32, 520, 978);
+	IDSC(desc_979 + 32, 522, 978);
 }
 
 

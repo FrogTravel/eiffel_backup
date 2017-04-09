@@ -22,11 +22,11 @@ static const EIF_TYPE_INDEX egt_9_1056 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1056 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1056 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1056 [] = {0xFF01,1055,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1056 [] = {0xFF05,979,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1056 [] = {0xFF05,980,0xFFFF};
 static const EIF_TYPE_INDEX egt_14_1056 [] = {0xFF05,1074,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_1056 [] = {0xFF05,979,0xFFFF};
-static const EIF_TYPE_INDEX egt_16_1056 [] = {0xFF05,1108,0xFFFF};
-static const EIF_TYPE_INDEX egt_17_1056 [] = {0xFF05,1155,0xFF01,1073,0xFFFF};
+static const EIF_TYPE_INDEX egt_15_1056 [] = {0xFF05,980,0xFFFF};
+static const EIF_TYPE_INDEX egt_16_1056 [] = {0xFF05,1109,0xFFFF};
+static const EIF_TYPE_INDEX egt_17_1056 [] = {0xFF05,1154,0xFF01,1073,0xFFFF};
 
 
 static const struct desc_info desc_1056[] = {
@@ -89,9 +89,9 @@ void Init1056(void)
 {
 	IDSC(desc_1056, 0, 1055);
 	IDSC(desc_1056 + 1, 1, 1055);
-	IDSC(desc_1056 + 32, 510, 1055);
-	IDSC(desc_1056 + 34, 535, 1055);
-	IDSC(desc_1056 + 45, 507, 1055);
+	IDSC(desc_1056 + 32, 521, 1055);
+	IDSC(desc_1056 + 34, 549, 1055);
+	IDSC(desc_1056 + 45, 520, 1055);
 }
 
 

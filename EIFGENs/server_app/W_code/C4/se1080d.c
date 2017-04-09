@@ -24,7 +24,7 @@ static const EIF_TYPE_INDEX egt_11_1080 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1080 [] = {0xFF01,1079,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_1080 [] = {0xFF01,1082,0xFFFF};
 static const EIF_TYPE_INDEX egt_14_1080 [] = {0xFF01,225,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_1080 [] = {0xFF01,976,0xFFFF};
+static const EIF_TYPE_INDEX egt_15_1080 [] = {0xFF01,977,0xFFFF};
 
 
 static const struct desc_info desc_1080[] = {
@@ -74,7 +74,7 @@ void Init1080(void)
 	IDSC(desc_1080, 0, 1079);
 	IDSC(desc_1080 + 1, 1, 1079);
 	IDSC(desc_1080 + 32, 40, 1079);
-	IDSC(desc_1080 + 35, 432, 1079);
+	IDSC(desc_1080 + 35, 426, 1079);
 }
 
 

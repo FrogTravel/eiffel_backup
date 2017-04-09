@@ -1,4 +1,4 @@
-INCLUDE_PATH =  -I"C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL\library\time\spec\include" -I"c:\program files\eiffel software\eiffelstudio 17.01 gpl\contrib\library\network\http_network/spec/include"
+INCLUDE_PATH =  -I"C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL\library\time\spec\include" -I"C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL/unstable/library/persistency/database/sqlite3/spec/include" -I"-DSQLITE_THREADSAFE=1" -I"c:\program files\eiffel software\eiffelstudio 17.01 gpl\contrib\library\network\http_network/spec/include"
 SHELL = /bin/sh
 CC = "C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL/gcc/win64/mingw/bin/gcc"
 CPP = "C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL/gcc/win64/mingw/bin/gcc"
@@ -28,7 +28,7 @@ COMMAND_MAKEFILE =
 START_TEST = if [ ! -f finished ] ; then 
 END_TEST = ; fi 
 CREATE_TEST = "C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL/gcc/win64/msys/1.0/bin/touch" finished
-PATH := C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL/gcc/win64/mingw/libexec/gcc/mingw32/3.4.2;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Users\Ekaterina\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\MobileRobots\Aria\bin64;C:\sqlite 
+PATH := C:\Program Files\Eiffel Software\EiffelStudio 17.01 GPL/gcc/win64/mingw/libexec/gcc/mingw32/3.4.2;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Users\Ekaterina\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\MobileRobots\Aria\bin64;C:\sqlite 
 SYSTEM_IN_DYNAMIC_LIB = server_app.dll 
 
 .SUFFIXES:.cpp .o 
@@ -41,16 +41,16 @@ SYSTEM_IN_DYNAMIC_LIB = server_app.dll
 
 OBJECTS = big_file_C3_c.o 
 
-OLDOBJECTS =  ht1043.o ht1043d.o ws1053.o ws1053d.o ws1052.o ws1052d.o ws1050.o \
-	ws1050d.o ws1051.o ws1051d.o ht1040.o ht1040d.o ht1039.o ht1039d.o \
-	ws1033.o ws1033d.o sh1049.o sh1049d.o wg1038.o wg1038d.o wg1034.o \
-	wg1034d.o da1023.o da1023d.o ws1031.o ws1031d.o ws1030.o ws1030d.o \
-	wg1037.o wg1037d.o ht1044.o ht1044d.o ws1029.o ws1029d.o ba1048.o \
-	ba1048d.o da1024.o da1024d.o ws1032.o ws1032d.o ht1041.o ht1041d.o \
-	pe1028.o pe1028d.o in1046.o in1046d.o in1025.o in1025d.o ht1054.o \
-	ht1054d.o wg1036.o wg1036d.o wg1042.o wg1042d.o ht1055.o ht1055d.o \
-	in1027.o in1027d.o in1026.o in1026d.o so1045.o so1045d.o wg1035.o \
-	wg1035d.o ne1047.o ne1047d.o 
+OLDOBJECTS =  ws1053.o ws1053d.o ws1052.o ws1052d.o ws1050.o ws1050d.o wg1044.o \
+	wg1044d.o ht1040.o ht1040d.o ht1039.o ht1039d.o ws1051.o ws1051d.o \
+	ht1038.o ht1038d.o ws1032.o ws1032d.o sh1049.o sh1049d.o wg1034.o \
+	wg1034d.o ws1033.o ws1033d.o ht1041.o ht1041d.o wg1037.o wg1037d.o \
+	ba1048.o ba1048d.o da1024.o da1024d.o ws1030.o ws1030d.o ws1029.o \
+	ws1029d.o ht1042.o ht1042d.o da1023.o da1023d.o ws1031.o ws1031d.o \
+	pe1028.o pe1028d.o wg1036.o wg1036d.o wg1043.o wg1043d.o in1025.o \
+	in1025d.o in1046.o in1046d.o ht1054.o ht1054d.o wg1035.o wg1035d.o \
+	in1027.o in1027d.o in1026.o in1026d.o so1045.o so1045d.o ht1055.o \
+	ht1055d.o ne1047.o ne1047d.o 
 
 all::  Cobj3.o
 

@@ -88,7 +88,7 @@ void Init1016(void)
 {
 	IDSC(desc_1016, 0, 1015);
 	IDSC(desc_1016 + 1, 1, 1015);
-	IDSC(desc_1016 + 32, 525, 1015);
+	IDSC(desc_1016 + 32, 533, 1015);
 }
 
 

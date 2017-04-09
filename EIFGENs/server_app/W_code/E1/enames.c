@@ -5492,25 +5492,25 @@ char *names962 [] =
 
 char *names963 [] =
 {
-"description",
-"code",
+"dispatched_handler",
 };
 
 char *names964 [] =
 {
-"path_parameters",
+"internal_item",
+"is_utc",
+"microseconds_now",
+};
+
+char *names965 [] =
+{
+"description",
+"code",
 };
 
 char *names966 [] =
 {
-"dispatched_handler",
-};
-
-char *names967 [] =
-{
-"internal_item",
-"is_utc",
-"microseconds_now",
+"path_parameters",
 };
 
 char *names968 [] =
@@ -5525,17 +5525,17 @@ char *names969 [] =
 "is_hidden",
 };
 
-char *names970 [] =
+char *names972 [] =
 {
 "socket_address",
 };
 
-char *names974 [] =
+char *names975 [] =
 {
 "pool",
 };
 
-char *names976 [] =
+char *names977 [] =
 {
 "vary_header_value",
 "supported_variants",
@@ -5543,7 +5543,7 @@ char *names976 [] =
 "is_acceptable",
 };
 
-char *names977 [] =
+char *names978 [] =
 {
 "vary_header_value",
 "supported_variants",
@@ -5551,13 +5551,13 @@ char *names977 [] =
 "is_acceptable",
 };
 
-char *names982 [] =
+char *names983 [] =
 {
 "identifier",
 "output",
 };
 
-char *names983 [] =
+char *names984 [] =
 {
 "http_version",
 };
@@ -5594,12 +5594,12 @@ char *names990 [] =
 "port",
 };
 
-char *names996 [] =
+char *names997 [] =
 {
 "byte_count",
 };
 
-char *names997 [] =
+char *names998 [] =
 {
 "buffer",
 "schedule",
@@ -5639,14 +5639,14 @@ char *names1002 [] =
 "server_port",
 };
 
-char *names1003 [] =
+char *names1004 [] =
 {
 "ws",
 "msg",
 "msg_frame",
 };
 
-char *names1004 [] =
+char *names1005 [] =
 {
 "ws",
 "msg",
@@ -5691,7 +5691,7 @@ char *names1020 [] =
 "fractional_second",
 };
 
-char *names1023 [] =
+char *names1024 [] =
 {
 "time",
 "date",
@@ -5706,18 +5706,18 @@ char *names1025 [] =
 char *names1026 [] =
 {
 "internal_host_name",
-"the_address",
-"the_scope_ifname",
-"is_scope_id_set",
 "family",
-"the_scope_id",
+"the_address",
 };
 
 char *names1027 [] =
 {
 "internal_host_name",
-"family",
 "the_address",
+"the_scope_ifname",
+"is_scope_id_set",
+"family",
+"the_scope_id",
 };
 
 char *names1028 [] =
@@ -5730,7 +5730,7 @@ char *names1029 [] =
 "has_error",
 };
 
-char *names1032 [] =
+char *names1031 [] =
 {
 "router",
 };
@@ -5773,7 +5773,7 @@ char *names1037 [] =
 "wgi_response",
 };
 
-char *names1042 [] =
+char *names1043 [] =
 {
 "http_version",
 "target",
@@ -5837,7 +5837,19 @@ char *names1056 [] =
 "is_shutdown_requested",
 };
 
-char *names1059 [] =
+char *names1058 [] =
+{
+"document_root",
+"index_ignores_function",
+"directory_index",
+"not_found_handler",
+"access_denied_handler",
+"is_hidden",
+"index_disabled",
+"max_age",
+};
+
+char *names1061 [] =
 {
 "wgi_response",
 "internal_header",
@@ -5848,23 +5860,11 @@ char *names1059 [] =
 "transfered_content_length",
 };
 
-char *names1060 [] =
+char *names1062 [] =
 {
 "post_commit_action",
 "wgi_response",
 "wsf_response",
-};
-
-char *names1062 [] =
-{
-"document_root",
-"index_ignores_function",
-"directory_index",
-"not_found_handler",
-"access_denied_handler",
-"is_hidden",
-"index_disabled",
-"max_age",
 };
 
 char *names1063 [] =
@@ -5898,24 +5898,24 @@ char *names1065 [] =
 
 char *names1067 [] =
 {
+"origin_date",
+"year",
+"month",
+"day",
+};
+
+char *names1068 [] =
+{
 "minute",
 "hour",
 "fine_second",
 };
 
-char *names1068 [] =
+char *names1069 [] =
 {
 "origin_date_time",
 "time",
 "date",
-};
-
-char *names1069 [] =
-{
-"origin_date",
-"year",
-"month",
-"day",
 };
 
 char *names1072 [] =
@@ -6062,14 +6062,9 @@ char *names1089 [] =
 "is_locked",
 };
 
-char *names1092 [] =
+char *names1091 [] =
 {
 "response",
-};
-
-char *names1093 [] =
-{
-"options",
 };
 
 char *names1094 [] =
@@ -6088,6 +6083,11 @@ char *names1096 [] =
 };
 
 char *names1097 [] =
+{
+"options",
+};
+
+char *names1098 [] =
 {
 "found_item",
 "content",
@@ -6109,11 +6109,6 @@ char *names1097 [] =
 "count",
 };
 
-char *names1098 [] =
-{
-"headers",
-};
-
 char *names1099 [] =
 {
 "headers",
@@ -6121,7 +6116,7 @@ char *names1099 [] =
 
 char *names1100 [] =
 {
-"object_ptr",
+"headers",
 };
 
 char *names1101 [] =
@@ -6136,31 +6131,7 @@ char *names1102 [] =
 
 char *names1103 [] =
 {
-"last_string",
-"address",
-"peer_address",
-"socket_error",
-"internal_socket_buffer",
-"last_character",
-"last_boolean",
-"is_blocking",
-"is_open_read",
-"is_open_write",
-"descriptor_available",
-"last_natural_8",
-"last_integer_8",
-"last_natural_16",
-"last_integer_16",
-"last_natural",
-"last_integer",
-"bytes_read",
-"family",
-"protocol",
-"type",
-"last_real",
-"last_natural_64",
-"last_integer_64",
-"last_double",
+"object_ptr",
 };
 
 char *names1104 [] =
@@ -6170,7 +6141,6 @@ char *names1104 [] =
 "peer_address",
 "socket_error",
 "internal_socket_buffer",
-"accepted",
 "last_character",
 "last_boolean",
 "is_blocking",
@@ -6200,16 +6170,13 @@ char *names1105 [] =
 "peer_address",
 "socket_error",
 "internal_socket_buffer",
+"accepted",
 "last_character",
 "last_boolean",
 "is_blocking",
 "is_open_read",
 "is_open_write",
 "descriptor_available",
-"is_created",
-"is_connected",
-"is_bound",
-"is_closed",
 "last_natural_8",
 "last_integer_8",
 "last_natural_16",
@@ -6220,11 +6187,6 @@ char *names1105 [] =
 "family",
 "protocol",
 "type",
-"timeout",
-"fd",
-"fd1",
-"last_fd",
-"internal_port",
 "last_real",
 "last_natural_64",
 "last_integer_64",
@@ -6238,7 +6200,6 @@ char *names1106 [] =
 "peer_address",
 "socket_error",
 "internal_socket_buffer",
-"accepted",
 "last_character",
 "last_boolean",
 "is_blocking",
@@ -6264,8 +6225,6 @@ char *names1106 [] =
 "fd1",
 "last_fd",
 "internal_port",
-"connect_timeout",
-"accept_timeout",
 "last_real",
 "last_natural_64",
 "last_integer_64",
@@ -6307,7 +6266,6 @@ char *names1107 [] =
 "internal_port",
 "connect_timeout",
 "accept_timeout",
-"bytes_sent",
 "last_real",
 "last_natural_64",
 "last_integer_64",
@@ -6442,18 +6400,60 @@ char *names1110 [] =
 
 char *names1111 [] =
 {
+"last_string",
+"address",
+"peer_address",
+"socket_error",
+"internal_socket_buffer",
+"accepted",
+"last_character",
+"last_boolean",
+"is_blocking",
+"is_open_read",
+"is_open_write",
+"descriptor_available",
+"is_created",
+"is_connected",
+"is_bound",
+"is_closed",
+"last_natural_8",
+"last_integer_8",
+"last_natural_16",
+"last_integer_16",
+"last_natural",
+"last_integer",
+"bytes_read",
+"family",
+"protocol",
+"type",
+"timeout",
+"fd",
+"fd1",
+"last_fd",
+"internal_port",
+"connect_timeout",
+"accept_timeout",
+"bytes_sent",
+"last_real",
+"last_natural_64",
+"last_integer_64",
+"last_double",
+};
+
+char *names1112 [] =
+{
 "entity",
 "fitness",
 "quality",
 };
 
-char *names1112 [] =
+char *names1113 [] =
 {
 "mapping",
 "request_methods",
 };
 
-char *names1113 [] =
+char *names1114 [] =
 {
 "value",
 "name",
@@ -6466,7 +6466,7 @@ char *names1113 [] =
 "type",
 };
 
-char *names1114 [] =
+char *names1115 [] =
 {
 "auth_type",
 "content_length",
@@ -6488,22 +6488,12 @@ char *names1114 [] =
 "server_port",
 };
 
-char *names1115 [] =
+char *names1116 [] =
 {
 "date_time",
 "internal_rfc1123_string",
 "has_error",
 "internal_timestamp",
-};
-
-char *names1116 [] =
-{
-"type",
-"subtype",
-"parameters",
-"internal_string",
-"internal_simple_type",
-"has_error",
 };
 
 char *names1117 [] =
@@ -6516,38 +6506,48 @@ char *names1117 [] =
 "has_error",
 };
 
-char *names1120 [] =
+char *names1118 [] =
 {
-"uri",
+"type",
+"subtype",
+"parameters",
+"internal_string",
+"internal_simple_type",
+"has_error",
 };
 
 char *names1121 [] =
 {
 "uri",
+};
+
+char *names1122 [] =
+{
+"uri",
 "handler",
 };
 
-char *names1123 [] =
+char *names1124 [] =
 {
 "value",
 "url_encoded_name",
 "name",
 };
 
-char *names1124 [] =
+char *names1125 [] =
 {
 "values",
 "name",
 };
 
-char *names1125 [] =
+char *names1126 [] =
 {
 "values",
 "url_encoded_name",
 "name",
 };
 
-char *names1126 [] =
+char *names1127 [] =
 {
 "url_encoded_value",
 "internal_name",
@@ -6555,7 +6555,7 @@ char *names1126 [] =
 "url_encoded_name",
 };
 
-char *names1127 [] =
+char *names1128 [] =
 {
 "filename",
 "content_type",
@@ -6567,7 +6567,7 @@ char *names1127 [] =
 "error",
 };
 
-char *names1128 [] =
+char *names1129 [] =
 {
 "id",
 "errors",
@@ -6576,7 +6576,12 @@ char *names1128 [] =
 "propagations",
 };
 
-char *names1129 [] =
+char *names1130 [] =
+{
+"mapping",
+};
+
+char *names1131 [] =
 {
 "payload_data",
 "error",
@@ -6588,29 +6593,6 @@ char *names1129 [] =
 "fragment_count",
 "last_utf_8_stream_validation_position",
 "payload_length",
-};
-
-char *names1130 [] =
-{
-"mapping",
-};
-
-char *names1132 [] =
-{
-"http_server_name",
-"secure_certificate",
-"secure_certificate_key",
-"is_verbose",
-"is_secure",
-"secure_protocol",
-"http_server_port",
-"max_tcp_clients",
-"socket_timeout",
-"socket_recv_timeout",
-"max_concurrent_connections",
-"verbose_level",
-"keep_alive_timeout",
-"max_keep_alive_requests",
 };
 
 char *names1133 [] =
@@ -6633,22 +6615,32 @@ char *names1133 [] =
 
 char *names1134 [] =
 {
-"parent",
+"http_server_name",
+"secure_certificate",
+"secure_certificate_key",
+"is_verbose",
+"is_secure",
+"secure_protocol",
+"http_server_port",
+"max_tcp_clients",
+"socket_timeout",
+"socket_recv_timeout",
+"max_concurrent_connections",
+"verbose_level",
+"keep_alive_timeout",
+"max_keep_alive_requests",
 };
 
 char *names1135 [] =
 {
 "parent",
-"sub_errors",
-"name",
 };
 
 char *names1136 [] =
 {
 "parent",
-"message",
+"sub_errors",
 "name",
-"code",
 };
 
 char *names1137 [] =
@@ -6659,7 +6651,15 @@ char *names1137 [] =
 "code",
 };
 
-char *names1139 [] =
+char *names1138 [] =
+{
+"parent",
+"message",
+"name",
+"code",
+};
+
+char *names1140 [] =
 {
 "wgi_request",
 "raw_input_data",
@@ -6687,6 +6687,16 @@ char *names1139 [] =
 
 char *names1144 [] =
 {
+"ordered_compact_date",
+};
+
+char *names1145 [] =
+{
+"ordered_compact_date",
+};
+
+char *names1147 [] =
+{
 "value",
 "days",
 "months",
@@ -6696,36 +6706,26 @@ char *names1144 [] =
 "base_century",
 };
 
-char *names1145 [] =
-{
-"compact_time",
-"fractional_second",
-};
-
-char *names1146 [] =
-{
-"compact_time",
-"fractional_second",
-};
-
-char *names1147 [] =
-{
-"ordered_compact_date",
-};
-
 char *names1148 [] =
 {
-"ordered_compact_date",
+"compact_time",
+"fractional_second",
 };
 
 char *names1149 [] =
 {
 "compact_time",
-"ordered_compact_date",
 "fractional_second",
 };
 
 char *names1150 [] =
+{
+"compact_time",
+"ordered_compact_date",
+"fractional_second",
+};
+
+char *names1151 [] =
 {
 "source_string",
 "day_text_val",
@@ -6745,7 +6745,7 @@ char *names1150 [] =
 "fine_second_val",
 };
 
-char *names1151 [] =
+char *names1152 [] =
 {
 "time",
 "date",
@@ -6754,18 +6754,13 @@ char *names1151 [] =
 "fractional_second",
 };
 
-char *names1154 [] =
+char *names1153 [] =
 {
 "start_bound",
 "end_bound",
 };
 
 char *names1155 [] =
-{
-"internal_name",
-};
-
-char *names1156 [] =
 {
 "items",
 "busy_items",
@@ -6774,7 +6769,57 @@ char *names1156 [] =
 "capacity",
 };
 
+char *names1157 [] =
+{
+"internal_name",
+};
+
 char *names1158 [] =
+{
+"options",
+"on_launched_actions",
+"on_stopped_actions",
+"server_name",
+"base_url",
+"secure_settings",
+"connector",
+"verbose",
+"port_number",
+"verbose_level",
+"max_concurrent_connections",
+"max_tcp_clients",
+"socket_timeout",
+"socket_recv_timeout",
+"keep_alive_timeout",
+"max_keep_alive_requests",
+};
+
+char *names1159 [] =
+{
+"options",
+"on_launched_actions",
+"on_stopped_actions",
+"server_name",
+"base_url",
+"secure_settings",
+"connector",
+"verbose",
+"port_number",
+"verbose_level",
+"max_concurrent_connections",
+"max_tcp_clients",
+"socket_timeout",
+"socket_recv_timeout",
+"keep_alive_timeout",
+"max_keep_alive_requests",
+};
+
+char *names1160 [] =
+{
+"options",
+};
+
+char *names1161 [] =
 {
 "server",
 "request_handler_factory",
@@ -6787,13 +6832,13 @@ char *names1158 [] =
 "port",
 };
 
-char *names1159 [] =
+char *names1162 [] =
 {
 "connector",
 "request_settings",
 };
 
-char *names1160 [] =
+char *names1163 [] =
 {
 "pool",
 "internal_client_socket",
@@ -6817,51 +6862,6 @@ char *names1160 [] =
 "keep_alive_timeout",
 };
 
-char *names1161 [] =
-{
-"options",
-"on_launched_actions",
-"on_stopped_actions",
-"server_name",
-"base_url",
-"secure_settings",
-"connector",
-"verbose",
-"port_number",
-"verbose_level",
-"max_concurrent_connections",
-"max_tcp_clients",
-"socket_timeout",
-"socket_recv_timeout",
-"keep_alive_timeout",
-"max_keep_alive_requests",
-};
-
-char *names1162 [] =
-{
-"options",
-"on_launched_actions",
-"on_stopped_actions",
-"server_name",
-"base_url",
-"secure_settings",
-"connector",
-"verbose",
-"port_number",
-"verbose_level",
-"max_concurrent_connections",
-"max_tcp_clients",
-"socket_timeout",
-"socket_recv_timeout",
-"keep_alive_timeout",
-"max_keep_alive_requests",
-};
-
-char *names1163 [] =
-{
-"options",
-};
-
 char *names1164 [] =
 {
 "server",
@@ -6873,6 +6873,214 @@ char *names1164 [] =
 "on_launched_actions",
 "launched",
 "port",
+};
+
+char *names1173 [] =
+{
+"db",
+"db_insert_statement",
+"query",
+"db_query",
+"iterator",
+};
+
+char *names1176 [] =
+{
+"file_path",
+};
+
+char *names1178 [] =
+{
+"recipient_name",
+"type_name",
+"throwing_exception",
+"c_description",
+"internal_trace",
+"tag",
+"internal_is_ignorable",
+"line_number",
+"internal_code",
+};
+
+char *names1179 [] =
+{
+"recipient_name",
+"type_name",
+"throwing_exception",
+"c_description",
+"internal_trace",
+"tag",
+"internal_is_ignorable",
+"line_number",
+"internal_code",
+};
+
+char *names1185 [] =
+{
+"statement",
+"index",
+"statement_mark",
+};
+
+char *names1186 [] =
+{
+"source",
+"commit_action",
+"rollback_action",
+"update_action",
+"progress_handler",
+"busy_handler",
+"is_in_transaction",
+"busy_timeout",
+"internal_flags",
+"internal_lock_count",
+"internal_db",
+"internal_thread_id",
+"internal_progress_handler_data",
+"internal_busy_handler_data",
+};
+
+char *names1189 [] =
+{
+"statement",
+"bindings",
+"internal_item",
+"has_started",
+"last_result",
+};
+
+char *names1190 [] =
+{
+"string",
+"database",
+"statement_string",
+"next_statement",
+"last_exception",
+"is_executing",
+"is_abort_requested",
+"mark",
+"internal_changes_count",
+"internal_thread_id",
+"internal_stmt",
+"internal_db",
+};
+
+char *names1191 [] =
+{
+"string",
+"database",
+"statement_string",
+"next_statement",
+"last_exception",
+"internal_column_names",
+"is_executing",
+"is_abort_requested",
+"mark",
+"internal_changes_count",
+"internal_thread_id",
+"internal_stmt",
+"internal_db",
+};
+
+char *names1192 [] =
+{
+"string",
+"database",
+"statement_string",
+"next_statement",
+"last_exception",
+"is_executing",
+"is_abort_requested",
+"mark",
+"internal_changes_count",
+"internal_thread_id",
+"internal_stmt",
+"internal_db",
+};
+
+char *names1193 [] =
+{
+"string",
+"database",
+"statement_string",
+"next_statement",
+"last_exception",
+"is_executing",
+"is_abort_requested",
+"mark",
+"internal_changes_count",
+"internal_thread_id",
+"internal_stmt",
+"internal_db",
+"last_row_id",
+};
+
+char *names1194 [] =
+{
+"maximum_variable_index_number",
+};
+
+char *names1195 [] =
+{
+"variable",
+"value",
+"internal_value",
+};
+
+char *names1196 [] =
+{
+"variable",
+"value",
+"internal_value",
+};
+
+char *names1197 [] =
+{
+"variable",
+"value",
+"internal_value",
+};
+
+char *names1198 [] =
+{
+"variable",
+"value",
+};
+
+char *names1199 [] =
+{
+"variable",
+"value",
+};
+
+char *names1200 [] =
+{
+"variable",
+"value",
+};
+
+char *names1201 [] =
+{
+"variable",
+"value",
+};
+
+char *names1202 [] =
+{
+"variable",
+"value",
+};
+
+char *names1203 [] =
+{
+"variable",
+"value",
+};
+
+char *names1204 [] =
+{
+"variable",
+"value",
 };
 
 

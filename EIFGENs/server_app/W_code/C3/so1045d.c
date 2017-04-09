@@ -157,7 +157,7 @@ void Init1045(void)
 {
 	IDSC(desc_1045, 0, 1044);
 	IDSC(desc_1045 + 1, 1, 1044);
-	IDSC(desc_1045 + 32, 544, 1044);
+	IDSC(desc_1045 + 32, 547, 1044);
 }
 
 

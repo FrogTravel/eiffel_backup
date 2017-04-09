@@ -32,11 +32,16 @@ feature
 		local
 			server_cmd:COMMANDS_CLIENT
 			parser: DATA_CLIENT_PARSER
+			db_helper: DB_HELPER
 		do
 			create server_cmd.send_message (ws, a_message,text_frame)
 			create parser
 
-			parser.parse(a_message)
+			if a_message.starts_with ("query1") then
+				ws.send (Text_frame, db_helper.query1 ("1995"))
+			end
+
+			parser.parse_and_save(a_message)
 			-- CALL PARSER
 			print("%N-------------"+a_message+"--------------%N")
 		end

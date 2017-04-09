@@ -1,5 +1,5 @@
 /*
- * Class WGI_STANDALONE_ERROR_STREAM
+ * Class WGI_ERROR_STREAM
  */
 
 #include "eif_macros.h"
@@ -22,8 +22,6 @@ static const EIF_TYPE_INDEX egt_9_982 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_982 [] = {0xFF01,227,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_982 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_982 [] = {0xFF01,981,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_982 [] = {0xFF01,225,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_982 [] = {0xFF01,176,0xFFFF};
 
 
 static const struct desc_info desc_982[] = {
@@ -59,19 +57,13 @@ static const struct desc_info desc_982[] = {
 	{EIF_NON_GENERIC(0x07AB /*981*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01BD /*222*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_982), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 13390, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 13391, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 13392, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_982), 13393, 0},
-	{EIF_GENERIC(egt_14_982), 13394, 8},
-	{EIF_GENERIC(NULL), 13395, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 0x00, 0xFFFFFFFF},
 };
 void Init982(void)
 {
 	IDSC(desc_982, 0, 981);
 	IDSC(desc_982 + 1, 1, 981);
-	IDSC(desc_982 + 32, 517, 981);
-	IDSC(desc_982 + 37, 513, 981);
+	IDSC(desc_982 + 32, 509, 981);
 }
 
 

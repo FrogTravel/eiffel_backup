@@ -34,14 +34,16 @@ feature {NONE} -- Initialization
 --			end
 		end
 
-		
+
 feature
-	parse(info: STRING)
+	parse_and_save(info: STRING)
 	local
 		i_string: STRING
 		check_string: STRING
+		db_helper: DB_HELPER
 	do
 		create check_string.make_empty
+		create db_helper.make
 		i_string := info
 		check_string := i_string.substring (1, 6)
 		if
@@ -55,6 +57,8 @@ feature
 				i_string := extract_info(i_string)
 			end
 		end
+
+
 	end
 
 feature --extracting information

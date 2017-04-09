@@ -86,12 +86,12 @@ void F1053_8304 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAA(Current, dtype, 6035, 0x10000000, 1); /* status_code */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5721, 1039))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5775, 1039))(Current)).it_i4);
 	*(EIF_INTEGER_32 *)(Current + RTWA(6035, dtype)) = (EIF_INTEGER_32) ti4_1;
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 6036, 0xF8000449, 0); /* header */
+	RTDBGAA(Current, dtype, 6036, 0xF800044A, 0); /* header */
 	tr1 = RTLNSMART(RTWCT(6036, dtype, Dftype(Current)).id);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(6721, Dtype(tr1)))(tr1);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(6725, Dtype(tr1)))(tr1);
 	RTNHOOK(2,1);
 	RTAR(Current, tr1);
 	*(EIF_REFERENCE *)(Current + RTWA(6036, dtype)) = (EIF_REFERENCE) RTCCL(tr1);
@@ -882,7 +882,7 @@ body:;
 	ur1 = tr1;
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(4534, "append", loc2))(loc2, ur1x);
 	RTHOOK(15);
-	RTDBGAL(Current, 1, 0xF8000449, 0, 0); /* loc1 */
+	RTDBGAL(Current, 1, 0xF800044A, 0, 0); /* loc1 */
 	loc1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6036, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTHOOK(16);
 	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6035, dtype));
@@ -903,7 +903,7 @@ body:;
 		(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(6602, "put_content_type_text_html", loc1))(loc1);
 	}
 	RTHOOK(21);
-	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6730, "string", loc1))(loc1)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6734, "string", loc1))(loc1)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	ur1 = RTCCL(tr1);
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(5446, "put_header_text", arg1))(arg1, ur1x);
 	RTHOOK(22);

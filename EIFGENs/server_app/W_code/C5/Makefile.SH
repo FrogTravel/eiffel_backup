@@ -11,7 +11,7 @@ case "$O" in
 esac
 echo "Compiling C code in C5"
 $spitshell >Makefile <<!GROK!THIS!
-INCLUDE_PATH =  -I"\$(ISE_LIBRARY)\library\time\spec\include" -I"c:\program files\eiffel software\eiffelstudio 17.01 gpl\contrib\library\network\http_network/spec/include"
+INCLUDE_PATH =  -I"\$(ISE_LIBRARY)\library\time\spec\include" -I"\$(ISE_LIBRARY)/unstable/library/persistency/database/sqlite3/spec/include" -I"-DSQLITE_THREADSAFE=1" -I"c:\program files\eiffel software\eiffelstudio 17.01 gpl\contrib\library\network\http_network/spec/include"
 SHELL = /bin/sh
 CC = $cc
 CPP = $cpp
@@ -55,16 +55,16 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C5_c.o 
 
-OLDOBJECTS =  ap1090.o ap1090d.o ws1096.o ws1096d.o ws1095.o ws1095d.o ws1093.o \
-	ws1093d.o ws1118.o ws1118d.o ws1089.o ws1089d.o ht1098.o ht1098d.o \
-	ht1115.o ht1115d.o ht1109.o ht1109d.o ws1094.o ws1094d.o ht1117.o \
-	ht1117d.o wg1114.o wg1114d.o ws1099.o ws1099d.o ht1091.o ht1091d.o \
-	ws1092.o ws1092d.o ws1121.o ws1121d.o ht1107.o ht1107d.o da1113.o \
-	da1113d.o ws1112.o ws1112d.o ht1116.o ht1116d.o ws1120.o ws1120d.o \
-	ne1106.o ne1106d.o fi1111.o fi1111d.o ht1097.o ht1097d.o ws1119.o \
-	ws1119d.o ne1105.o ne1105d.o st1104.o st1104d.o ad1101.o ad1101d.o \
-	so1103.o so1103d.o ad1102.o ad1102d.o ex1100.o ex1100d.o ht1110.o \
-	ht1110d.o ht1108.o ht1108d.o 
+OLDOBJECTS =  ap1093.o ap1093d.o ws1097.o ws1097d.o ws1096.o ws1096d.o da1092.o \
+	da1092d.o ws1094.o ws1094d.o ht1110.o ht1110d.o ht1099.o ht1099d.o \
+	ht1116.o ht1116d.o ws1119.o ws1119d.o ws1089.o ws1089d.o ws1095.o \
+	ws1095d.o ht1108.o ht1108d.o ht1090.o ht1090d.o wg1115.o wg1115d.o \
+	ht1118.o ht1118d.o ws1091.o ws1091d.o ws1100.o ws1100d.o ne1107.o \
+	ne1107d.o ht1117.o ht1117d.o da1114.o da1114d.o ws1113.o ws1113d.o \
+	ws1121.o ws1121d.o ne1106.o ne1106d.o st1105.o st1105d.o fi1112.o \
+	fi1112d.o ht1098.o ht1098d.o ws1120.o ws1120d.o ad1102.o ad1102d.o \
+	so1104.o so1104d.o ad1103.o ad1103d.o ex1101.o ex1101d.o ht1111.o \
+	ht1111d.o ht1109.o ht1109d.o 
 
 all: Cobj5.o
 

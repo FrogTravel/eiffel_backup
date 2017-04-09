@@ -11,7 +11,7 @@ case "$O" in
 esac
 echo "Compiling C code in C2"
 $spitshell >Makefile <<!GROK!THIS!
-INCLUDE_PATH =  -I"\$(ISE_LIBRARY)\library\time\spec\include" -I"c:\program files\eiffel software\eiffelstudio 17.01 gpl\contrib\library\network\http_network/spec/include"
+INCLUDE_PATH =  -I"\$(ISE_LIBRARY)\library\time\spec\include" -I"\$(ISE_LIBRARY)/unstable/library/persistency/database/sqlite3/spec/include" -I"-DSQLITE_THREADSAFE=1" -I"c:\program files\eiffel software\eiffelstudio 17.01 gpl\contrib\library\network\http_network/spec/include"
 SHELL = /bin/sh
 CC = $cc
 CPP = $cpp
@@ -55,14 +55,14 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C2_c.o 
 
-OLDOBJECTS =  ws1011.o ws1011d.o co1004.o co1004d.o wg1009.o wg1009d.o ws1010.o \
-	ws1010d.o ws1008.o ws1008d.o ws1007.o ws1007d.o sh997.o sh997d.o \
-	wg1006.o wg1006d.o sh1005.o sh1005d.o co1003.o co1003d.o ht994.o \
+OLDOBJECTS =  ws1011.o ws1011d.o co1005.o co1005d.o wg1009.o wg1009d.o ws1010.o \
+	ws1010d.o ws1008.o ws1008d.o sh998.o sh998d.o wg1007.o wg1007d.o \
+	sh1006.o sh1006d.o co1004.o co1004d.o ws1003.o ws1003d.o ht994.o \
 	ht994d.o wg1001.o wg1001d.o wg990.o wg990d.o wg1000.o wg1000d.o \
-	ws992.o ws992d.o ht999.o ht999d.o ws998.o ws998d.o me996.o me996d.o \
-	he995.o he995d.o ht993.o ht993d.o wg991.o wg991d.o da1021.o da1021d.o \
-	da1022.o da1022d.o ti1020.o ti1020d.o ti1019.o ti1019d.o wg1002.o \
-	wg1002d.o ti1017.o ti1017d.o ti1018.o ti1018d.o co1016.o co1016d.o \
+	ht999.o ht999d.o ws992.o ws992d.o me997.o me997d.o he996.o he996d.o \
+	ws995.o ws995d.o ht993.o ht993d.o wg991.o wg991d.o ti1020.o ti1020d.o \
+	ti1019.o ti1019d.o da1021.o da1021d.o da1022.o da1022d.o wg1002.o \
+	wg1002d.o ti1018.o ti1018d.o ti1017.o ti1017d.o co1016.o co1016d.o \
 	in1013.o in1013d.o in1015.o in1015d.o in1014.o in1014d.o in1012.o \
 	in1012d.o 
 

@@ -82,8 +82,8 @@ void Init1048(void)
 {
 	IDSC(desc_1048, 0, 1047);
 	IDSC(desc_1048 + 1, 1, 1047);
-	IDSC(desc_1048 + 32, 465, 1047);
-	IDSC(desc_1048 + 40, 464, 1047);
+	IDSC(desc_1048 + 32, 466, 1047);
+	IDSC(desc_1048 + 40, 449, 1047);
 }
 
 

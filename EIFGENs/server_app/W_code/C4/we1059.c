@@ -1,0 +1,556 @@
+/*
+ * Code for class WEB_SOCKET_CONSTANTS
+ */
+
+#include "eif_eiffel.h"
+#include "../E1/estructure.h"
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+extern EIF_TYPED_VALUE F1059_8410(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8411(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8412(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8413(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8414(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8415(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8416(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8417(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8418(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8419(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8420(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8421(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8422(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8423(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8424(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8425(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8426(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8427(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8428(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8429(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8430(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8431(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8432(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8433(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F1059_8434(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F1059_8435(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8436(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8437(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8438(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8439(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8440(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8441(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8442(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F1059_8443(EIF_REFERENCE);
+extern void EIF_Minit1059(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
+#ifdef __cplusplus
+}
+#endif
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/* {WEB_SOCKET_CONSTANTS}.http_1_1 */
+RTOID (F1059_8410)
+
+
+EIF_TYPED_VALUE F1059_8410 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F1059_8410,14459,RTMS_EX_H("HTTP/1.1 101 WebSocket Protocol Handshake",41,1714280805));
+}
+
+/* {WEB_SOCKET_CONSTANTS}.upgrade_ws */
+RTOID (F1059_8411)
+
+
+EIF_TYPED_VALUE F1059_8411 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F1059_8411,14460,RTMS_EX_H("Upgrade: websocket",18,736081524));
+}
+
+/* {WEB_SOCKET_CONSTANTS}.connection_ws */
+RTOID (F1059_8412)
+
+
+EIF_TYPED_VALUE F1059_8412 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F1059_8412,14461,RTMS_EX_H("Connection: Upgrade",19,1451536997));
+}
+
+/* {WEB_SOCKET_CONSTANTS}.sec_websocket_origin */
+RTOID (F1059_8413)
+
+
+EIF_TYPED_VALUE F1059_8413 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F1059_8413,14462,RTMS_EX_H("Sec-WebSocket-Origin: ",22,1241649696));
+}
+
+/* {WEB_SOCKET_CONSTANTS}.sec_websocket_protocol */
+RTOID (F1059_8414)
+
+
+EIF_TYPED_VALUE F1059_8414 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F1059_8414,14463,RTMS_EX_H("Sec-WebSocket-Protocol: ",24,1524685344));
+}
+
+/* {WEB_SOCKET_CONSTANTS}.sec_websocket_location */
+RTOID (F1059_8415)
+
+
+EIF_TYPED_VALUE F1059_8415 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F1059_8415,14464,RTMS_EX_H("Sec-WebSocket-Location: ",24,113344032));
+}
+
+/* {WEB_SOCKET_CONSTANTS}.sec_websocket_version */
+RTOID (F1059_8416)
+
+
+EIF_TYPED_VALUE F1059_8416 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F1059_8416,14465,RTMS_EX_H("Sec-WebSocket-Version: ",23,723865632));
+}
+
+/* {WEB_SOCKET_CONSTANTS}.sec_websocket_extensions */
+RTOID (F1059_8417)
+
+
+EIF_TYPED_VALUE F1059_8417 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F1059_8417,14466,RTMS_EX_H("Sec-WebSocket-Extensions: ",26,1375269152));
+}
+
+/* {WEB_SOCKET_CONSTANTS}.websocket_origin */
+RTOID (F1059_8418)
+
+
+EIF_TYPED_VALUE F1059_8418 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F1059_8418,14467,RTMS_EX_H("WebSocket-Origin: ",18,1140101920));
+}
+
+/* {WEB_SOCKET_CONSTANTS}.websocket_protocol */
+RTOID (F1059_8419)
+
+
+EIF_TYPED_VALUE F1059_8419 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F1059_8419,14468,RTMS_EX_H("WebSocket-Protocol: ",20,1529562400));
+}
+
+/* {WEB_SOCKET_CONSTANTS}.websocket_location */
+RTOID (F1059_8420)
+
+
+EIF_TYPED_VALUE F1059_8420 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F1059_8420,14469,RTMS_EX_H("WebSocket-Location: ",20,118221088));
+}
+
+/* {WEB_SOCKET_CONSTANTS}.origin */
+RTOID (F1059_8421)
+
+
+EIF_TYPED_VALUE F1059_8421 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F1059_8421,14470,RTMS_EX_H("Origin",6,1924580718));
+}
+
+/* {WEB_SOCKET_CONSTANTS}.server */
+RTOID (F1059_8422)
+
+
+EIF_TYPED_VALUE F1059_8422 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F1059_8422,14471,RTMS_EX_H("EWSS",4,1163350867));
+}
+
+/* {WEB_SOCKET_CONSTANTS}.sec_websocket_key */
+RTOID (F1059_8423)
+
+
+EIF_TYPED_VALUE F1059_8423 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F1059_8423,14472,RTMS_EX_H("Sec-WebSocket-Key",17,143976569));
+}
+
+/* {WEB_SOCKET_CONSTANTS}.ws_scheme */
+RTOID (F1059_8424)
+
+
+EIF_TYPED_VALUE F1059_8424 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F1059_8424,14473,RTMS_EX_H("ws://",5,1934106927));
+}
+
+/* {WEB_SOCKET_CONSTANTS}.wss_scheme */
+RTOID (F1059_8425)
+
+
+EIF_TYPED_VALUE F1059_8425 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F1059_8425,14474,RTMS_EX_H("wss://",6,20559919));
+}
+
+/* {WEB_SOCKET_CONSTANTS}.magic_guid */
+RTOID (F1059_8426)
+
+
+EIF_TYPED_VALUE F1059_8426 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F1059_8426,14475,RTMS_EX_H("258EAFA5-E914-47DA-95CA-C5AB0DC85B11",36,354532657));
+}
+
+/* {WEB_SOCKET_CONSTANTS}.continuation_frame */
+EIF_TYPED_VALUE F1059_8427 (EIF_REFERENCE Current)
+{
+	EIF_TYPED_VALUE r;
+	r.type = SK_INT32;
+	r.it_i4 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 0L);
+	return r;
+}
+
+/* {WEB_SOCKET_CONSTANTS}.text_frame */
+EIF_TYPED_VALUE F1059_8428 (EIF_REFERENCE Current)
+{
+	EIF_TYPED_VALUE r;
+	r.type = SK_INT32;
+	r.it_i4 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1L);
+	return r;
+}
+
+/* {WEB_SOCKET_CONSTANTS}.binary_frame */
+EIF_TYPED_VALUE F1059_8429 (EIF_REFERENCE Current)
+{
+	EIF_TYPED_VALUE r;
+	r.type = SK_INT32;
+	r.it_i4 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 2L);
+	return r;
+}
+
+/* {WEB_SOCKET_CONSTANTS}.connection_close_frame */
+EIF_TYPED_VALUE F1059_8430 (EIF_REFERENCE Current)
+{
+	EIF_TYPED_VALUE r;
+	r.type = SK_INT32;
+	r.it_i4 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 8L);
+	return r;
+}
+
+/* {WEB_SOCKET_CONSTANTS}.ping_frame */
+EIF_TYPED_VALUE F1059_8431 (EIF_REFERENCE Current)
+{
+	EIF_TYPED_VALUE r;
+	r.type = SK_INT32;
+	r.it_i4 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 9L);
+	return r;
+}
+
+/* {WEB_SOCKET_CONSTANTS}.pong_frame */
+EIF_TYPED_VALUE F1059_8432 (EIF_REFERENCE Current)
+{
+	EIF_TYPED_VALUE r;
+	r.type = SK_INT32;
+	r.it_i4 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 10L);
+	return r;
+}
+
+/* {WEB_SOCKET_CONSTANTS}.is_control_frame */
+EIF_TYPED_VALUE F1059_8433 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+{
+	GTCX
+	char *l_feature_name = "is_control_frame";
+	RTEX;
+#define arg1 arg1x.it_i4
+	EIF_BOOLEAN Result = ((EIF_BOOLEAN) 0);
+	
+	RTSN;
+	RTDA;
+	RTLD;
+	
+	if ((arg1x.type & SK_HEAD) == SK_REF) arg1x.it_i4 = * (EIF_INTEGER_32 *) arg1x.it_r;
+	
+	RTLI(1);
+	RTLR(0,Current);
+	RTLIU(1);
+	RTLU (SK_BOOL, &Result);
+	RTLU(SK_INT32,&arg1);
+	RTLU (SK_REF, &Current);
+	
+	RTEAA(l_feature_name, 1058, Current, 0, 1, 14481);
+	RTSA(Dtype(Current));
+	RTSC;
+	RTME(Dtype(Current), 0);
+	RTGC;
+	RTDBGEAA(1058, Current, 14481);
+	RTIV(Current, RTAL);
+	RTHOOK(1);
+	switch (arg1) {
+		case 8L:
+		case 9L:
+		case 10L:
+			RTHOOK(2);
+			RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
+			Result = (EIF_BOOLEAN) (EIF_BOOLEAN) 1;
+			break;
+	}
+	RTVI(Current, RTAL);
+	RTRS;
+	RTHOOK(3);
+	RTDBGLE;
+	RTMD(0);
+	RTLE;
+	RTLO(3);
+	RTEE;
+	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
+#undef arg1
+}
+
+/* {WEB_SOCKET_CONSTANTS}.opcode_name */
+EIF_TYPED_VALUE F1059_8434 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+{
+	GTCX
+	char *l_feature_name = "opcode_name";
+	RTEX;
+#define arg1 arg1x.it_i4
+	EIF_TYPED_VALUE up1x = {{0}, SK_POINTER};
+#define up1 up1x.it_p
+	EIF_TYPED_VALUE ur1x = {{0}, SK_REF};
+#define ur1 ur1x.it_r
+	EIF_REFERENCE tr1 = NULL;
+	EIF_REFERENCE tr2 = NULL;
+	EIF_REFERENCE tr3 = NULL;
+	EIF_REFERENCE Result = ((EIF_REFERENCE) 0);
+	
+	RTSN;
+	RTDA;
+	RTLD;
+	
+	if ((arg1x.type & SK_HEAD) == SK_REF) arg1x.it_i4 = * (EIF_INTEGER_32 *) arg1x.it_r;
+	
+	RTLI(6);
+	RTLR(0,Result);
+	RTLR(1,tr1);
+	RTLR(2,tr2);
+	RTLR(3,tr3);
+	RTLR(4,ur1);
+	RTLR(5,Current);
+	RTLIU(6);
+	RTLU (SK_REF, &Result);
+	RTLU(SK_INT32,&arg1);
+	RTLU (SK_REF, &Current);
+	
+	RTEAA(l_feature_name, 1058, Current, 0, 1, 14482);
+	RTSA(Dtype(Current));
+	RTSC;
+	RTME(Dtype(Current), 0);
+	RTGC;
+	RTDBGEAA(1058, Current, 14482);
+	RTIV(Current, RTAL);
+	RTHOOK(1);
+	switch (arg1) {
+		case 0L:
+			RTHOOK(2);
+			RTDBGAL(Current, 0, 0xF80000E3, 0,0); /* Result */
+			Result = RTMS_EX_H("Continuation",12,2143371118);
+			break;
+		case 1L:
+			RTHOOK(3);
+			RTDBGAL(Current, 0, 0xF80000E3, 0,0); /* Result */
+			Result = RTMS_EX_H("Text",4,1415936116);
+			break;
+		case 2L:
+			RTHOOK(4);
+			RTDBGAL(Current, 0, 0xF80000E3, 0,0); /* Result */
+			Result = RTMS_EX_H("Binary",6,1982447737);
+			break;
+		case 8L:
+			RTHOOK(5);
+			RTDBGAL(Current, 0, 0xF80000E3, 0,0); /* Result */
+			Result = RTMS_EX_H("Connection Close",16,1035209317);
+			break;
+		case 9L:
+			RTHOOK(6);
+			RTDBGAL(Current, 0, 0xF80000E3, 0,0); /* Result */
+			Result = RTMS_EX_H("Ping",4,1349086823);
+			break;
+		case 10L:
+			RTHOOK(7);
+			RTDBGAL(Current, 0, 0xF80000E3, 0,0); /* Result */
+			Result = RTMS_EX_H("Pong",4,1349480039);
+			break;
+		default:
+			RTHOOK(8);
+			RTDBGAL(Current, 0, 0xF80000E3, 0,0); /* Result */
+			Result = RTMS_EX_H("Unknown-Opcode",14,86764901);
+			break;
+	}
+	RTHOOK(9);
+	RTDBGAL(Current, 0, 0xF80000E3, 0,0); /* Result */
+	tr1 = RTMS_EX_H("0x",2,12408);
+	tr2 = RTLN(eif_new_type(213, 0x00).id);
+	*(EIF_INTEGER_32 *)tr2 = arg1;
+	tr3 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(4185, "to_hex_string", tr2))(tr2)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	ur1 = RTCCL(tr3);
+	tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(4449, "plus", tr1))(tr1, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	tr1 = RTMS_EX_H(" ",1,32);
+	ur1 = tr1;
+	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(4449, "plus", tr2))(tr2, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	ur1 = RTCCL(Result);
+	tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(4449, "plus", tr1))(tr1, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	Result = (EIF_REFERENCE) RTCCL(tr2);
+	RTVI(Current, RTAL);
+	RTRS;
+	RTHOOK(10);
+	RTDBGLE;
+	RTMD(0);
+	RTLE;
+	RTLO(3);
+	RTEE;
+	{ EIF_TYPED_VALUE r; r.type = SK_REF; r.it_r = Result; return r; }
+#undef up1
+#undef ur1
+#undef arg1
+}
+
+/* {WEB_SOCKET_CONSTANTS}.normal_closure */
+EIF_TYPED_VALUE F1059_8435 (EIF_REFERENCE Current)
+{
+	EIF_TYPED_VALUE r;
+	r.type = SK_INT32;
+	r.it_i4 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1000L);
+	return r;
+}
+
+/* {WEB_SOCKET_CONSTANTS}.going_away */
+EIF_TYPED_VALUE F1059_8436 (EIF_REFERENCE Current)
+{
+	EIF_TYPED_VALUE r;
+	r.type = SK_INT32;
+	r.it_i4 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1001L);
+	return r;
+}
+
+/* {WEB_SOCKET_CONSTANTS}.protocol_error */
+EIF_TYPED_VALUE F1059_8437 (EIF_REFERENCE Current)
+{
+	EIF_TYPED_VALUE r;
+	r.type = SK_INT32;
+	r.it_i4 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1002L);
+	return r;
+}
+
+/* {WEB_SOCKET_CONSTANTS}.unsupported_data */
+EIF_TYPED_VALUE F1059_8438 (EIF_REFERENCE Current)
+{
+	EIF_TYPED_VALUE r;
+	r.type = SK_INT32;
+	r.it_i4 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1003L);
+	return r;
+}
+
+/* {WEB_SOCKET_CONSTANTS}.invalid_data */
+EIF_TYPED_VALUE F1059_8439 (EIF_REFERENCE Current)
+{
+	EIF_TYPED_VALUE r;
+	r.type = SK_INT32;
+	r.it_i4 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1007L);
+	return r;
+}
+
+/* {WEB_SOCKET_CONSTANTS}.policy_violation */
+EIF_TYPED_VALUE F1059_8440 (EIF_REFERENCE Current)
+{
+	EIF_TYPED_VALUE r;
+	r.type = SK_INT32;
+	r.it_i4 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1008L);
+	return r;
+}
+
+/* {WEB_SOCKET_CONSTANTS}.message_too_large */
+EIF_TYPED_VALUE F1059_8441 (EIF_REFERENCE Current)
+{
+	EIF_TYPED_VALUE r;
+	r.type = SK_INT32;
+	r.it_i4 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1009L);
+	return r;
+}
+
+/* {WEB_SOCKET_CONSTANTS}.extension_required */
+EIF_TYPED_VALUE F1059_8442 (EIF_REFERENCE Current)
+{
+	EIF_TYPED_VALUE r;
+	r.type = SK_INT32;
+	r.it_i4 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1010L);
+	return r;
+}
+
+/* {WEB_SOCKET_CONSTANTS}.internal_error */
+EIF_TYPED_VALUE F1059_8443 (EIF_REFERENCE Current)
+{
+	EIF_TYPED_VALUE r;
+	r.type = SK_INT32;
+	r.it_i4 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1011L);
+	return r;
+}
+
+void EIF_Minit1059 (void)
+{
+	GTCX
+	RTOTS (8410,F1059_8410)
+	RTOTS (8411,F1059_8411)
+	RTOTS (8412,F1059_8412)
+	RTOTS (8413,F1059_8413)
+	RTOTS (8414,F1059_8414)
+	RTOTS (8415,F1059_8415)
+	RTOTS (8416,F1059_8416)
+	RTOTS (8417,F1059_8417)
+	RTOTS (8418,F1059_8418)
+	RTOTS (8419,F1059_8419)
+	RTOTS (8420,F1059_8420)
+	RTOTS (8421,F1059_8421)
+	RTOTS (8422,F1059_8422)
+	RTOTS (8423,F1059_8423)
+	RTOTS (8424,F1059_8424)
+	RTOTS (8425,F1059_8425)
+	RTOTS (8426,F1059_8426)
+}
+
+
+#ifdef __cplusplus
+}
+#endif
