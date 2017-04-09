@@ -1,0 +1,198 @@
+<html>
+<head>
+	<title>First Page</title>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/dropdown.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	
+</head>
+<body>
+	<div class="content">
+		<h4>Page 1</h4>
+		<p>Name of unit</p>
+		<input id="UNITNAME" class="mandatory" type="text" name="UNITNAME">
+		<p>Name of Head Unit</p>
+		<input id="UNITHEADNAME" class="mandatory" type="text" name="UNITHEADNAME">
+		<p>Start of reporting period</p>
+		<input  class="datepicker notMandatory" id="REPORTSTARTDATE" type="text" name="REPORTSTARTDATE">
+		<p>End of reporting period</p>
+		<input  class="datepicker notMandatory" id="REPORTENDDATE" type="text" name="REPORTENDDATE"><br>
+ 		
+
+ 		<h4>Page 2</h4>
+ 		<p class="inline">Courses taught</p>
+ 		<button id="addbtncourses">Add</button>
+ 		<button id="removebtncourses">Remove</button>
+ 		<div class="bigform courses">
+ 			<p class="inline number">1.</p>
+			<input id="COURSENAME" class="mandatory" type="text" name="COURSENAME">
+
+			<!-- <div class="dropdown">
+				<button class="dropbtn">Level</button>
+				<div class="dropdown-content">
+					<a class="levelDropList buttonChoice" href="#">Bachelor</a>
+					<a class="levelDropList buttonChoice" href="#">Master</a>
+					<a class="levelDropList buttonChoice" href="#">PhD</a>
+				</div>
+			</div> -->
+
+			<select id="semesterSelectorCourses">
+				<option>Fall</option>
+				<option>Spring</option>
+			</select>
+
+			<select id="levelSelectorCourses">
+				<option>Bachelor</option>
+				<option>Master</option>
+				<option>PhD</option>
+			</select>
+
+			<input class="mandatory" type="number" name="APPROXIMATESTUDENTNUMBER" id="APPROXIMATESTUDENTNUMBER">
+			<div id="newCoursesRow"></div>
+		</div>
+
+		<!-- Examinations -->
+		<p class="inline">Examinations</p>
+		<button id="addbtnexams">Add</button>
+		<button id="removebtnexams">Remove</button>
+		<div class="bigform exams">
+			<p class="inline number">1.</p>
+			<input id="courseName" class="mandatory" type="text" name="COURSENAME">
+			<select id="examsSelector">
+				<option>Fall</option>
+				<option>Spring</option>
+			</select>
+			<select id="kindOfExams">
+				<option>Final</option>
+				<option>Repetition</option>
+			</select>
+			<input id="approxStudNumb" class="mandatory" type="number" name="APPROXIMATESTUDENTNUMBER">
+			<div id="newExamsRow"></div>
+		</div>
+
+
+		<!-- Students supervised -->
+		<p class="inline">Students supervised</p>
+		<button id="addbtnstudsupervised">Add</button>
+		<button id="removebtnstudsupervised">Remove</button>
+		<div class="bigform studsupervised">
+			<input id="studentNameStudSupervised" class="mandatory" type="text" name="name">
+			<select id="levelStudSupervised">
+				<option>Bachelor Thesis</option>
+				<option>Master Thesis</option>
+				<option>Summer Internship</option>
+			</select>
+			<div id="newStudentsSupervisedRow"></div>
+		</div>
+
+
+		<!-- Completed student reports -->
+		<p class="inline">Completed student reports</p>
+		<button id="addbtnstudreports">Add</button>
+		<button id="removebtnstudreports">Remove</button>
+		<div class="bigform reports">
+			<input id="studentNameReports" class="mandatory" type="text" name="name">
+			<input id="titleOfReportStudent" class="mandatory" type="text" name="titleofreport">
+			<input id="plansForPublication" class="notMandatory" type="text" name="plans">
+			<div id="newCompletedReportsRow"></div>
+		</div>
+
+
+		<!-- Completed PhD theses -->
+		<p class="inline">Completed PhD theses</p>
+		<button id="addbtncompphd">Add</button>
+		<button id="removebtncompphd">Remove</button>
+		<div class="bigform theses">
+			<input id="studentNameTheses" class="mandatory" type="text" name="name">
+			<select id="degreeSelector">
+				<option>PhD</option>
+				<option>Dr. Sc.</option>
+			</select>
+			<input id="supervisorName" class="mandatory" type="text" name="name">
+			<input id="otherMembersName" class="mandatory" type="type" name="nameOfComitee">
+			<input id="nameOfDegreeGrantingInstitution" class="mandatory" type="text" name="nameOfInstitution">
+			<input id="titleOfTheses" class="mandatory" type="text" name="titleOfTheses">
+			<div id="newCompletedPhDTheses"></div>
+		</div>
+
+		<h4>Page 3</h4>
+		<!-- Grants -->
+		<p class="inline">Grants</p>
+		<button id="addbtnGrants">Add</button>
+		<button id="removebtnGrants">Remove</button>
+		<div class="bigform grants">
+			<p class="inline number">1.</p>
+			<input id="titleOfProject" class="mandatory" type="text" name="name">
+			<input id="grantingAgency" class="mandatory" type="text" name="agency">
+			<input id="durationGrants" class="mandatory" type="number" name="date">
+			<input id="amountOfGrant" class="mandatory" type="text" name="amountOfGrant">
+			<div id="newGrantRow"></div>
+		</div>
+
+		<!-- Research projects -->
+		<p class="inline">Research projects</p>
+		<button id="addbtnResearchProj">Add</button>
+		<button id="removebtnResearchProj">Remove</button>
+		<div class="bigform researchProj">
+			<p class="inline number">1.</p>
+			<input id="titleOfProjectResearch" class="mandatory" type="text" name="name">
+			<input id="IUpersonnel" class="mandatory" type="text" name="IUpersonnel">
+			<input id="externalPersonnel" class="mandatory" type="text" name="externalPersonnel">
+			<input  class="datepicker" id="startDateOfProject" type="text" name="date">
+			<input  class="datepicker" id="endDateOfProject" type="text" name="date">
+			<input id="sourceOfFinance" class="mandatory" type="text" name="sourceOfFinance">
+			<div id="newResearchProjectsRow"></div>
+		</div>	
+		
+		<!-- Research collaborations -->
+		<p class="inline notMandatory">Research collaborations</p>
+		<button id="addbtnResearchColl">Add</button>
+		<button id="removebtnResearchColl">Remove</button>
+		<div class="bigform researchColl">
+			<p class="inline number">1.</p>
+			<input id="countryOfInst" class="mandatory" type="text" name="country">
+			<input id="nameOfInstitution" class="mandatory" type="text" name="nameOfInstitution">
+			<input id="departmentOfUnit" class="notMandatory" type="text" name="departmentOfUnit">
+			<input id="nameOfPrincipal" class="mandatory" type="text" name="nameOfPrincipal">
+			<input id="otherImportantContacts" class="mandatory" type="text" name="otherImportantContacts">
+			<input id="natureOfColl" class="mandatory" type="text" name="natureOfColl">
+			<div id="newResearchCollaborationsRow"></div>
+		</div>	
+
+
+		<!-- Conference publications -->
+		<p class="inline notMandatory">Conference publications</p>
+		<button id="addbtnconference">Add</button>
+		<button id="removebtnconference">Remove</button>
+		<div class="bigform conferencePubl">
+			<p class="inline number">1.</p>
+			<input id="publications" class="mandatory" type="text" name="publications">
+			<div id="newConferencePublRow"></div>
+		</div>	
+
+
+		<!-- Journal publications -->
+		<p class="inline notMandatory">Journal publications</p>
+		<button id="addbtnjournalpubl">Add</button>
+		<button id="removejournalpubl">Remove</button>
+		<div class="bigform journalPubl">
+			<p class="inline number">1.</p>
+			<input id="publications" class="mandatory" type="text" name="publications">
+			<div id="newJournalPublRow"></div>
+		</div>	
+
+		<button id="submit">submit</button>
+	</div>
+
+		<script type="text/javascript" src="scripts/socket.js"></script>
+		<script type="text/javascript" src="scripts/data-collector.js"></script>
+		<script type="text/javascript" src="scripts/initialization.js"></script>
+		<script type="text/javascript" src="scripts/fieldsChecker.js"></script>
+		<script type="text/javascript" src="scripts/dropdown.js"></script>
+		<script type="text/javascript" src="scripts/main.js"></script>
+		<script type="text/javascript" src="scripts/newRowsAdder.js"></script>
+</body>
+</html>
