@@ -31,8 +31,12 @@ feature
 	on_text (ws: WEB_SOCKET; a_message: READABLE_STRING_8)
 		local
 			server_cmd:COMMANDS_CLIENT
+			parser: DATA_CLIENT_PARSER
 		do
 			create server_cmd.send_message (ws, a_message,text_frame)
+			create parser
+
+			parser.parse(a_message)
 			-- CALL PARSER
 			print("%N-------------"+a_message+"--------------%N")
 		end
