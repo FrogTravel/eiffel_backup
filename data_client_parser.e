@@ -6,37 +6,16 @@ note
 
 class
 	DATA_CLIENT_PARSER
-inherit
-	ARGUMENTS
-
+create
+	make
 
 feature {NONE} -- Initialization
 
 	make
-		local
-			i_string: STRING
-			check_string: STRING
 		do
---			create check_string.make_empty
---			Io.read_line
---			i_string := Io.last_string
---			check_string := i_string.substring (1, 6)
---			if
---				check_string.is_equal ("<USERP")
---			then
---				i_string := i_string.substring (11, i_string.count)
---				from
---				until
---					i_string.is_equal ("</USERPAGE>")
---				loop
---					i_string := extract_info(i_string)
---				end
---			end
 		end
-
-
 feature
-	parse_and_save(info: STRING)
+	parse_and_save(data: STRING)
 	local
 		i_string: STRING
 		check_string: STRING
@@ -44,188 +23,285 @@ feature
 	do
 		create check_string.make_empty
 		create db_helper.make
-		i_string := info
+		print("%N----STARTING PARCING PROCESS----%N")
+		print("%NDATA: " + data + "%N")
+		i_string := data
 		check_string := i_string.substring (1, 6)
-		if
-			check_string.is_equal ("<USERP")
-		then
+		if check_string.is_equal ("<USERP") then
+			print("USERPAGE FOUND")
 			i_string := i_string.substring (11, i_string.count)
-			from
-			until
-				i_string.is_equal ("</USERPAGE>")
-			loop
-				i_string := extract_info(i_string)
-			end
+			db_helper.add_data (getUnitName(i_string), getUnitHeadName(i_string), getReportStartDate(i_string), getReportEndDate(i_string), getCoursesTaught(i_string), getExamsAdmin(i_string), getStudentsSupervised(i_string), getStudentReports(i_string), getPhDTheses(i_string), getGrantsWon(i_string), getResearchProjects(i_string), getResearchCollaborations(i_string), getConferencePublications(i_string), getJournalPublications(i_string))
+
+--			Io.put_string(getUnitName(i_string))
+--			Io.put_new_line
+--			Io.put_string(getUnitHeadName(i_string))
+--			Io.put_new_line
+--			Io.put_string(getReportStartDate(i_string))
+--			Io.put_new_line
+--			Io.put_string(getReportEndDate(i_string))
+--			Io.put_new_line
+--			Io.put_string(getCoursesTaught(i_string))
+--			Io.put_new_line
+--			Io.put_string(getExamsAdmin(i_string))
+--			Io.put_new_line
+--			Io.put_string(getStudentsSupervised(i_string))
+--			Io.put_new_line
+--			Io.put_string(getStudentReports(i_string))
+--			Io.put_new_line
+--			Io.put_string(getPhDTheses(i_string))
+--			Io.put_new_line
+--			Io.put_string(getGrantsWon(i_string))
+--			Io.put_new_line
+--			Io.put_string(getResearchProjects(i_string))
+--			Io.put_new_line
+--			Io.put_string(getResearchCollaborations(i_string))
+--			Io.put_new_line
+--			Io.put_string(getConferencePublications(i_string))
+--			Io.put_new_line
+--			Io.put_string(getJournalPublications(i_string))
 		end
-
-
 	end
 
-feature --extracting information
 
-	extract_info (str_i: STRING): STRING
+feature
+	getUnitName(i_str: STRING): STRING
 		local
-			s, str:STRING
-			a,b:INTEGER
+			i,k: INTEGER
 		do
-			create s.make_empty
+			if
+				i_str.has_substring ("<UNITNAME>")
+			then
+				i := i_str.substring_index ("<UNITNAME>", 1)
+				k := i_str.substring_index ("</UNITNAME>", 1)
+				if i_str.substring (i + 10, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 10, k - 1)
+				end
+			else Result := ""
+			end
+		end
+	getUnitHeadName(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<UNITHEADNAME>")
+			then
+				i := i_str.substring_index ("<UNITHEADNAME>", 1)
+				k := i_str.substring_index ("</UNITHEADNAME>", 1)
+				if i_str.substring (i + 14, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 14, k - 1)
+				end
+			else Result := ""
+			end
+		end
+	getReportStartDate(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+			str: STRING
+		do
 			create str.make_empty
-			str := str_i.twin
-			s := str.substring (1, 10)
-			if								-- UNITNAME
-				s.is_equal ("<UNITNAME>")
+			if
+				i_str.has_substring ("<REPORTSTARTDATE>")
 			then
-				str := str.substring (11, str.count)
-				a := str.index_of ('<', 1)
-				b := str.index_of ('>', 1)
-				s := str.substring (1, a-1)
-				str := str.substring (b+1, str.count)
-				Io.put_string (s)
-				Io.put_string("%N")
+				i := i_str.substring_index ("<REPORTSTARTDATE>", 1)
+				k := i_str.substring_index ("</REPORTSTARTDATE>", 1)
+				if i_str.substring (i + 17, k - 1).same_string ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 17, k - 1)
+				end
+			else Result := ""
 			end
-			if								--UNITHEADNAME
-				s.is_equal ("<UNITHEADN")
+		end
+	getReportEndDate(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<REPORTENDDATE>")
 			then
-				str := str.substring (15, str.count)
-				a := str.index_of ('<', 1)
-				b := str.index_of ('>', 1)
-				s := str.substring (1, a-1)
-				str := str.substring (b+1, str.count)
-				Io.put_string (s)
-				Io.put_string("%N")
+				i := i_str.substring_index ("<REPORTENDDATE>", 1)
+				k := i_str.substring_index ("</REPORTENDDATE>", 1)
+				if i_str.substring (i + 15, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 15, k - 1)
+				end
+			else Result := ""
 			end
-			if								--REPORTSTARTDATE
-				s.is_equal ("<REPORTSTA")
+		end
+	getCoursesTaught(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<COURSESTAUGHT>")
 			then
-				str := str.substring (18, str.count)
-				a := str.index_of ('<', 1)
-				b := str.index_of ('>', 1)
-				s := str.substring (1, a-1)
-				str := str.substring (b+1, str.count)
-				Io.put_string (s)
-				Io.put_string("%N")
+				i := i_str.substring_index ("<COURSESTAUGHT>", 1)
+				k := i_str.substring_index ("</COURSESTAUGHT>", 1)
+				if i_str.substring (i + 15, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 15, k - 1)
+				end
+			else Result := ""
 			end
-			if								--REPORTENDDATE
-				s.is_equal ("<REPORTEND")
+		end
+	getExamsAdmin(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<EXAMSADMIN>")
 			then
-				str := str.substring (16, str.count)
-				a := str.index_of ('<', 1)
-				b := str.index_of ('>', 1)
-				s := str.substring (1, a-1)
-				str := str.substring (b+1, str.count)
-				Io.put_string (s)
-				Io.put_string("%N")
+				i := i_str.substring_index ("<EXAMSADMIN>", 1)
+				k := i_str.substring_index ("</EXAMSADMIN>", 1)
+				if i_str.substring (i + 12, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 12, k - 1)
+				end
+			else Result := ""
 			end
-			if								--COURSESTAUGHT
-				s.is_equal ("<COURSESTA")
+		end
+	getStudentsSupervised(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<STUDENTSSUPERVISED>")
 			then
-				str := str.substring (16, str.count)
-				a := str.index_of ('<', 1)
-				b := str.index_of ('>', 1)
-				s := str.substring (1, a-1)
-				str := str.substring (b+1, str.count)
-				Io.put_string (s)
-				Io.put_string("%N")
+				i := i_str.substring_index ("<STUDENTSSUPERVISED>", 1)
+				k := i_str.substring_index ("</STUDENTSSUPERVISED>", 1)
+				if i_str.substring (i + 20, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 20, k - 1)
+				end
+			else Result := ""
 			end
-			if								--EXAMSADMIN
-				s.is_equal ("<EXAMSADMI")
+		end
+	getStudentReports(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<STUDENTREPORTS>")
 			then
-				str := str.substring (13, str.count)
-				a := str.index_of ('<', 1)
-				b := str.index_of ('>', 1)
-				s := str.substring (1, a-1)
-				str := str.substring (b+1, str.count)
-				Io.put_string (s)
-				Io.put_string("%N")
+				i := i_str.substring_index ("<STUDENTREPORTS>", 1)
+				k := i_str.substring_index ("</STUDENTREPORTS>", 1)
+				if i_str.substring (i + 16, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 16, k - 1)
+				end
+			else Result := ""
 			end
-			if								--STUDENTSSUPERVISED
-				s.is_equal ("<STUDENTSS")
+		end
+	getPhDTheses(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<PHDTHESES")
 			then
-				str := str.substring (21, str.count)
-				a := str.index_of ('<', 1)
-				b := str.index_of ('>', 1)
-				s := str.substring (1, a-1)
-				str := str.substring (b+1, str.count)
-				Io.put_string (s)
-				Io.put_string("%N")
+				i := i_str.substring_index ("<PHDTHESES>", 1)
+				k := i_str.substring_index ("</PHDTHESES>", 1)
+				if i_str.substring (i + 11, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 11, k - 1)
+				end
+			else Result := ""
 			end
-			if								--STUDENTREPORTS
-				s.is_equal ("<STUDENTRE")
+		end
+	getGrantsWon(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<GRANTSWON>")
 			then
-				str := str.substring (17, str.count)
-				a := str.index_of ('<', 1)
-				b := str.index_of ('>', 1)
-				s := str.substring (1, a-1)
-				str := str.substring (b+1, str.count)
-				Io.put_string (s)
-				Io.put_string("%N")
+				i := i_str.substring_index ("<GRANTSWON>", 1)
+				k := i_str.substring_index ("</GRANTSWON>", 1)
+				if i_str.substring (i + 11, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 11, k - 1)
+				end
+			else Result := ""
 			end
-			if								--PHDTHESES
-				s.is_equal ("<PHDTHESES")
+		end
+	getResearchProjects(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<RESEARCHPROJECTS>")
 			then
-				str := str.substring (12, str.count)
-				a := str.index_of ('<', 1)
-				b := str.index_of ('>', 1)
-				s := str.substring (1, a-1)
-				str := str.substring (b+1, str.count)
-				Io.put_string (s)
-				Io.put_string("%N")
+				i := i_str.substring_index ("<RESEARCHPROJECTS>", 1)
+				k := i_str.substring_index ("</RESEARCHPROJECTS>", 1)
+				if i_str.substring (i + 18, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 18, k - 1)
+				end
+			else Result := ""
 			end
-			if								--GRANTSWON
-				s.is_equal ("<GRANTSWON")
+		end
+	getResearchCollaborations(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<RESEARCHCOLL>")
 			then
-				str := str.substring (12, str.count)
-				a := str.index_of ('<', 1)
-				b := str.index_of ('>', 1)
-				s := str.substring (1, a-1)
-				str := str.substring (b+1, str.count)
-				Io.put_string (s)
-				Io.put_string("%N")
+				i := i_str.substring_index ("<RESEARCHCOLL>", 1)
+				k := i_str.substring_index ("</RESEARCHCOLL>", 1)
+				if i_str.substring (i + 14, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 14, k - 1)
+				end
+			else Result := ""
 			end
-			if								--RESEARCHPROJECTS
-				s.is_equal ("<RESEARCHP")
+		end
+	getConferencePublications(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<CONFERENCEPUBL>")
 			then
-				str := str.substring (19, str.count)
-				a := str.index_of ('<', 1)
-				b := str.index_of ('>', 1)
-				s := str.substring (1, a-1)
-				str := str.substring (b+1, str.count)
-				Io.put_string (s)
-				Io.put_string("%N")
+				i := i_str.substring_index ("<CONFERENCEPUBL>", 1)
+				k := i_str.substring_index ("</CONFERENCEPUBL>", 1)
+				if i_str.substring (i + 16, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 16, k - 1)
+				end
+			else Result := ""
 			end
-			if								--RESEARCHCOLL
-				s.is_equal ("<RESEARCHC")
+		end
+	getJournalPublications(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<JOURNALPUBL>")
 			then
-				str := str.substring (15, str.count)
-				a := str.index_of ('<', 1)
-				b := str.index_of ('>', 1)
-				s := str.substring (1, a-1)
-				str := str.substring (b+1, str.count)
-				Io.put_string (s)
-				Io.put_string("%N")
+				i := i_str.substring_index ("<JOURNALPUBL>", 1)
+				k := i_str.substring_index ("</JOURNALPUBL>", 1)
+				if i_str.substring (i + 13, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 13, k - 1)
+				end
+			else Result := ""
 			end
-			if								--CONFERENCEPUBL
-				s.is_equal ("<CONFERENC")
-			then
-				str := str.substring (17, str.count)
-				a := str.index_of ('<', 1)
-				b := str.index_of ('>', 1)
-				s := str.substring (1, a-1)
-				str := str.substring (b+1, str.count)
-				Io.put_string (s)
-				Io.put_string("%N")
-			end
-			if								--JOURNALPUBL
-				s.is_equal ("<JOURNALPU")
-			then
-				str := str.substring (14, str.count)
-				a := str.index_of ('<', 1)
-				b := str.index_of ('>', 1)
-				s := str.substring (1, a-1)
-				str := str.substring (b+1, str.count)
-				Io.put_string (s)
-				Io.put_string("%N")
-			end
-			Result := str
 		end
 end

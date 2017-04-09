@@ -16,8 +16,8 @@ $("#askbtn").click( function(event){
 	}
 
 	if($("select").find(":selected").text() === "Courses between two dates local"){
-		var newElement = "<input id=\"dateOne\" type=\"number\" name=\"dateOne\"></input>" + 
-		"<input id=\"dateTwo\" type=\"number\" name=\"dateTwo\"></input>" +
+		var newElement = "<input id=\"dateOne\" type=\"text\" name=\"dateOne\"></input>" + 
+		"<input id=\"dateTwo\" type=\"text\" name=\"dateTwo\"></input>" +
 		"<button id=\"submbtn\">Submit</button>";
 		$("#additionalInfo").html(newElement);
 		setUpSbmButton();
@@ -26,11 +26,12 @@ $("#askbtn").click( function(event){
 
 function setUpSbmButton(){
 	$("#submbtn").click(function(event){
-		console.log("submbtn");
-		var data = getData("query1" + $("#givenYear").text());
-		console.log(data);
-		var newElement = "<p>" + data + "</p>";
-		$("#resultInfo").html(newElement);
+		getData($("select").find(":selected").text());
 	})
+}
+
+function appendQuery(data){
+	var newElement = "<p>" + data + "</p>";
+	$("#resultInfo").html(newElement);
 }
 

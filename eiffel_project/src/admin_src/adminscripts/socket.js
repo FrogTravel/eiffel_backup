@@ -25,6 +25,10 @@ function connect(){
 
 function message(msg){
 	console.log(msg);
+	if(~msg.toString().indexOf("SERVER_RESPONSE")){
+		appendQuery(msg.toString().replace("SERVER_RESPONSE", ""));
+		console.log("got response");
+	}	
 }//End message()
 
 function send(text){

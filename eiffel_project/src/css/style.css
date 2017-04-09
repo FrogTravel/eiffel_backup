@@ -39,3 +39,8 @@ input {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+
+input, select{
+	margin: 2px;
+}
+

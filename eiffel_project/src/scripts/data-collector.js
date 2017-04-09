@@ -4,7 +4,33 @@ function collect(){
 	var unitName = $("#UNITNAME").val();
 	var unitHeadName = $("#UNITHEADNAME").val();
 	var startDate = $("#REPORTSTARTDATE").datepicker("getDate");
+
+	if(startDate === null){
+		startDateString = "";
+	}else{
+		var startDateString = startDate.getDate() + " ";
+		// if(startDate.getMonth+1 < 10)
+		// 	startDateString += "0" + (startDate.getMonth() + 1) + " ";
+		// else
+		// 	startDateString += startDate.getMonth() + 1 + " ";
+		startDateString += (startDate.getMonth() + 1) + " ";
+		startDateString += startDate.getYear() + 1900;
+	}
+	console.log(startDateString);
+
 	var endDate = $("#REPORTENDDATE").datepicker("getDate");
+	if(endDate === null){
+		endDateString = "";
+	}else{
+		var endDateString = endDate.getDate() + " ";
+		// if(endDate.getMonth+1 < 10)
+		// 	endDateString += "0" + (endDate.getMonth() + 1) + " ";
+		// else
+		// 	endDateString += endDate.getMonth() + 1 + " ";
+		endDateString += (endDate.getMonth() + 1) + " "
+		endDateString += endDate.getYear() + 1900;
+	}
+
 	var coursesTaught = "";
 
 	$(".courses").each( function() {
@@ -14,7 +40,7 @@ function collect(){
 		coursesTaught += $(this).find("#COURSENAME").val() + " ";
 		coursesTaught += $(this).find("#semesterSelectorCourses").find(":selected").text() + " ";
 		coursesTaught += $(this).find("#levelSelectorCourses").find(":selected").text() + " ";
-		coursesTaught += $(this).find("#APPROXIMATESTUDENTNUMBER").val() + "; ";
+		coursesTaught += $(this).find("#APPROXIMATESTUDENTNUMBER").val() + "/n ";
 	});
 
 	var exams = "";
@@ -23,13 +49,13 @@ function collect(){
 		exams += $(this).find("#courseName").val() + " ";
 		exams += $(this).find("#examsSelector").find(":selected").text() + " ";
 		exams += $(this).find("#kindOfExams").find(":selected").text() + " ";
-		exams += $(this).find("#approxStudNumb").val() + "; ";
+		exams += $(this).find("#approxStudNumb").val() + "/n ";
 	})
 
 	var studentsSupervised = "";
 	$(".studsupervised").each( function(){
 		studentsSupervised += $(this).find("#studentNameStudSupervised").val() + " ";
-		studentsSupervised += $(this).find("#levelStudSupervised").find(":selected").text() + "; ";
+		studentsSupervised += $(this).find("#levelStudSupervised").find(":selected").text() + "/n ";
 	})
 
 
@@ -37,7 +63,7 @@ function collect(){
 	$(".reports").each( function(){
 		reports += $(this).find("#studentNameReports").val() + " ";
 		reports += $(this).find("#titleOfReportStudent").val() + " ";
-		reports += $(this).find("#plansForPublication").val() + "; ";
+		reports += $(this).find("#plansForPublication").val() + "/n ";
 	})
 
 	var completedPhD = "";
@@ -47,7 +73,7 @@ function collect(){
 		completedPhD += $(this).find("#supervisorName").val() + " ";
 		completedPhD += $(this).find("#otherMembersName").val() + " ";
 		completedPhD += $(this).find("#nameOfDegreeGrantingInstitution").val() + " ";
-		completedPhD += $(this).find("#titleOfTheses").val() + "; ";
+		completedPhD += $(this).find("#titleOfTheses").val() + "/n ";
 	})
 
 	var grants = "";
@@ -55,7 +81,7 @@ function collect(){
 		grants += $(this).find("#titleOfProject").val() + " ";
 		grants += $(this).find("#grantingAgency").val() + " ";
 		grants += $(this).find("#durationGrants").val() + " ";
-		grants += $(this).find("#amountOfGrant").val() + "; ";
+		grants += $(this).find("#amountOfGrant").val() + "/n ";
 	})
 
 	var researchProjects = "";
@@ -65,7 +91,7 @@ function collect(){
 		researchProjects += $(this).find("#externalPersonnel").val() + " ";
 		//TODO datepicker id startDateOfProject
 		//TODO datepicker id endDateOfProject
-		researchProjects += $(this).find("#sourceOfFinance").val() + "; ";
+		researchProjects += $(this).find("#sourceOfFinance").val() + "/n ";
 	})
 
 	var researchColl = "";
@@ -75,17 +101,17 @@ function collect(){
 		researchColl += $(this).find("#departmentOfUnit").val() + " ";
 		researchColl += $(this).find("#nameOfPrincipal").val() + " ";
 		researchColl += $(this).find("#otherImportantContacts").val() + " ";
-		researchColl += $(this).find("#natureOfColl").val() + "; ";
+		researchColl += $(this).find("#natureOfColl").val() + "/n ";
 	})
 
 	var conferencePubl = "";
 	$(".conferencePubl").each( function(){
-		conferencePubl += $(this).find("#publications").val() + "; ";
+		conferencePubl += $(this).find("#publications").val() + "/n ";
 	})
 
 	var journalPubl = "";
 	$(".journalPubl").each( function(){
-		journalPubl += $(this).find("#publications").val() + "; ";
+		journalPubl += $(this).find("#publications").val() + "/n ";
 	})
 
 	
@@ -94,8 +120,8 @@ function collect(){
 
 		query = "<USERPAGE>" + "<UNITNAME>" + unitName + "</UNITNAME>" +
 			"<UNITHEADNAME>" + unitHeadName + "</UNITHEADNAME>" +
-			"<REPORTSTARTDATE>" + startDate + "</REPORTSTARTDATE>" +
-			"<REPORTENDDATE>" + endDate + "</REPORTENDDATE>" + 
+			"<REPORTSTARTDATE>" + startDateString + "</REPORTSTARTDATE>" +
+			"<REPORTENDDATE>" + endDateString + "</REPORTENDDATE>" + 
 			"<COURSESTAUGHT>" + coursesTaught.trim() + "</COURSESTAUGHT>" + 
 			"<EXAMSADMIN>" + exams.trim() + "</EXAMSADMIN>" +
 			"<STUDENTSSUPERVISED>" + studentsSupervised.trim() + "</STUDENTSSUPERVISED>" + 
