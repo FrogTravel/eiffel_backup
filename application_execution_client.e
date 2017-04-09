@@ -36,6 +36,9 @@ feature
 			create server_cmd.send_message (ws, a_message,text_frame)
 			create parser
 
+			if a_message.starts_with ("query1") then
+				ws.send (Text_frame, "HELLO DARKNESS MY OLD FRIEND!")
+			end
 			parser.parse(a_message)
 			-- CALL PARSER
 			print("%N-------------"+a_message+"--------------%N")

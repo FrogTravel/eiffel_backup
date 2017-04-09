@@ -58,10 +58,14 @@ feature
 
 			if path.starts_with ("/index.html") then
 				create {WSF_FILE_RESPONSE} mesg.make_with_content_type({HTTP_MIME_TYPES}.text_html, "eiffel_project/src/index.html")
+			elseif path.starts_with ("/adminindex.html") then
+				create {WSF_FILE_RESPONSE} mesg.make_with_content_type ({HTTP_MIME_TYPES}.text_html, "eiffel_project/src/admin_src/adminindex.html")
 			elseif path.starts_with ("/scripts") then
 				create {WSF_FILE_RESPONSE} mesg.make_with_content_type ({HTTP_MIME_TYPES}.application_javascript, "eiffel_project/src" + path)
 			elseif path.starts_with ("/css") then
 				create {WSF_FILE_RESPONSE} mesg.make_with_content_type ({HTTP_MIME_TYPES}.text_css, "eiffel_project/src/" + path)
+			elseif path.starts_with ("/adminscripts") then
+				create {WSF_FILE_RESPONSE} mesg.make_with_content_type ({HTTP_MIME_TYPES}.application_javascript, "eiffel_project/src/admin_src" + path)
 			else
 				create not_found.make (request)
 					not_found.add_suggested_location (request.absolute_script_url (""), "Home", "Back to home page")
