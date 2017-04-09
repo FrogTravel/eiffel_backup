@@ -28,11 +28,10 @@ function message(msg){
 }//End message()
 
 function send(text){
-	message("Trying to send data!!!");
-
+	message("Sending data");
 	try{
 		socket.send(text);
-		message(text)
+		message("Data send: " + text);
 	} catch(exception){
 		message("exception");
 	}
