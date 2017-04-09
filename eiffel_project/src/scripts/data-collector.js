@@ -95,7 +95,7 @@ function collect(){
 		query = "<USERPAGE>" + "<UNITNAME>" + unitName + "</UNITNAME>" +
 			"<UNITHEADNAME>" + unitHeadName + "</UNITHEADNAME>" +
 			"<REPORTSTARTDATE>" + startDate + "</REPORTSTARTDATE>" +
-			"<REPORTSTARTDATE>" + endDate + "</REPORTENDDATE>" + 
+			"<REPORTENDDATE>" + endDate + "</REPORTENDDATE>" + 
 			"<COURSESTAUGHT>" + coursesTaught.trim() + "</COURSESTAUGHT>" + 
 			"<EXAMSADMIN>" + exams.trim() + "</EXAMSADMIN>" +
 			"<STUDENTSSUPERVISED>" + studentsSupervised.trim() + "</STUDENTSSUPERVISED>" + 
