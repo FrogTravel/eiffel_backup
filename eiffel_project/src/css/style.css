@@ -1,38 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	margin: auto;
 	background-color: #357a38;
 	font-family: sans-serif;
+	background-image: url("img/back.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
 }
 
 .content {
 	margin: auto;
-	background-color: #265728;
+	background: rgba(38, 87, 40, 0.7);
 	padding: 20px;
 	width: 70%;
-
+	position: relative;
 }
 
-p, h4{
+p, h4, h1{
 	color: #ffffff;
 }
 
+
 p {
-	font-size: 16px;
+	font-size: 18px;
 }
 
 h4 {
 	font-size: 25px;
+	margin-top: 20px;
+	margin-bottom: 20px; 
+}
+
+input, select{
+	font-size: 15px;
+	padding: 15px;
+	border: none;
 }
 
 input {
 	background-color: #b7dfb9;
+	width: 180px;
+}
+
+select {
 	border: none;
-	padding: 18px;
-	vertical-align: middle;
+	background: #4CAF50;
+	color: white;
+	/*-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;*/
+	height: 48px;
 }
 
 .inline{
 	display: inline;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	padding: 8px;
+}
+
+img {
+	width: 15%;
+	padding: 20px;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}
+
+/*#submit {
+	font-size: 20px;
+	padding: 16px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	right: 50%;
+	margin: 10px;
+}*/
+
+.single {
+	/*margin: 15px;*/
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .bigform {
@@ -40,7 +97,8 @@ input {
 	margin-bottom: 20px;
 }
 
-input, select{
-	margin: 2px;
+#submit {
+	font-size: 20px;
+	padding: 16px;
 }
 

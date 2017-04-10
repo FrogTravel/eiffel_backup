@@ -4,9 +4,9 @@ function checkForErrors(){
 		var error = $(this).val() === "";
 
 		if(error){
-			$(this).css("background-color", "red");
+			$(this).css("background-color", "#FF8A80");
 		}else{
-			$(this).css("background-color", "green");
+			$(this).css("background-color", "#b7dfb9");
 		}
 
 		console.log("ERRORS: " + error);
