@@ -2,19 +2,36 @@
 	<head>
 		<title>Admin Page</title>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="admincss/style.css">
+		<link rel="stylesheet" type="text/css" href="admincss/dropdown.css">
 	</head>
 	<body>
-		<select>
-			<option>All publications in a given year</option>
-			<option>Summary information about given unit in given number of years</option>
-			<option>Courses between two dates local</option>
-		</select>
-		<button id="askbtn">Ask</button>
-		<div id="additionalInfo"></div>
-		<div id="resultInfo"></div>
-		<script type="text/javascript" src="adminscripts/socket.js"></script>
-		<script type="text/javascript" src="adminscripts/parser.js"></script>
-		<script type="text/javascript" src="adminscripts/main.js"></script>
-		<script type="text/javascript" src="adminscripts/clicker.js"></script>
+		<div class="content">
+			<h1 align="center">Administration page</h1>
+			<h2 align="center">Unit Annual Report</h2>
+			<!-- <select size="3">
+				<option>All publications in a given year</option>
+				<option>Summary information about given unit in given number of years</option>
+				<option>Courses between two dates local</option>
+			</select> -->
+
+			<div class="dropdown">
+				<button class="dropbtn">Choice query</button>
+				<div class="dropdown-content">
+					<a class="levelDropList buttonChoice" href="#">All publications in a given year</a>
+					<a class="levelDropList buttonChoice" href="#">Summary information about given unit in given number of years</a>
+					<a class="levelDropList buttonChoice" href="#">Courses between two dates local</a>
+				</div>
+			</div>
+
+
+			<!-- <button id="askbtn">Ask</button> -->
+			<div id="additionalInfo"></div>
+			<div id="resultInfo"></div>
+			<script type="text/javascript" src="adminscripts/socket.js"></script>
+			<script type="text/javascript" src="adminscripts/parser.js"></script>
+			<script type="text/javascript" src="adminscripts/main.js"></script>
+			<script type="text/javascript" src="adminscripts/clicker.js"></script>
 	</body>
+	</div>
 </html>

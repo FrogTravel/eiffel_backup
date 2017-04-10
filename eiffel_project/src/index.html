@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div class="content">
-		<div id="heading"><h1>Unit Annual Report</h1></div>
+		<div id="heading"><h1 align="center">Unit Annual Report</h1></div>
 		<h4 class="heading">General</h4>
 		<p>Name of unit</p>
 		<input id="UNITNAME" class="mandatory single" type="text" name="UNITNAME">
@@ -143,6 +143,8 @@
 			<input id="titleOfProjectResearch" placeholder="Title of project" class="mandatory" type="text" name="name">
 			<input id="IUpersonnel" placeholder="IU persons involved" class="mandatory" type="text" name="IUpersonnel">
 			<input id="externalPersonnel" class="mandatory" placeholder="External persons involved" type="text" name="externalPersonnel">
+			<div></div>
+			<p class="inline" style="color: transparent;">1.</p>
 			<input  class="datepicker" id="startDateOfProject" placeholder="Start date" type="text" name="date">
 			<input  class="datepicker" id="endDateOfProject" placeholder="End date" type="text" name="date">
 			<input id="sourceOfFinance" class="mandatory" placeholder="Source of financing" type="text" name="sourceOfFinance">
@@ -155,12 +157,14 @@
 		<button id="removebtnResearchColl">Remove</button>
 		<div class="bigform researchColl">
 			<p class="inline number">1.</p>
-			<input id="countryOfInst" class="mandatory" type="text" name="country">
-			<input id="nameOfInstitution" class="mandatory" type="text" name="nameOfInstitution">
-			<input id="departmentOfUnit" class="notMandatory" type="text" name="departmentOfUnit">
-			<input id="nameOfPrincipal" class="mandatory" type="text" name="nameOfPrincipal">
-			<input id="otherImportantContacts" class="mandatory" type="text" name="otherImportantContacts">
-			<input id="natureOfColl" class="mandatory" type="text" name="natureOfColl">
+			<input id="countryOfInst" class="mandatory" placeholder="Country of institution" type="text" name="country">
+			<input id="nameOfInstitution" class="mandatory" placeholder="Name of institution" type="text" name="nameOfInstitution">
+			<input id="departmentOfUnit" class="notMandatory" placeholder="Department" type="text" name="departmentOfUnit">
+			<div></div>
+			<p class="inline" style="color: transparent;">1.</p>
+			<input id="nameOfPrincipal" class="mandatory" placeholder="Name of Principal" type="text" name="nameOfPrincipal">
+			<input id="otherImportantContacts" class="mandatory" placeholder="Other important contacts" type="text" name="otherImportantContacts">
+			<input id="natureOfColl" class="mandatory" placeholder="Nature of collaboration" type="text" name="natureOfColl">
 			<div id="newResearchCollaborationsRow"></div>
 		</div>	
 
@@ -171,7 +175,7 @@
 		<button id="removebtnconference">Remove</button>
 		<div class="bigform conferencePubl">
 			<p class="inline number">1.</p>
-			<input id="publications" class="mandatory" type="text" name="publications">
+			<input id="publications" class="mandatory" placeholder="Name of publication" type="text" name="publications">
 			<div id="newConferencePublRow"></div>
 		</div>	
 
@@ -182,7 +186,7 @@
 		<button id="removejournalpubl">Remove</button>
 		<div class="bigform journalPubl">
 			<p class="inline number">1.</p>
-			<input id="publications" class="mandatory" type="text" name="publications">
+			<input id="publications" class="mandatory" placeholder="Name of publication" type="text" name="publications">
 			<div id="newJournalPublRow"></div>
 		</div>	
 
