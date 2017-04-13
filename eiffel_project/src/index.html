@@ -19,9 +19,9 @@
 		<p>Name of Head Unit</p>
 		<input id="UNITHEADNAME" class="mandatory single" type="text" name="UNITHEADNAME">
 		<p>Start of reporting period</p>
-		<input  class="datepicker notMandatory single" id="REPORTSTARTDATE" type="text" name="REPORTSTARTDATE">
+		<input  class="datepicker single" id="REPORTSTARTDATE" type="text" name="REPORTSTARTDATE">
 		<p>End of reporting period</p>
-		<input  class="datepicker notMandatory single" id="REPORTENDDATE" type="text" name="REPORTENDDATE"><br>
+		<input  class="datepicker single" id="REPORTENDDATE" type="text" name="REPORTENDDATE"><br>
  		
 
  		<h4 class="heading">Teaching</h4>
@@ -145,8 +145,8 @@
 			<input id="externalPersonnel" class="mandatory" placeholder="External persons involved" type="text" name="externalPersonnel">
 			<div></div>
 			<p class="inline" style="color: transparent;">1.</p>
-			<input  class="datepicker" id="startDateOfProject" placeholder="Start date" type="text" name="date">
-			<input  class="datepicker" id="endDateOfProject" placeholder="End date" type="text" name="date">
+			<input  id="startDateOfProject" placeholder="From dd/mm/yyyy" type="text" name="date">
+			<input id="endDateOfProject" placeholder="Until dd/mm/yyyy" type="text" name="date">
 			<input id="sourceOfFinance" class="mandatory" placeholder="Source of financing" type="text" name="sourceOfFinance">
 			<div id="newResearchProjectsRow"></div>
 		</div>	
@@ -191,7 +191,7 @@
 		</div>	
 
 		<button id="submit">Submit</button>
-
+		<div class="inline" id="info"></div>
 		<img src="css/img/iu_logo.png">
 	</div>
 

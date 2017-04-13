@@ -183,13 +183,20 @@ feature
       until
         iterator.after
       loop
-        if iterator.item.string_value (1).substring (1, iterator.item.string_value (1).index_of (' ', 1) - 1).to_integer >= day_start
-        and iterator.item.string_value (1).substring (iterator.item.string_value (1).index_of (' ', 1) + 1, iterator.item.string_value (1).index_of (' ', 4) - 1).to_integer >= m_start
-        and iterator.item.string_value (1).substring (iterator.item.string_value (1).index_of (' ', 4) + 1, iterator.item.string_value (1).index_of (' ', 4) + 4).to_integer >= year_start
-        and iterator.item.string_value (2).substring (1, iterator.item.string_value (2).index_of (' ', 1) - 1).to_integer <= day_end
-        and iterator.item.string_value (2).substring (iterator.item.string_value (2).index_of (' ', 1) + 1, iterator.item.string_value (2).index_of (' ', 4) - 1).to_integer <= m_end
-        and iterator.item.string_value (2).substring (iterator.item.string_value (2).index_of (' ', 4) + 1, iterator.item.string_value (2).index_of (' ', 4) + 4).to_integer <= year_end then
+        if iterator.item.string_value (1).substring (iterator.item.string_value (1).index_of (' ', 4) + 1, iterator.item.string_value (1).index_of (' ', 4) + 4).to_integer >= year_start then
+          if iterator.item.string_value (2).substring (iterator.item.string_value (2).index_of (' ', 4) + 1, iterator.item.string_value (2).index_of (' ', 4) + 4).to_integer <= year_end then
+            result := result + iterator.item.string_value (3) + ", "
+            else
+        if iterator.item.string_value (1).substring (iterator.item.string_value (1).index_of (' ', 1) + 1, iterator.item.string_value (1).index_of (' ', 4) - 1).to_integer >= m_start then
+        if iterator.item.string_value (1).substring (1, iterator.item.string_value (1).index_of (' ', 1) - 1).to_integer >= day_start then
+        if iterator.item.string_value (2).substring (iterator.item.string_value (2).index_of (' ', 1) + 1, iterator.item.string_value (2).index_of (' ', 4) - 1).to_integer <= m_end then
+        if iterator.item.string_value (2).substring (1, iterator.item.string_value (2).index_of (' ', 1) - 1).to_integer <= day_end then
           result := result + iterator.item.string_value (3) + ", "
+        end
+        end
+        end
+        end
+        end
         end
         iterator.forth
       end

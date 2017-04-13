@@ -6,7 +6,7 @@ function collect(){
 	var startDate = $("#REPORTSTARTDATE").datepicker("getDate");
 
 	if(startDate === null){
-		startDateString = "";
+		startDateString = "00/00/00000";
 	}else{
 		var startDateString = startDate.getDate() + " ";
 		// if(startDate.getMonth+1 < 10)
@@ -20,7 +20,7 @@ function collect(){
 
 	var endDate = $("#REPORTENDDATE").datepicker("getDate");
 	if(endDate === null){
-		endDateString = "";
+		endDateString = "00/00/0000";
 	}else{
 		var endDateString = endDate.getDate() + " ";
 		// if(endDate.getMonth+1 < 10)
@@ -40,7 +40,7 @@ function collect(){
 		coursesTaught += $(this).find("#COURSENAME").val() + " ";
 		coursesTaught += $(this).find("#semesterSelectorCourses").find(":selected").text() + " ";
 		coursesTaught += $(this).find("#levelSelectorCourses").find(":selected").text() + " ";
-		coursesTaught += $(this).find("#APPROXIMATESTUDENTNUMBER").val() + "/n ";
+		coursesTaught += $(this).find("#APPROXIMATESTUDENTNUMBER").val() + "<br> ";
 	});
 
 	var exams = "";
@@ -49,13 +49,13 @@ function collect(){
 		exams += $(this).find("#courseName").val() + " ";
 		exams += $(this).find("#examsSelector").find(":selected").text() + " ";
 		exams += $(this).find("#kindOfExams").find(":selected").text() + " ";
-		exams += $(this).find("#approxStudNumb").val() + "/n ";
+		exams += $(this).find("#approxStudNumb").val() + "<br> ";
 	})
 
 	var studentsSupervised = "";
 	$(".studsupervised").each( function(){
 		studentsSupervised += $(this).find("#studentNameStudSupervised").val() + " ";
-		studentsSupervised += $(this).find("#levelStudSupervised").find(":selected").text() + "/n ";
+		studentsSupervised += $(this).find("#levelStudSupervised").find(":selected").text() + "<br> ";
 	})
 
 
@@ -63,7 +63,7 @@ function collect(){
 	$(".reports").each( function(){
 		reports += $(this).find("#studentNameReports").val() + " ";
 		reports += $(this).find("#titleOfReportStudent").val() + " ";
-		reports += $(this).find("#plansForPublication").val() + "/n ";
+		reports += $(this).find("#plansForPublication").val() + "<br> ";
 	})
 
 	var completedPhD = "";
@@ -73,7 +73,7 @@ function collect(){
 		completedPhD += $(this).find("#supervisorName").val() + " ";
 		completedPhD += $(this).find("#otherMembersName").val() + " ";
 		completedPhD += $(this).find("#nameOfDegreeGrantingInstitution").val() + " ";
-		completedPhD += $(this).find("#titleOfTheses").val() + "/n ";
+		completedPhD += $(this).find("#titleOfTheses").val() + "<br> ";
 	})
 
 	var grants = "";
@@ -81,7 +81,7 @@ function collect(){
 		grants += $(this).find("#titleOfProject").val() + " ";
 		grants += $(this).find("#grantingAgency").val() + " ";
 		grants += $(this).find("#durationGrants").val() + " ";
-		grants += $(this).find("#amountOfGrant").val() + "/n ";
+		grants += $(this).find("#amountOfGrant").val() + "<br> ";
 	})
 
 	var researchProjects = "";
@@ -91,7 +91,9 @@ function collect(){
 		researchProjects += $(this).find("#externalPersonnel").val() + " ";
 		//TODO datepicker id startDateOfProject
 		//TODO datepicker id endDateOfProject
-		researchProjects += $(this).find("#sourceOfFinance").val() + "/n ";
+		researchProjects += $(this).find("#startDateOfProject").val() + " ";
+		researchProjects += $(this).find("#endDateOfProject").val() + " ";
+		researchProjects += $(this).find("#sourceOfFinance").val() + "<br> ";
 	})
 
 	var researchColl = "";
@@ -101,17 +103,17 @@ function collect(){
 		researchColl += $(this).find("#departmentOfUnit").val() + " ";
 		researchColl += $(this).find("#nameOfPrincipal").val() + " ";
 		researchColl += $(this).find("#otherImportantContacts").val() + " ";
-		researchColl += $(this).find("#natureOfColl").val() + "/n ";
+		researchColl += $(this).find("#natureOfColl").val() + "<br> ";
 	})
 
 	var conferencePubl = "";
 	$(".conferencePubl").each( function(){
-		conferencePubl += $(this).find("#publications").val() + "/n ";
+		conferencePubl += $(this).find("#publications").val() + "<br> ";
 	})
 
 	var journalPubl = "";
 	$(".journalPubl").each( function(){
-		journalPubl += $(this).find("#publications").val() + "/n ";
+		journalPubl += $(this).find("#publications").val() + "<br> ";
 	})
 
 	
@@ -137,6 +139,7 @@ function collect(){
 
 		console.log(query);
 		send(query);
+		$("#info").html("<p class=\"inline\">Sent successfully</p>");
 	}else{
 		console.log("error")
 	}
