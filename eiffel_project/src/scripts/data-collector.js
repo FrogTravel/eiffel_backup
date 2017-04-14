@@ -116,6 +116,51 @@ function collect(){
 		journalPubl += $(this).find("#publications").val() + "<br> ";
 	})
 
+	var patents = "";
+	$(".patents").each( function(){
+		patents += $(this).find("#patentsFilled").val() + " ";
+		patents += $(this).find("#countryOfPatent").val() + "<br>";
+	})
+
+	var iplic = "";
+	$(".IPlic").each( function() {
+		iplic += $(this).find("#licensesGranted").val() + "<br>";
+	})
+
+	var bestPaper = "";
+	$(".bestPaper").each( function(){
+		bestPaper += $(this).find("#authorOfPaper").val() + " ";
+		bestPaper += $(this).find("#titleOfArticle").val() + " ";
+		bestPaper += $(this).find("#awardingConferenceJournal").val() + " ";
+		bestPaper += $(this).find("#exactWording").val() + " ";
+		bestPaper += $(this).find("#dateOfAwarding").val() + "<br>";
+	})
+
+	var membership = "";
+	$(".membership").each( function(){
+		membership += $(this).find("#membername").val() + " ";
+		membership += $(this).find("#dateOfMembership").val() + "<br>";
+	})
+
+	var prizes = "";
+	$(".prizes").each( function(){
+		prizes += $(this).find("#recipientOfPrize").val() + " ";
+		prizes += $(this).find("#nameOfPrize").val() + " ";
+		prizes += $(this).find("#grantingInstitution").val() + " ";
+		prizes += $(this).find("#dateOfPrize").val() + "<br>";
+	})
+
+	var outside = "";
+	$(".industryColl").each( function(){
+		outside += $(this).find("#companyOfIndColl").val() + " ";
+		outside += $(this).find("#natureOfIndColl").val() + "<br>";
+	})
+
+	var other = "";
+	$(".otherInf").each( function(){
+		other += $(this).find("#otherInf").val() + "<br>";
+	})
+
 	
 	if(checkForErrors()){
 		console.log("Exams: " + exams);
@@ -134,6 +179,13 @@ function collect(){
 			"<RESEARCHCOLL>" + researchColl.trim() + "</RESEARCHCOLL>" + 
 			"<CONFERENCEPUBL>" + conferencePubl.trim() + "</CONFERENCEPUBL>" + 
 			"<JOURNALPUBL>" + journalPubl.trim() + "</JOURNALPUBL>" +
+			"<PATENTS>" + patents.trim() + "</PATENTS>" +
+			"<IPLIC>" + iplic.trim() + "</IPLIC>" +
+			"<BESTPAPER>" + bestPaper.trim() + "</BESTPAPER>" +
+			"<MEMBERSHIP>" + membership.trim() + "</MEMBERSHIP>" +
+			"<PRIZES>" + prizes.trim() + "</PRIZES>" +
+			"<INDUSTRYCOLL>" + outside.trim() + "</INDUSTRYCOLL>" +
+			"<OTHER>" + other.trim() + "</OTHER>" +
 			"</USERPAGE>";
 	
 

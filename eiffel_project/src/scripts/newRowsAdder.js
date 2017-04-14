@@ -247,7 +247,6 @@ $(document).ready(function(){
 		var newElement = "<div id='" + patents + "pat' class='bigform patents'>" +
 			"<input id='patentsFilled' class='notMandatory newElement' placeholder='Patents filled' type='text' name='patentsFilled'>" +
 			"<input id='countryOfPatent' class='notMandatory' placeholder='Country of patent office' type='text' name='countryOfPatent'>" +
-			"<div id='newPatentsRow'></div>" +
 		"</div>	";
 		patents++;
 
@@ -260,6 +259,131 @@ $(document).ready(function(){
 			patents--;
 
 		$("#" + patents + "pat").remove();
+	})
+
+	//IP licesing
+	var iplicesing = 0;
+	$("#addbtnIP").click( function(even){
+		var newElement = "<div id='" + iplicesing + "lic' class='bigform IPlic'>" + 
+			"<input id='licensesGranted' class='notMandatory' placeholder='Licenses granted' type='text' name='licensesGranted'>" +
+		"</div>";
+		iplicesing++;
+
+		$("#newIPRow").append(newElement);
+
+	})
+
+	$("#removebtnIP").click( function(even){
+		if(iplicesing>0)
+			iplicesing--;
+
+		$("#" + iplicesing + "lic").remove();
+	})
+
+	//Best paper awards
+	var bestpaper = 0;
+	$("#addbtnBestPaper").click( function(even){
+		var newElement = "<div id='" + bestpaper + "bp' class='bigform bestPaper'>" +
+			"<input id='authorOfPaper' class='notMandatory newElement' placeholder='Author' type='text' name='authorOfPaper'>" +
+			"<input id='titleOfArticle' class='notMandatory newElement' placeholder='Title of the article' type='text' name='titleOfArticle'>" +
+			"<input id='awardingConferenceJournal' class='notMandatory newElement' placeholder='Awarding conference of journal' type='text' name='awardingConferenceJournal'>" +
+			"<input id='exactWording' class='notMandatory newElement' placeholder='Exact wording of award' type='text' name='exactWording'>" +
+			"<input id='dateOfAwarding' class='notMandatory newElement' placeholder='date dd/mm/yyyy' type='text' name='dateOfAwarding'>" +
+		"</div>	";
+		bestpaper++;
+
+		$("#newBestPaperRow").append(newElement);
+
+	})
+
+	$("#removebtnBestPaper").click( function(even){
+		if(bestpaper>0)
+			bestpaper--;
+
+		$("#" + bestpaper + "bp").remove();
+	})
+
+	//Membership
+	var membersIndex = 0;
+	$("#addbtnMembership").click( function(even){
+		var newElement = "<div id='" + membersIndex + "mI' class='bigform membership'>" +
+			"<input id='membername' class='notMandatory newElement' placeholder='Name of member' type='text' name='authorOfPaper'>" +
+			"<input id='dateOfMembership' class='notMandatory' placeholder='Date of membership dd/mm/yyyy' type='text' name='dateOfMembership'>" +
+		"</div>";
+		membersIndex++;
+
+		$("#newMembershipRow").append(newElement);
+
+	})
+
+	$("#removebtnMembership").click( function(even){
+		if(membersIndex>0)
+			membersIndex--;
+
+		$("#" + membersIndex + "mI").remove();
+	})
+
+
+	//Prizes
+	var prizesIndex = 0;
+	$("#addbtnPrizes").click( function(even){
+		var newElement = "<div id='"+ prizesIndex +"pI' class='bigform prizes'>" +
+			"<input id='recipientOfPrize' class='notMandatory newElement' placeholder='Recipient' type='text' name='recipientOfPrize'>" +
+			"<input id='nameOfPrize' class='notMandatory newElement' placeholder='Name of prize' type='text' name='nameOfPrize'>" +
+			"<input id='grantingInstitution' class='notMandatory newElement' placeholder='Granting institution' type='text' name='grantingInstitution'>" + 
+			"<input id='dateOfPrize' class='notMandatory newElement' placeholder='Date: dd/mm/yyyy' type='text' name='dateOfPrize'>" + 
+		"</div>	";
+		prizesIndex++;
+
+		$("#newPrizeRow").append(newElement);
+
+	})
+
+	$("#removebtnPrizes").click( function(even){
+		if(prizesIndex>0)
+			prizesIndex--;
+
+		$("#" + prizesIndex + "pI").remove();
+	})
+
+
+	//Industry collaborations
+	var indColl = 0;
+	$("#addbtnIndColl").click( function(even){
+		var newElement = "<div id='"+ indColl +"indColl' class='bigform industryColl'>" +
+			"<input id='companyOfIndColl' class='notMandatory newElement' placeholder='Company' type='text' name='companyOfIndColl'>" +
+			"<input id='natureOfIndColl' class='notMandatory' placeholder='Nature of collaboration' type='text' name='nameOfPrize'>" +
+		"</div>	";
+		indColl++;
+
+		$("#newIndCollRow").append(newElement);
+
+	})
+
+	$("#removebtnIndColl").click( function(even){
+		if(indColl>0)
+			indColl--;
+
+		$("#" + indColl + "indColl").remove();
+	})
+
+	//Other
+	var otherIndex = 0;
+	$("#addbtnOtherInf").click( function(even){
+		var newElement = "<div id='" + otherIndex +"other' class='bigform otherInf'>" +
+			"<input id='otherInf' class='notMandatory' placeholder='Other' type='text' name='recipientOfPrize'>" +
+		"</div>";
+		otherIndex++;
+
+		$("#newOtherInfRow").append(newElement);
+
+	})
+
+	$("#removebtnOtherInf").click( function(even){
+		if(otherIndex>0)
+			otherIndex--;
+
+		$("#" + otherIndex + "other").remove();
 	})
 });
 
