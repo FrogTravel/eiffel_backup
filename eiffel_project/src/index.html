@@ -190,10 +190,100 @@
 			<div id="newJournalPublRow"></div>
 		</div>	
 
+		<h4 class="heading">Technology transfer</h4>
+		<!-- Patents -->
+		<p class="inline notMandatory">Patents</p>
+		<button id="addbtnPatents">Add</button>
+		<button id="removebtnPatents">Remove</button>
+		<div class="bigform patents">
+			<input id="patentsFilled" class="notMandatory" placeholder="Patents filled" type="text" name="patentsFilled">
+			<input id="countryOfPatent" class="notMandatory" placeholder="Country of patent office" type="text" name="countryOfPatent">
+			<div id="newPatentsRow"></div>
+		</div>	
+
+		<!-- IP licensing -->
+		<p class="inline notMandatory">IP licesing (software of others)</p>
+		<button id="addbtnIP">Add</button>
+		<button id="removebtnIP">Remove</button>
+		<div class="bigform IPlic">
+			<input id="licensesGranted" class="notMandatory" placeholder="Licenses granted" type="text" name="licensesGranted">
+			<div id="newIPRow"></div>
+		</div>	
+
+		<h4 class="heading">Distinctions</h4>
+		<!-- Best paper awards  -->
+		<p class="inline notMandatory">Best paper awards</p>
+		<button id="addbtnBestPaper">Add</button>
+		<button id="removebtnBestPaper">Remove</button>
+		<div class="bigform bestPaper">
+			<input id="authorOfPaper" class="notMandatory" placeholder="Author" type="text" name="authorOfPaper">
+			<input id="titleOfArticle" class="notMandatory" placeholder="Title of the article" type="text" name="titleOfArticle">
+			<input id="awardingConferenceJournal" class="notMandatory" placeholder="Awarding conference of journal" type="text" name="awardingConferenceJournal">
+			<input id="exactWording" class="notMandatory" placeholder="Exact wording of award" type="text" name="exactWording">
+			<input id="dateOfAwarding" class="notMandatory" placeholder="date dd/mm/yyyy" type="text" name="dateOfAwarding">
+			<div id="newBestPaperRow"></div>
+		</div>	
+
+		<!-- Memberships -->
+		<p class="notMandatory inline">Membership</p>
+		<button id="addbtnMembership">Add</button>
+		<button id="removebtnMembership">Remove</button>
+		<div></div>
+		<p class="discription">Membership in academies, international working groups(IFIP, ACM etc.)</p>
+		
+		<div class="bigform membership">
+			<input id="membername" class="notMandatory" placeholder="Name of member" type="text" name="authorOfPaper">
+			<input id="dateOfMembership" class="notMandatory" placeholder="Date of membership dd/mm/yyyy" type="text" name="dateOfMembership">
+			
+			<div id="newMembershipRow"></div>
+		</div>	
+
+		<!-- Prizes -->
+		<p class="inline notMandatory">Prizes</p>
+		<button id="addbtnPrizes">Add</button>
+		<button id="removebtnPrizes">Remove</button>
+		<div class="bigform prizes">
+			<input id="recipientOfPrize" class="notMandatory" placeholder="Recipient" type="text" name="recipientOfPrize">
+			<input id="nameOfPrize" class="notMandatory" placeholder="Name of prize" type="text" name="nameOfPrize">
+			<input id="grantingInstitution" class="notMandatory" placeholder="Granting institution" type="text" name="grantingInstitution">
+			<input id="dateOfPrize" class="notMandatory" placeholder="Date: dd/mm/yyyy" type="text" name="dateOfPrize">
+			
+			<div id="newPrizeRow"></div>
+		</div>	
+
+		<h4 class="heading">Outside activities</h4>
+		<!-- Industry collaborations -->
+		<p class="inline notMandatory">Industry collaborations</p>
+		<button id="addbtnIndColl">Add</button>
+		<button id="removebrnIndColl">Remove</button>
+		<div class="bigform industryColl">
+			<input id="companyOfIndColl" class="notMandatory" placeholder="Company" type="text" name="companyOfIndColl">
+			<input id="natureOfIndColl" class="notMandatory" placeholder="Nature of collaboration" type="text" name="nameOfPrize">
+			
+			<div id="newIndCollRow"></div>
+		</div>	
+
+		<h4 class="heading">Other relevent information</h4>
+		<!-- Other relevant information -->
+		<p class="inline notMandatory">Other relevant information</p>
+		<button id="addbtnOtherInf">Add</button>
+		<button id="removebtnOtherInf">Remove</button>
+		<div></div>
+		<p class="discription">Any information on your unit's achievements that is not covered by the previous sections</p>
+		
+		<div class="bigform otherInf">
+			<input id="otherInf" class="notMandatory" placeholder="Other " type="text" name="recipientOfPrize">
+			
+			<div id="newOtherInfRow"></div>
+		</div>	
+
+
 		<button id="submit">Submit</button>
 		<div class="inline" id="info"></div>
 		<img src="css/img/iu_logo.png">
-	</div>
+		</div>
+
+
 
 		<script type="text/javascript" src="scripts/socket.js"></script>
 		<script type="text/javascript" src="scripts/data-collector.js"></script>

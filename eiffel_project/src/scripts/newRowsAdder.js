@@ -241,6 +241,26 @@ $(document).ready(function(){
 		$("#" + jourPubl + "jP").remove();
 	})
 
+	//Patents
+	var patents = 0;
+	$("#addbtnPatents").click( function(even){
+		var newElement = "<div id='" + patents + "pat' class='bigform patents'>" +
+			"<input id='patentsFilled' class='notMandatory newElement' placeholder='Patents filled' type='text' name='patentsFilled'>" +
+			"<input id='countryOfPatent' class='notMandatory' placeholder='Country of patent office' type='text' name='countryOfPatent'>" +
+			"<div id='newPatentsRow'></div>" +
+		"</div>	";
+		patents++;
+
+		$("#newPatentsRow").append(newElement);
+
+	})
+
+	$("#removebtnPatents").click( function(even){
+		if(patents>0)
+			patents--;
+
+		$("#" + patents + "pat").remove();
+	})
 });
 
 

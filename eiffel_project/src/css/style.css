@@ -110,3 +110,22 @@ img {
 	padding: 16px;
 }
 
+p.discription {
+	color: rgba(255,255,255,0.7);
+	margin-top: 5px;
+	font-size: 15px;
+	margin-bottom: -13px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	font-size: 13px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	font-size: 13px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	font-size: 13px;
+}
+:-moz-placeholder { /* Firefox 18- */
+	font-size: 13px;
+}
