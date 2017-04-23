@@ -22,12 +22,6 @@ feature {NONE} -- Initialization
 	make
 		do
 			create_db
---			add_data ("", "", "13.05.1998", "13.12.1998", "Baekhyun", "", "", "", "", "", "", "", "Kpop", "EXO")
---			add_data ("Jikook", "Alina", "31.05.1998", "31.08.1998", "Jimin", "something", "any", "Jungkook", "no", "not_today", "SF9", "bye", "Kpop", "BTS")
---			add_data ("Jikook", "", "13.05.2000", "13.09.2008", "Bobby", "no", "hyung", "or", "oppa", "", "", "", "Kpop", "iKON")
---			print(query1("2000"))
---			print(query2("Jikook", "5"))
---			print(query3 ("30.05.1998", "31.08.1999"))
 		end
 
 feature
@@ -49,7 +43,14 @@ feature
 				RESEARCHPROJECTS TEXT NOT NULL,
 				RESEARCHCOLL TEXT,
 				CONFERENCEPUBL TEXT,
-				JOURNALPUBL	TEXT
+				JOURNALPUBL	TEXT,
+				PATENTS TEXT,
+				IPLIC TEXT,
+				BESTPAPER TEXT,
+				MEMBERSHIP TEXT,
+				PRIZES TEXT,
+				INDUSTRYCOLL TEXT,
+				OTHER TEXT
 				);
 				]"
 		create db_insert_statement.make (query, db)
@@ -58,7 +59,7 @@ feature
 		end
 
 feature
-		add_data (UNITNAME, UNITHEADNAME, REPORTSTARTDATE, REPORTENDDATE, COURSESTAUGHT, EXAMSADMIN, STUDENTSSUPERVISED, STUDENTREPORTS, PHDTHESES, GRANTSWON, RESEARCHPROJECTS, RESEARCHCOLL, CONFERENCEPUBL, JOURNALPUBL: STRING)
+		add_data (UNITNAME, UNITHEADNAME, REPORTSTARTDATE, REPORTENDDATE, COURSESTAUGHT, EXAMSADMIN, STUDENTSSUPERVISED, STUDENTREPORTS, PHDTHESES, GRANTSWON, RESEARCHPROJECTS, RESEARCHCOLL, CONFERENCEPUBL, JOURNALPUBL, PATENTS, IPLIC, BESTPAPER, MEMBERSHIP, PRIZES, INDUSTRYCOLL, OTHER: STRING)
 			do
 			create db.make_open_read_write ("Forms.db")
 			query := "INSERT INTO Project VALUES('"
@@ -89,6 +90,20 @@ feature
 			query.append (CONFERENCEPUBL)
 			query.append("', '")
 			query.append (JOURNALPUBL)
+			query.append("', '")
+			query.append (PATENTS)
+			query.append("', '")
+			query.append (IPLIC)
+			query.append("', '")
+			query.append (BESTPAPER)
+			query.append("', '")
+			query.append (MEMBERSHIP)
+			query.append("', '")
+			query.append (PRIZES)
+			query.append("', '")
+			query.append (INDUSTRYCOLL)
+			query.append("', '")
+			query.append (OTHER)
 			query.append("');")
 			create db_insert_statement.make (query, db)
 			db_insert_statement.execute
@@ -108,8 +123,11 @@ feature
 			until
 				iterator.after
 			loop
-				if iterator.item.string_value (1).substring (iterator.item.string_value (1).index_of (' ', 4) + 1, iterator.item.string_value (1).index_of (' ', 4) + 4).to_integer  = year.to_integer then
-				result := result + iterator.item.string_value (2) + "; " + iterator.item.string_value (3) + "%N"
+				if iterator.item.string_value (1).same_string ("00/00/00000") or iterator.item.string_value (1).same_string ("") then
+					else
+						if iterator.item.string_value (1).substring (iterator.item.string_value (1).index_of (' ', 4) + 1, iterator.item.string_value (1).index_of (' ', 4) + 4).to_integer  = year.to_integer then
+						result := result + iterator.item.string_value (2) + "; " + iterator.item.string_value (3) + "%N"
+					end
 				end
 				iterator.forth
 			end
@@ -128,7 +146,10 @@ feature
       create db.make_open_read_write ("Forms.db")
       create db_query.make ("SELECT UNITNAME, UNITHEADNAME, REPORTSTARTDATE, REPORTENDDATE, COURSESTAUGHT, EXAMSADMIN, STUDENTSSUPERVISED, STUDENTREPORTS, PHDTHESES, GRANTSWON, RESEARCHPROJECTS, RESEARCHCOLL, CONFERENCEPUBL, JOURNALPUBL FROM Project;", db)
       iterator := db_query.execute_new
-      year_start := iterator.item.string_value (3).substring (iterator.item.string_value (3).index_of (' ', 4) + 1, iterator.item.string_value (3).index_of (' ', 4) + 4).to_integer
+      if iterator.item.string_value (3).same_string ("00/00/00000") then
+      	year_start := -1
+      	else  year_start := iterator.item.string_value (3).substring (iterator.item.string_value (3).index_of (' ', 4) + 1, iterator.item.string_value (3).index_of (' ', 4) + 4).to_integer
+      end
       create result.make_empty
       result := ""
       from
@@ -136,19 +157,22 @@ feature
       until
         iterator.after
       loop
+      	if iterator.item.string_value (3).same_string ("00/00/00000") or iterator.item.string_value (4).same_string ("00/00/0000") or iterator.item.string_value (3).same_string ("") or iterator.item.string_value (4).same_string ("") then
+      	else
         if year_start + years_number.to_integer >= iterator.item.string_value (3).substring (iterator.item.string_value (3).index_of (' ', 4) + 1, iterator.item.string_value (3).index_of (' ', 4) + 4).to_integer and iterator.item.string_value (1).same_string (unit) then
           result := result + "Information about " + unit + " in " + iterator.item.string_value (3).substring (iterator.item.string_value (3).index_of (' ', 4) + 1, iterator.item.string_value (3).index_of (' ', 4) + 4) + " year:" + "%N"
-          result := result + "Unit's head name: " + iterator.item.string_value (2) + ";" + "%N"
-          result := result + "Courses taught: " + iterator.item.string_value (5) + ";" + "%N"
-          result := result + "Examinations: " + iterator.item.string_value (6) + ";" + "%N"
-          result := result + "Students supervised: " + iterator.item.string_value (7) + ";" + "%N"
-          result := result + "Completed student reports: " + iterator.item.string_value (8) + ";" + "%N"
-          result := result + "Completed PhD theses: " + iterator.item.string_value (9) + ";" + "%N"
-          result := result + "Grants: " + iterator.item.string_value (10) + ";" + "%N"
-          result := result + "Research projects: " + iterator.item.string_value (11) + ";" + "%N"
-          result := result + "Research collaborations: " + iterator.item.string_value (12) + ";" + "%N"
-          result := result + "Conference publications: " + iterator.item.string_value (13) + ";" + "%N"
-          result := result + "Journal publications: " + iterator.item.string_value (14) + "." + "%N" + "%N"
+          result := result + "Unit's head name: " + iterator.item.string_value (2)  + "%N"
+          result := result + "Courses taught: " + iterator.item.string_value (5) + "%N"
+          result := result + "Examinations: " + iterator.item.string_value (6) + "%N"
+          result := result + "Students supervised: " + iterator.item.string_value (7) + "%N"
+          result := result + "Completed student reports: " + iterator.item.string_value (8) + "%N"
+          result := result + "Completed PhD theses: " + iterator.item.string_value (9) + "%N"
+          result := result + "Grants: " + iterator.item.string_value (10) +  "%N"
+          result := result + "Research projects: " + iterator.item.string_value (11) + "%N"
+          result := result + "Research collaborations: " + iterator.item.string_value (12) + "%N"
+          result := result + "Conference publications: " + iterator.item.string_value (13) + "%N"
+          result := result + "Journal publications: " + iterator.item.string_value (14) + "%N" + "%N"
+        end
         end
         iterator.forth
       end
@@ -183,6 +207,8 @@ feature
       until
         iterator.after
       loop
+      	if iterator.item.string_value (1).same_string ("") or iterator.item.string_value (1).same_string ("00/00/00000") or iterator.item.string_value (2).same_string ("") or iterator.item.string_value (2).same_string ("00/00/0000") then
+      		else
         if iterator.item.string_value (1).substring (iterator.item.string_value (1).index_of (' ', 4) + 1, iterator.item.string_value (1).index_of (' ', 4) + 4).to_integer >= year_start then
           if iterator.item.string_value (2).substring (iterator.item.string_value (2).index_of (' ', 4) + 1, iterator.item.string_value (2).index_of (' ', 4) + 4).to_integer <= year_end then
             result := result + iterator.item.string_value (3) + ", "
@@ -198,6 +224,7 @@ feature
         end
         end
         end
+        end
         iterator.forth
       end
       if result.same_string("Courses taught between " + start + " and " + the_end + ":" + "%N") then
@@ -207,6 +234,98 @@ feature
       end
     end
 
+    query4(name: STRING):STRING --number of supervised students
+    local
+    	number: INTEGER
+    do
+    	create db.make_open_read_write ("Forms.db")
+      	create db_query.make ("SELECT UNITNAME, STUDENTSSUPERVISED FROM Project;", db)
+     	iterator := db_query.execute_new
+     	create result.make_empty
+     	number := 0
+     	result := "Number of supervised students by " + name + ": " + "%N"
+     	from
+        	iterator.start
+      	until
+       		iterator.after
+      	loop
+      		if iterator.item.string_value (1).same_string (name) then
+				number := number + iterator.item.string_value (2).occurrences ('<')
+      		end
+      		iterator.forth
+      	end
+      	result := result + number.out
+    end
 
+    query5(name: STRING):STRING --number of research collaborations
+    local
+    	number: INTEGER
+    do
+    	create db.make_open_read_write ("Forms.db")
+      	create db_query.make ("SELECT UNITNAME, RESEARCHCOLL FROM Project;", db)
+     	iterator := db_query.execute_new
+     	create result.make_empty
+     	number := 0
+     	result := "Number of research collaborations by " + name + ": " + "%N"
+     	from
+        	iterator.start
+      	until
+       		iterator.after
+      	loop
+      		if iterator.item.string_value (1).same_string (name) then
+				number := number + iterator.item.string_value (2).occurrences ('<')
+      		end
+      		iterator.forth
+      	end
+      	result := result + number.out
+    end
+
+    query6(name: STRING): STRING --examinations by a given unit
+		do
+			create db.make_open_read_write ("Forms.db")
+			create db_query.make ("SELECT UNITNAME, EXAMSADMIN FROM Project;", db)
+			iterator := db_query.execute_new
+			create result.make_empty
+			result := "Examinations by " + name + ":" + "%N"
+			from
+				iterator.start
+			until
+				iterator.after
+			loop
+				if iterator.item.string_value (1).same_string (name) and not iterator.item.string_value (2).same_string ("") then
+					result := result + iterator.item.string_value (2) + "%N"
+				end
+				iterator.forth
+			end
+			if result.same_string("Examinations by " + name + ":" + "%N") then
+				result := "Can't find the information!" + "%N"
+			else
+				result := result + "%N"
+			end
+		end
+
+	query7(name: STRING): STRING --prizes by a given unit
+		do
+			create db.make_open_read_write ("Forms.db")
+			create db_query.make ("SELECT UNITNAME, PRIZES FROM Project;", db)
+			iterator := db_query.execute_new
+			create result.make_empty
+			result := name + "'s prizes:" + "%N"
+			from
+				iterator.start
+			until
+				iterator.after
+			loop
+				if iterator.item.string_value (1).same_string (name) and not iterator.item.string_value (2).same_string ("") then
+					result := result + iterator.item.string_value (2) + "%N"
+				end
+				iterator.forth
+			end
+			if result.same_string(name + "'s prizes:" + "%N") then
+				result := "Can't find the information!" + "%N"
+			else
+				result := result + "%N"
+			end
+		end
 end
 

@@ -30,7 +30,7 @@ feature
 		if check_string.is_equal ("<USERP") then
 			print("USERPAGE FOUND")
 			i_string := i_string.substring (11, i_string.count)
-			db_helper.add_data (getUnitName(i_string), getUnitHeadName(i_string), getReportStartDate(i_string), getReportEndDate(i_string), getCoursesTaught(i_string), getExamsAdmin(i_string), getStudentsSupervised(i_string), getStudentReports(i_string), getPhDTheses(i_string), getGrantsWon(i_string), getResearchProjects(i_string), getResearchCollaborations(i_string), getConferencePublications(i_string), getJournalPublications(i_string))
+			db_helper.add_data (getUnitName(i_string), getUnitHeadName(i_string), getReportStartDate(i_string), getReportEndDate(i_string), getCoursesTaught(i_string), getExamsAdmin(i_string), getStudentsSupervised(i_string), getStudentReports(i_string), getPhDTheses(i_string), getGrantsWon(i_string), getResearchProjects(i_string), getResearchCollaborations(i_string), getConferencePublications(i_string), getJournalPublications(i_string), getPatents(i_string), getIPLic(i_string), getBestPaper(i_string), getMemberships(i_string), getPrizes(i_string), getIndustryColl(i_string), getOtherInfo(i_string))
 
 --			Io.put_string(getUnitName(i_string))
 --			Io.put_new_line
@@ -300,6 +300,126 @@ feature
 					Result := ""
 				else
 					Result := i_str.substring (i + 13, k - 1)
+				end
+			else Result := ""
+			end
+		end
+
+		getPatents(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<PATENTS>")
+			then
+				i := i_str.substring_index ("<PATENTS>", 1)
+				k := i_str.substring_index ("</PATENTS>", 1)
+				if i_str.substring (i + 13, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 9, k - 1)
+				end
+			else Result := ""
+			end
+		end
+	getIPLic(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<IPLIC>")
+			then
+				i := i_str.substring_index ("<IPLIC>", 1)
+				k := i_str.substring_index ("</IPLIC>", 1)
+				if i_str.substring (i + 13, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 7, k - 1)
+				end
+			else Result := ""
+			end
+		end
+	getBestPaper(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<BESTPAPER>")
+			then
+				i := i_str.substring_index ("<BESTPAPER>", 1)
+				k := i_str.substring_index ("</BESTPAPER>", 1)
+				if i_str.substring (i + 13, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 11, k - 1)
+				end
+			else Result := ""
+			end
+		end
+	getMemberships(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<MEMBERSHIP>")
+			then
+				i := i_str.substring_index ("<MEMBERSHIP>", 1)
+				k := i_str.substring_index ("</MEMBERSHIP>", 1)
+				if i_str.substring (i + 13, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 12, k - 1)
+				end
+			else Result := ""
+			end
+		end
+	getPrizes(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<PRIZES>")
+			then
+				i := i_str.substring_index ("<PRIZES>", 1)
+				k := i_str.substring_index ("</PRIZES>", 1)
+				if i_str.substring (i + 13, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 8, k - 1)
+				end
+			else Result := ""
+			end
+		end
+	getIndustryColl(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<INDUSTRYCOLL>")
+			then
+				i := i_str.substring_index ("<INDUSTRYCOLL>", 1)
+				k := i_str.substring_index ("</INDUSTRYCOLL>", 1)
+				if i_str.substring (i + 13, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 14, k - 1)
+				end
+			else Result := ""
+			end
+		end
+	getOtherInfo(i_str: STRING): STRING
+		local
+			i,k: INTEGER
+		do
+			if
+				i_str.has_substring ("<OTHER>")
+			then
+				i := i_str.substring_index ("<OTHER>", 1)
+				k := i_str.substring_index ("</OTHER>", 1)
+				if i_str.substring (i + 13, k - 1).is_equal ("null") then
+					Result := ""
+				else
+					Result := i_str.substring (i + 7, k - 1)
 				end
 			else Result := ""
 			end
