@@ -123,7 +123,7 @@ feature
 			until
 				iterator.after
 			loop
-				if iterator.item.string_value (1).same_string ("00/00/00000") or iterator.item.string_value (1).same_string ("") then
+				if iterator.item.string_value (1).same_string ("00/00/00000") or iterator.item.string_value (1).same_string ("") or not year.is_integer then
 					else
 						if iterator.item.string_value (1).substring (iterator.item.string_value (1).index_of (' ', 4) + 1, iterator.item.string_value (1).index_of (' ', 4) + 4).to_integer  = year.to_integer then
 						result := result + iterator.item.string_value (2) + "; " + iterator.item.string_value (3) + "%N"
@@ -139,7 +139,7 @@ feature
 
 		end
 
-		query2(unit, years_number: STRING): STRING -- summary information about given unit in given number of years
+	query2(unit, years_number: STRING): STRING -- summary information about given unit in given number of years
     local
       year_start: INTEGER
    do
@@ -157,7 +157,7 @@ feature
       until
         iterator.after
       loop
-      	if iterator.item.string_value (3).same_string ("00/00/00000") or iterator.item.string_value (4).same_string ("00/00/0000") or iterator.item.string_value (3).same_string ("") or iterator.item.string_value (4).same_string ("") then
+      	if iterator.item.string_value (3).same_string ("00/00/00000") or iterator.item.string_value (4).same_string ("00/00/0000") or iterator.item.string_value (3).same_string ("") or iterator.item.string_value (4).same_string ("") or not years_number.is_integer then
       	else
         if year_start + years_number.to_integer >= iterator.item.string_value (3).substring (iterator.item.string_value (3).index_of (' ', 4) + 1, iterator.item.string_value (3).index_of (' ', 4) + 4).to_integer and iterator.item.string_value (1).same_string (unit) then
           result := result + "Information about " + unit + " in " + iterator.item.string_value (3).substring (iterator.item.string_value (3).index_of (' ', 4) + 1, iterator.item.string_value (3).index_of (' ', 4) + 4) + " year:" + "%N"
@@ -194,12 +194,15 @@ feature
       create db.make_open_read_write ("Forms.db")
       create db_query.make ("SELECT REPORTSTARTDATE, REPORTENDDATE, COURSESTAUGHT FROM Project;", db)
       iterator := db_query.execute_new
+      if not start.is_integer or not the_end.is_integer then
+      	 else
       day_start := start.substring (1, start.index_of ('/', 1) - 1).to_integer
       day_end := the_end.substring (1, the_end.index_of ('/', 1) - 1).to_integer
       m_start := start.substring (start.index_of ('/', 1) + 1, start.index_of ('/', 4) - 1).to_integer
       m_end := the_end.substring (the_end.index_of ('/', 1) + 1, the_end.index_of ('/', 4) - 1).to_integer
       year_start := start.substring (start.index_of ('/', 4) + 1, start.index_of ('/', 4) + 4).to_integer
       year_end := the_end.substring (the_end.index_of ('/', 4) + 1, the_end.index_of ('/', 4) + 4).to_integer
+      	end
       create result.make_empty
       result := "Courses taught between " + start + " and " + the_end + ":" + "%N"
       from
@@ -328,4 +331,3 @@ feature
 			end
 		end
 end
-

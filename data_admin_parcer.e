@@ -16,7 +16,7 @@ feature {NONE} -- Initialization
 			-- Run application.
 
 		do
-		
+
 		end
 feature
 
@@ -41,6 +41,22 @@ feature
 	extract_q3_year2(str: STRING): STRING
 		do
 			Result := str.substring (str.index_of (' ', 1)+1, str.substring_index ("</QUERY3>", 1) - 1)
+		end
+	extract_q4(str: STRING): STRING
+		do
+			Result := str.substring (str.substring_index ("<QUERY4>", 1) + 8, str.substring_index ("</QUERY4>", 1)-1)
+		end
+	extract_q5(str: STRING): STRING
+		do
+			Result := str.substring (str.substring_index ("<QUERY5>", 1) + 8, str.substring_index ("</QUERY5>", 1)-1)
+		end
+	extract_q6(str: STRING): STRING
+		do
+			Result := str.substring (str.substring_index ("<QUERY6>", 1) + 8, str.substring_index ("</QUERY6>", 1)-1)
+		end
+	extract_q7(str: STRING): STRING
+		do
+			Result := str.substring (str.substring_index ("<QUERY7>", 1) + 8, str.substring_index ("</QUERY7>", 1)-1)
 		end
 end
 

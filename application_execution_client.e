@@ -47,6 +47,14 @@ feature
 				ws.send (Text_frame, "SERVER_RESPONSE" + db_helper.query2 (admin_parser.extract_q2_unit (a_message) , admin_parser.extract_q2_year (a_message)))
 			elseif a_message.starts_with ("<QUERY3>") then
 				ws.send (Text_frame, "SERVER_RESPONSE" + db_helper.query3 (admin_parser.extract_q3_year1 (a_message), admin_parser.extract_q3_year2 (a_message)))
+			elseif a_message.starts_with ("<QUERY4>") then
+				ws.send (Text_frame, "SERVER_RESPONSE" + db_helper.query4 (admin_parser.extract_q4 (a_message)))
+			elseif a_message.starts_with ("<QUERY5>") then
+				ws.send (Text_frame, "SERVER_RESPONSE" + db_helper.query5 (admin_parser.extract_q5 (a_message)))
+			elseif a_message.starts_with ("<QUERY6>") then
+				ws.send (Text_frame, "SERVER_RESPONSE" + db_helper.query6 (admin_parser.extract_q6 (a_message)))
+			elseif a_message.starts_with ("<QUERY7>") then
+				ws.send (Text_frame, "SERVER_RESPONSE" + db_helper.query7 (admin_parser.extract_q7 (a_message)))
 			end
 
 
