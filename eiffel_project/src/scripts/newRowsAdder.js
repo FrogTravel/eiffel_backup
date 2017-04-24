@@ -149,7 +149,7 @@ $(document).ready(function(){
 		$("#" + grantsIndex + "grants").remove();
 	})
 
-	//Research projects
+	//Research projects 
 	var researchProjIndex = 0;
 	$("#addbtnResearchProj").click( function(even){
 		var newElement = "<div id=\"" + researchProjIndex + "rP\" class=\"bigform researchProj\">" +
@@ -159,8 +159,8 @@ $(document).ready(function(){
 			"<input id=\"externalPersonnel\" class=\"mandatory newElement\" placeholder=\"External persons involved\" type=\"text\" name=\"externalPersonnel\">" +
 			"<div></div>" + 
 			"<p class=\"inline\" style=\"color: transparent;\">11</p>" +
-			"<input  class=\"datepicker newElement\" id=\"startDateOfProject\" placeholder=\"Start date\" type=\"text\" name=\"date\">" + 
-			"<input  class=\"datepicker newElement\" id=\"endDateOfProject\" placeholder=\"End date\" type=\"text\" name=\"date\">" +
+			"<input  class=\"newElement\" id=\"startDateOfProject\" placeholder=\"From dd/mm/yyyy\" type=\"text\" name=\"date\">" + 
+			"<input  class=\"newElement\" id=\"endDateOfProject\" placeholder=\"From dd/mm/yyyy\" type=\"text\" name=\"date\">" +
 			"<input id=\"sourceOfFinance\" class=\"mandatory newElement\" placeholder=\"Source of financing\" type=\"text\" name=\"sourceOfFinance\">" +
 		"</div>";
 		researchProjIndex++;
